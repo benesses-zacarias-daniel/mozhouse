@@ -1,0 +1,12 @@
+:root {
+    --topoPreto: #101625;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    box-sizing: border-box;
+}

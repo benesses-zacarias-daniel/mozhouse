@@ -1,0 +1,12 @@
+header {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 0.9rem;
+}
