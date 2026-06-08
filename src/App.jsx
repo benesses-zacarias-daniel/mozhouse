@@ -1,13 +1,14 @@
-import './App.css'
-import MozHouse from './components/mozhouse/MozHouse'
+import { BrowserRouter } from 'react-router-dom';
+import MozHouseLayout from './components/mozhouse/MozHouseLayout';
+import ScrollProvider from './components/context/ScrollContext';
 
 function App() {
   return (
-    <>
-      <section id="center">
-        <MozHouse />
-      </section>
-    </>
+    <BrowserRouter>
+      <ScrollProvider>
+        <MozHouseLayout />
+      </ScrollProvider>
+    </BrowserRouter>
   )
 }
 

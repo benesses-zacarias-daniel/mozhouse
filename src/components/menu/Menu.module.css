@@ -1,12 +1,51 @@
 :root {
     --topoPreto: #101625;
+    --fundotransparente: #00000094;
+    --verde: #00ef4c;
+    --branco: #fff;
 }
 
-nav {
-    flex: 1;
+.container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: row;
     box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2px 0px 2px 0px;
+    background: var(--fundotransparente);
+}
+
+.area_btn_fexar {
+    background: none;
+}
+
+.btn_fexar {
+    width: 35px;
+    height: 30px;
+}
+
+.menu {
+    flex: 1;
+}
+
+.area_itens {
+    padding: 0px 0px 0px 5px;
+    width: 250px;
+    height: 100%;
+    background: var(--branco);
+}
+
+.item_menu {
+    text-decoration: none;
+    color: var(--topoPreto);
+}
+
+.activa {
+    color: var(--verde);
 }

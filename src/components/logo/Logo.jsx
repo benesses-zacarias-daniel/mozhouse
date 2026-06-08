@@ -1,9 +1,8 @@
-import Img from "../img/Img";
-import Log from "../assets/icone.svg";
+import style from "./Logo.module.css";
 
-const Logo = () => {
+const Logo = ({ logoTexto }) => {
     return (
-        <><Img src={Log} alt={"Ícone do MozHouse"} /> MozHouse</>
+        <div className={style.area_logo}>{logoTexto}</div>
     )
 }
 

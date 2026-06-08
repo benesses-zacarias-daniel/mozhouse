@@ -2,6 +2,7 @@
   --corFundo: #0d1322;
   --topoPreto: #101625;
   --corBtnDest: #21c45d;
+  --corTexto: #fff;
 }
 
 body,
@@ -12,7 +13,16 @@ html {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  background-color: var(--corFundo);
+  background-color: var(--corTexto);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0px;
 }
 
 #root {
@@ -20,6 +30,8 @@ html {
   height: 100%;
   margin: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   box-sizing: border-box;
 }

@@ -1,0 +1,13 @@
+.btn {
+    background: transparent;
+    height: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.96);
+}
