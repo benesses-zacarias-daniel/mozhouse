@@ -1,85 +1,12 @@
+import Hero from "../hero/Hero";
+import style from "./Inicio.module.css";
+
 const Inicio = () => {
 
     console.log("home");
-
     return (
-        <section>
-            <div>Inicio</div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ut dignissimos in impedit eveniet quidem doloribus
-            tempora, eum eligendi fuga quasi provident placeat porro ea fugit laboriosam consectetur! Sapiente, debitis.
-            Animi ea tempora reprehenderit fugit voluptatibus placeat itaque? Nisi soluta asperiores numquam repellat perferendis
-            aut, exercitationem, delectus, obcaecati consectetur voluptatibus culpa facilis architecto cupiditate iste similique
-            natus nobis? Corrupti, repellat!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ut dignissimos in impedit eveniet quidem doloribus
-            tempora, eum eligendi fuga quasi provident placeat porro ea fugit laboriosam consectetur! Sapiente, debitis.
-            Animi ea tempora reprehenderit fugit voluptatibus placeat itaque? Nisi soluta asperiores numquam repellat perferendis
-            aut, exercitationem, delectus, obcaecati consectetur voluptatibus culpa facilis architecto cupiditate iste similique
-            natus nobis? Corrupti, repellat!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ut dignissimos in impedit eveniet quidem doloribus
-            tempora, eum eligendi fuga quasi provident placeat porro ea fugit laboriosam consectetur! Sapiente, debitis.
-            Animi ea tempora reprehenderit fugit voluptatibus placeat itaque? Nisi soluta asperiores numquam repellat perferendis
-            aut, exercitationem, delectus, obcaecati consectetur voluptatibus culpa facilis architecto cupiditate iste similique
-            natus nobis? Corrupti, repellat!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ut dignissimos in impedit eveniet quidem doloribus
-            tempora, eum eligendi fuga quasi provident placeat porro ea fugit laboriosam consectetur! Sapiente, debitis.
-            Animi ea tempora reprehenderit fugit voluptatibus placeat itaque? Nisi soluta asperiores numquam repellat perferendis
-            aut, exercitationem, delectus, obcaecati consectetur voluptatibus culpa facilis architecto cupiditate iste similique
-            natus nobis? Corrupti, repellat!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ut dignissimos in impedit eveniet quidem doloribus
-            tempora, eum eligendi fuga quasi provident placeat porro ea fugit laboriosam consectetur! Sapiente, debitis.
-            Animi ea tempora reprehenderit fugit voluptatibus placeat itaque? Nisi soluta asperiores numquam repellat perferendis
-            aut, exercitationem, delectus, obcaecati consectetur voluptatibus culpa facilis architecto cupiditate iste similique
-            natus nobis? Corrupti, repellat!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ut dignissimos in impedit eveniet quidem doloribus
-            tempora, eum eligendi fuga quasi provident placeat porro ea fugit laboriosam consectetur! Sapiente, debitis.
-            Animi ea tempora reprehenderit fugit voluptatibus placeat itaque? Nisi soluta asperiores numquam repellat perferendis
-            aut, exercitationem, delectus, obcaecati consectetur voluptatibus culpa facilis architecto cupiditate iste similique
-            natus nobis? Corrupti, repellat!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ut dignissimos in impedit eveniet quidem doloribus
-            tempora, eum eligendi fuga quasi provident placeat porro ea fugit laboriosam consectetur! Sapiente, debitis.
-            Animi ea tempora reprehenderit fugit voluptatibus placeat itaque? Nisi soluta asperiores numquam repellat perferendis
-            aut, exercitationem, delectus, obcaecati consectetur voluptatibus culpa facilis architecto cupiditate iste similique
-            natus nobis? Corrupti, repellat!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ut dignissimos in impedit eveniet quidem doloribus
-            tempora, eum eligendi fuga quasi provident placeat porro ea fugit laboriosam consectetur! Sapiente, debitis.
-            Animi ea tempora reprehenderit fugit voluptatibus placeat itaque? Nisi soluta asperiores numquam repellat perferendis
-            aut, exercitationem, delectus, obcaecati consectetur voluptatibus culpa facilis architecto cupiditate iste similique
-            natus nobis? Corrupti, repellat!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ut dignissimos in impedit eveniet quidem doloribus
-            tempora, eum eligendi fuga quasi provident placeat porro ea fugit laboriosam consectetur! Sapiente, debitis.
-            Animi ea tempora reprehenderit fugit voluptatibus placeat itaque? Nisi soluta asperiores numquam repellat perferendis
-            aut, exercitationem, delectus, obcaecati consectetur voluptatibus culpa facilis architecto cupiditate iste similique
-            natus nobis? Corrupti, repellat!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ut dignissimos in impedit eveniet quidem doloribus
-            tempora, eum eligendi fuga quasi provident placeat porro ea fugit laboriosam consectetur! Sapiente, debitis.
-            Animi ea tempora reprehenderit fugit voluptatibus placeat itaque? Nisi soluta asperiores numquam repellat perferendis
-            aut, exercitationem, delectus, obcaecati consectetur voluptatibus culpa facilis architecto cupiditate iste similique
-            natus nobis? Corrupti, repellat!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ut dignissimos in impedit eveniet quidem doloribus
-            tempora, eum eligendi fuga quasi provident placeat porro ea fugit laboriosam consectetur! Sapiente, debitis.
-            Animi ea tempora reprehenderit fugit voluptatibus placeat itaque? Nisi soluta asperiores numquam repellat perferendis
-            aut, exercitationem, delectus, obcaecati consectetur voluptatibus culpa facilis architecto cupiditate iste similique
-            natus nobis? Corrupti, repellat!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ut dignissimos in impedit eveniet quidem doloribus
-            tempora, eum eligendi fuga quasi provident placeat porro ea fugit laboriosam consectetur! Sapiente, debitis.
-            Animi ea tempora reprehenderit fugit voluptatibus placeat itaque? Nisi soluta asperiores numquam repellat perferendis
-            aut, exercitationem, delectus, obcaecati consectetur voluptatibus culpa facilis architecto cupiditate iste similique
-            natus nobis? Corrupti, repellat!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ut dignissimos in impedit eveniet quidem doloribus
-            tempora, eum eligendi fuga quasi provident placeat porro ea fugit laboriosam consectetur! Sapiente, debitis.
-            Animi ea tempora reprehenderit fugit voluptatibus placeat itaque? Nisi soluta asperiores numquam repellat perferendis
-            aut, exercitationem, delectus, obcaecati consectetur voluptatibus culpa facilis architecto cupiditate iste similique
-            natus nobis? Corrupti, repellat!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ut dignissimos in impedit eveniet quidem doloribus
-            tempora, eum eligendi fuga quasi provident placeat porro ea fugit laboriosam consectetur! Sapiente, debitis.
-            Animi ea tempora reprehenderit fugit voluptatibus placeat itaque? Nisi soluta asperiores numquam repellat perferendis
-            aut, exercitationem, delectus, obcaecati consectetur voluptatibus culpa facilis architecto cupiditate iste similique
-            natus nobis? Corrupti, repellat!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ut dignissimos in impedit eveniet quidem doloribus
-            tempora, eum eligendi fuga quasi provident placeat porro ea fugit laboriosam consectetur! Sapiente, debitis.
-            Animi ea tempora reprehenderit fugit voluptatibus placeat itaque? Nisi soluta asperiores numquam repellat perferendis
-            aut, exercitationem, delectus, obcaecati consectetur voluptatibus culpa facilis architecto cupiditate iste similique
-            natus nobis? Corrupti, repellat!
+        <section className={style.area_inicio}>
+            <Hero titulo={"Encontre a casa dos seu sonhos em "} foco={"Moçambique"} mens={"Acesso exclusivo às propriedades mais luxuosas e bem localizadas, de Nampula. Viva a excelencia imobiliária."} />
         </section>
     )
 }
