@@ -11,6 +11,8 @@
   box-sizing: border-box;
   /* font-size: 1rem; */
   font-size: 0.9rem;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body,
