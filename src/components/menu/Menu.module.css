@@ -19,6 +19,15 @@
     height: 100%;
     padding: 2px 0px 2px 0px;
     background: var(--fundotransparente);
+    z-index: 99999;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    box-sizing: border-box;
 }
 
 .area_btn_fexar {

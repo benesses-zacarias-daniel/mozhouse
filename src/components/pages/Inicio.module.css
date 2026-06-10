@@ -1,16 +1,47 @@
 .area_inicio {
-    padding: 0px 5px 0px 5px;
-    height: 100%;
+    flex: 1;
+    padding: 0px 5px 10px 5px;
+    /* height: 100%; */
 }
 
 .ir_propriedades {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1rem;
+}
+
+.titulo_destaque {
+    padding: 5px 0px 5px 0px;
+}
+
+.titulo_desc_destaque {
+    width: 100%;
+}
+
+.destaque_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    height: 25px !important;
+}
+
+.destaque_btn a {
+    color: #21c45d;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+}
+
+a svg {
+    padding: 0px 0px 0px 3px;
 }
 
 .propriedades {
+    /* height: 100%; */
     display: flex;
     align-items: center;
     justify-content: center;

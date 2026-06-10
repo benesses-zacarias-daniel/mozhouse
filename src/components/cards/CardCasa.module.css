@@ -1,8 +1,8 @@
 .area_geral_card {
     width: 300px;
-    height: 350px;
-    border: 1px solid red;
-    border-radius: 10px;
+    height: 370px;
+    border: 1px solid #000;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,24 +21,53 @@
 
 .area_img_card img {
     width: 100%;
-    height: 273px;
-    border-radius: 10px;
-    border: 1px solid black;
+    height: 292px;
+    border-radius: 15px;
+}
+
+.area_compra {
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.286);
 }
 
 .area_categoria {
     position: absolute;
     top: 10px;
     left: 10px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 20px;
     color: #fff;
+    background: rgba(255, 255, 255, 0.286);
 }
 
 .area_preco_casa {
     position: absolute;
     top: 240px;
     right: 10px;
-    color: #fff;
-
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 20px;
+    color: #21c45d;
+    background: rgba(0, 0, 0, 0.406);
 }
 
 .area_info_card {
@@ -49,6 +78,7 @@
     width: 100%;
     padding: 3px 0px 3px 5px;
 }
+
 
 .area_localizacao {
     width: 100%;
@@ -70,8 +100,37 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
+}
+
+.icone {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.icone svg {
+    width: 20px;
+    height: 20px;
+}
+
+.icone p {
+    padding: 0px 0px 0px 4px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.linha {
+    height: 1px;
+    background: #e0e0e0;
+    width: 90%;
+    text-align: center;
+    margin: 5px 0px 5px 0px;
 }
 
 .info_medidas {

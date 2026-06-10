@@ -15,8 +15,9 @@ const Topo = () => {
             <Button children={<Img src={Mostrar} alt={"Ícone barras horizontais"} />} estilo={style.btn_topo} onClick={() => { setMostrar(true) }} />
             <Logo logoTexto={"MozHouse"} />
             <Menu mostrar={mostrar} onClick={() => { setMostrar(false) }} />
+            <div className={style.ajuste}></div>
         </header>
-    )
+    );
 }
 
 export default Topo;

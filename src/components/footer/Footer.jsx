@@ -1,8 +1,21 @@
-const Footer = () => {
+import Logo from "../logo/Logo";
+import style from "./Footer.module.css"
+
+const Footer = ({ nome }) => {
+    const onClick = () => {
+        console.log("Click Footer");
+    }
     return (
-        <div>
-            Footer
-        </div>
+        <footer>
+            <div className={style.area_info_footer}>
+                <div className={style.desc_footer}>
+                    <Logo logoTexto={"MozHouse"} />
+                    <p>A imobiliária de luxo lider em Moçambique, oferecendo as melhores propriedades residenciais e comerciais.</p>
+                </div>
+            </div>
+            <hr className={style.linha_footer} />
+            <span> © 2026 {nome}. Todos os direitos reservados.</span>
+        </footer>
     )
 }
 

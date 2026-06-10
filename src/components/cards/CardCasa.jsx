@@ -1,14 +1,16 @@
 import style from "./CardCasa.module.css"
 import Img from "../img/Img"
-import { FaBath, FaDraftingCompass, FaRuler } from "react-icons/fa";
+import { FaBath, FaBed, FaDraftingCompass } from "react-icons/fa";
 
-const CardCasa = ({ srcCasa, categoria, preco, localizacao, nome, quartos, banhos, area }) => {
+const CardCasa = ({ srcCasa, categoria, comprar, preco, localizacao, nome, quartos, banhos, area }) => {
     return (
         <div className={style.area_geral_card}>
             <div className={style.area_img_card}>
                 <Img src={srcCasa} alt={srcCasa} />
-                <div className={style.area_categoria}> {categoria}</div>
+                <div className={style.area_categoria}>{categoria}</div>
+                <div className={style.area_compra}>{comprar ? "Vende-se" : "Aluga-se"}</div>
                 <div className={style.area_preco_casa}>{preco} MT</div>
+
             </div>
             <div className={style.area_info_card}>
                 <div className={style.area_localizacao}>
@@ -18,9 +20,9 @@ const CardCasa = ({ srcCasa, categoria, preco, localizacao, nome, quartos, banho
                 <div className={style.area_medidas}>
                     <hr className={style.linha} />
                     <div className={style.info_medidas}>
-                        <div><FaRuler />{quartos}</div>
-                        <div><FaBath />{banhos}</div>
-                        <div><FaDraftingCompass />{area}</div>
+                        <div className={style.icone}><FaBed /><p>{quartos} Quartos</p></div>
+                        <div className={style.icone}><FaBath /><p>{banhos} Banhos</p></div>
+                        <div className={style.icone}><FaDraftingCompass /><p>{area} m<sup>2</sup></p></div>
                     </div>
                 </div>
             </div>
