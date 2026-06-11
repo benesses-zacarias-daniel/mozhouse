@@ -1,5 +1,6 @@
+import Menu from "../menu/Menu";
 import Logo from "../logo/Logo";
-import style from "./Footer.module.css"
+import style from "./Footer.module.css";
 
 const Footer = ({ nome }) => {
     const onClick = () => {
@@ -11,6 +12,13 @@ const Footer = ({ nome }) => {
                 <div className={style.desc_footer}>
                     <Logo logoTexto={"MozHouse"} />
                     <p>A imobiliária de luxo lider em Moçambique, oferecendo as melhores propriedades residenciais e comerciais.</p>
+                    <div className={style.contacto}>
+                        <div>Contactos:</div>
+                    </div>
+                </div>
+                <div className={style.area_nav}>
+                    <div className={style.area_nav_titulo}>Links Rápidos</div>
+                    <Menu mostrar={true} mostrarIcone={false} onClick={() => { onClick(); }} />
                 </div>
             </div>
             <hr className={style.linha_footer} />

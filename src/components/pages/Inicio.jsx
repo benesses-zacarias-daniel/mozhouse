@@ -9,7 +9,7 @@ const Inicio = () => {
 
     return (
         <section className={style.area_inicio}>
-            <Hero titulo={"Encontre a casa dos seus sonhos em "} foco={"Moçambique"} mens={"Acesso exclusivo às propriedades mais luxuosas e bem localizadas. Viva a excelencia imobiliária."} />
+            <Hero titulo={"Encontre a casa dos seus sonhos em "} foco={" Moçambique"} mens={"Acesso exclusivo às propriedades mais luxuosas e bem localizadas. Viva a excelencia imobiliária."} />
             <div className={style.area_destaque}>
                 <div className={style.titulo_destaque}>
                     <div className={style.titulo_desc_destaque}>
@@ -18,7 +18,7 @@ const Inicio = () => {
                             <p>A nossa seleção de imóveis</p>
                             <Button estilo={style.destaque_btn}>
                                 <Link to={"/propriedades"}>
-                                    Ver Imóveis
+                                    <p>Ver Imóveis</p>
                                     <FaArrowRight />
                                 </Link>
                             </Button>

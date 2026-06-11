@@ -1,3 +1,4 @@
+import { useState } from "react";
 import ScrollCima from "../scroll/ScrollCima";
 import Footer from "../footer/Footer";
 import Rotas from "../routes/Rotas";
@@ -5,10 +6,15 @@ import Topo from "../topo/Topo";
 import style from "./MozHouseLayout.module.css";
 
 const MozHouseLayout = () => {
+    const [mostrar, setMostrar] = useState(false);
+
+    const onClick = (val) => {
+        setMostrar(val)
+    }
 
     return (
         <div className={style.moz_house}>
-            <Topo />
+            <Topo mostrar={mostrar} onClick={() => { onClick(mostrar ? false : true) }} />
             <ScrollCima />
             <main id="conteudo" className={style.moz_main}>
                 <Rotas />

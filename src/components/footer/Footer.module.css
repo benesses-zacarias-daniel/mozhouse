@@ -9,7 +9,14 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 5px;
+    padding: 5px 5px 5px 6px;
+}
+
+.area_info_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
 .desc_footer {
@@ -17,14 +24,12 @@ footer {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    flex: 1;
+    padding: 0px 10px 0px 0px;
 }
 
 .desc_footer p {
     text-align: justify;
-}
-
-.area_menu_footer {
-    width: 130px;
 }
 
 .linha_footer {
@@ -34,4 +39,8 @@ footer {
     background: #e0e0e0;
     margin: 12px 0px 12px 0px;
     width: 95%;
+}
+
+.area_nav_titulo {
+    text-align: justify;
 }

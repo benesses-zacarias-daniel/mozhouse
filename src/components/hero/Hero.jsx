@@ -3,7 +3,7 @@ import style from "./Hero.module.css";
 const Hero = ({ titulo, mens, foco }) => {
     return (
         <div className={style.area_hero}>
-            <h1 className={style.titulo_hero}>{titulo}<p className={style.foco}>{foco}</p></h1>
+            <h1 className={style.titulo_hero}>{titulo}<span className={style.foco}>{foco}</span></h1>
             <p className={style.mens_hero}>{mens}</p>
         </div>
     );

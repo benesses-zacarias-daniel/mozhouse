@@ -22,12 +22,23 @@
     z-index: 99999;
 }
 
-.footer {
+.footerContainer {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
     box-sizing: border-box;
+    width: 105px;
+}
+
+.nava_footer {
+    width: 100%;
+    height: 100%;
+}
+
+.nava_footer .menu .item_menu {
+    color: var(--branco);
+    font-size: 0.8rem;
 }
 
 .area_btn_fexar {
@@ -41,20 +52,56 @@
 
 .menu {
     flex: 1;
+    width: 100%;
 }
 
 .area_itens {
-    padding: 0px 0px 0px 5px;
     width: 250px;
     height: 100%;
     background: var(--branco);
 }
 
+.links_nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+}
+
+.area_itens .menu button {
+    width: 145px;
+    padding: 0px 0px 0px 10px;
+}
+
+.area_itens .menu button:hover {
+    padding: 0px 0px 0px 15px;
+}
+
+.links_nav button {
+    width: 100%;
+    height: 25px;
+}
+
+.links_nav button:hover {
+    padding: 0px 0px 0px 4px;
+}
+
+.links_nav button a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
 .item_menu {
     text-decoration: none;
     color: var(--topoPreto);
+    text-align: justify;
 }
 
 .activa {
-    color: var(--verde);
+    color: var(--verde) !important;
 }

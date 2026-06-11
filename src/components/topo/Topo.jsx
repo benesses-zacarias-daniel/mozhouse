@@ -5,16 +5,14 @@ import Logo from "../logo/Logo";
 import Menu from "../menu/Menu";
 import LogoSrc from "../assets/icone.svg";
 import style from "./Topo.module.css";
-import { useState } from "react";
 
-const Topo = () => {
-    const [mostrar, setMostrar] = useState(false);
+const Topo = ({ mostrar, onClick }) => {
 
     return (
         <header>
-            <Button children={<Img src={Mostrar} alt={"Ícone barras horizontais"} />} estilo={style.btn_topo} onClick={() => { setMostrar(true) }} />
+            <Button children={<Img src={Mostrar} alt={"Ícone barras horizontais"} />} estilo={style.btn_topo} onClick={() => { onClick() }} />
             <Logo logoTexto={"MozHouse"} />
-            <Menu mostrar={mostrar} onClick={() => { setMostrar(false) }} />
+            <Menu mostrar={mostrar} mostrarIcone={mostrar} onClick={() => { onClick(); }} />
             <div className={style.ajuste}></div>
         </header>
     );

@@ -1,7 +1,12 @@
 .titulo_hero {
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
 }
 
 .foco {
     color: #21c45d;
+    padding: 1px 0px 0px 3px;
 }
