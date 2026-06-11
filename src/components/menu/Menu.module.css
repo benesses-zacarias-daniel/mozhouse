@@ -74,8 +74,9 @@
     padding: 0px 0px 0px 10px;
 }
 
-.area_itens .menu button:hover {
-    padding: 0px 0px 0px 15px;
+a:hover,
+.nava_footer .menu .item_menu:hover {
+    color: var(--verde);
 }
 
 .links_nav button {
