@@ -16,12 +16,12 @@ const Inicio = () => {
                         <h2>Destaques Exclusivos</h2>
                         <div className={style.ir_propriedades}>
                             <p>A nossa seleção de imóveis</p>
-                            <Button estilo={style.destaque_btn}>
-                                <Link to={"/propriedades"}>
-                                    <p>Ver Imóveis</p>
-                                    <FaArrowRight />
-                                </Link>
-                            </Button>
+                            <Link to={"/propriedades"} className={style.links_destaque}>
+                                <Button estilo={style.destaque_btn}>
+                                    Ver Imóveis
+                                </Button>
+                                <FaArrowRight className={style.ajuste_icone} />
+                            </Link>
                         </div>
 
                     </div>

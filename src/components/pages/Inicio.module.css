@@ -22,32 +22,36 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 5px;
+    /* padding: 5px; */
     height: 25px !important;
 }
 
-.destaque_btn a {
+.links_destaque {
+    width: 90px;
     color: #21c45d;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
     text-decoration: none;
-    height: 100%;
-    width: 100%;
 }
 
-a svg {
-    height: 100%;
+.links_destaque:hover {
+    color: #21c45d;
 }
 
-a p {
+.ajuste_icone {
+    height: 25px;
+}
+
+.destaque_btn {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100%;
-    padding: 0px 3px 4px 0px;
+    padding: 0px 3px 3px 0px;
+    color: #21c45d;
 }
 
 .propriedades {
