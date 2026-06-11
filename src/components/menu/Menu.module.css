@@ -84,7 +84,8 @@
 }
 
 .links_nav button:hover {
-    padding: 0px 0px 0px 4px;
+    padding: 0px 0px 0px 2cap;
+    border: 1px solid red;
 }
 
 .links_nav button a {
