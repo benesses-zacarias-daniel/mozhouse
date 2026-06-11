@@ -101,3 +101,7 @@
 .activa {
     color: var(--verde) !important;
 }
+
+.area_itens .menu button .activa {
+    padding: 0px 0px 0px 10px;
+}
