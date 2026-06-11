@@ -83,10 +83,6 @@
     height: 25px;
 }
 
-.links_nav button:hover {
-    padding: 0px 0px 0px 1px;
-}
-
 .links_nav button a {
     width: 100%;
     height: 100%;
