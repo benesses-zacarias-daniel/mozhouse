@@ -1,11 +1,14 @@
+import { useMenuContext } from "../context/MenuContext";
 import Hero from "../hero/Hero";
 import style from "./Inicio.module.css";
-import Button from "../botaos/Button"
+import Button from "../botaos/Button";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import CardCasa from "../cards/CardCasa";
-import Casas from "../data/Casas"
+import Casas from "../data/Casas";
+
 const Inicio = () => {
+    const { mudarPage } = useMenuContext();
 
     return (
         <section className={style.area_inicio}>
@@ -16,7 +19,9 @@ const Inicio = () => {
                         <h2>Destaques Exclusivos</h2>
                         <div className={style.ir_propriedades}>
                             <p>A nossa seleção de imóveis</p>
-                            <Link to={"/propriedades"} className={style.links_destaque}>
+                            <Link to={"/propriedades"} className={style.links_destaque} onClick={() => {
+                                mudarPage("propriedades");
+                            }}>
                                 <Button estilo={style.destaque_btn}>
                                     Ver Imóveis
                                 </Button>
