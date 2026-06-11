@@ -3,9 +3,11 @@ import Logo from "../logo/Logo";
 import style from "./Footer.module.css";
 
 const Footer = ({ nome }) => {
+
     const onClick = () => {
         console.log("Click Footer");
     }
+
     return (
         <footer>
             <div className={style.area_info_footer}>
@@ -18,7 +20,7 @@ const Footer = ({ nome }) => {
                 </div>
                 <div className={style.area_nav}>
                     <div className={style.area_nav_titulo}>Links Rápidos</div>
-                    <Menu mostrar={true} mostrarIcone={false} onClick={() => { onClick(); }} />
+                    <Menu mostrarMenu={true} mostrarIcone={false} onClick={() => { onClick(); }} />
                 </div>
             </div>
             <hr className={style.linha_footer} />

@@ -5,14 +5,20 @@ import Logo from "../logo/Logo";
 import Menu from "../menu/Menu";
 import LogoSrc from "../assets/icone.svg";
 import style from "./Topo.module.css";
+import { useMenuContext } from "../context/MenuContext";
 
-const Topo = ({ mostrar, onClick }) => {
+const Topo = () => {
+    const { mostrarMenu, setMostrarMenu } = useMenuContext();
+
+    const onClick = () => {
+        setMostrarMenu(true);
+    }
 
     return (
         <header>
-            <Button children={<Img src={Mostrar} alt={"Ícone barras horizontais"} />} estilo={style.btn_topo} onClick={() => { onClick() }} />
+            <Button children={<Img src={Mostrar} alt={"Ícone barras horizontais"} />} estilo={style.btn_topo} onClick={() => { onClick(); }} />
             <Logo logoTexto={"MozHouse"} />
-            <Menu mostrar={mostrar} mostrarIcone={mostrar} onClick={() => { onClick(); }} />
+            <Menu mostrarMenu={mostrarMenu} mostrarIcone={true} />
             <div className={style.ajuste}></div>
         </header>
     );
