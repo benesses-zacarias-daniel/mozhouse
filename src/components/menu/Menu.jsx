@@ -5,7 +5,7 @@ import Img from "../img/Img";
 import style from "./Menu.module.css";
 import Fexar from "../assets/fexar.svg";
 
-const Menu = ({ mostrarIcone, mostrarMenu }) => {
+const Menu = ({ mostrarMenu, mostrarIcone }) => {
     const { pageActiva, mudarPage, setMostrarMenu } = useMenuContext();
 
     const estiloContainer = mostrarIcone ? style.container : style.footerContainer;
