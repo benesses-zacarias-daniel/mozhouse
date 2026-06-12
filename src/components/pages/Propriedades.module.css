@@ -1,0 +1,70 @@
+.area_propriedades {
+    flex: 1;
+    padding: 0px 5px 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.area_exp {
+    padding: 0px;
+    width: 100%;
+    text-align: justify;
+}
+
+.desc_prop {
+    width: 100%;
+}
+
+.area_ver_mais {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.btn_ver_mais {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.casas_propriedades {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.controles_propriedades {
+    width: 100%;
+    height: 40px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.controles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
+}
+
+.controle_count {
+    padding: 0px 5px 0px 5px;
+}
+
+.btn_controle {
+    color: #21c45d;
+}

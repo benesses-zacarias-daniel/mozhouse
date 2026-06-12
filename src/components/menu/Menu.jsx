@@ -18,8 +18,12 @@ const Menu = ({ mostrarMenu, mostrarIcone }) => {
     return (
         <nav>
             {mostrarMenu && (
-                <div className={estiloContainer} onClick={() => { onClickOcultar(); }}>
-                    <div className={estiloIntens}>
+                <div className={estiloContainer} onClick={(evt) => {
+                    onClickOcultar();
+                }}>
+                    <div className={estiloIntens} onClick={(evt) => {
+                        evt.stopPropagation();
+                    }}>
                         {mostrarIcone && (<div className={style.area_btn_fexar}>
                             <Button children={<Img alt={"Ícone de quadro barras com um x no final."} src={Fexar} />} estilo={style.btn_fexar} onClick={() => { onClickOcultar(); }} />
                         </div>)}
