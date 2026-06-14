@@ -1,0 +1,74 @@
+.depoimentos_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.titulo_dep {
+    width: 100%;
+    text-align: center;
+    padding: 0px 0px 4px 0px;
+}
+
+.minInfoDep {
+    text-align: center;
+}
+
+.depoimentos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.area_depoimento {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8px;
+    border: 1px solid red;
+    border-radius: 0px 20px 0px 20px;
+}
+
+.estrela {
+    width: 100%;
+    text-align: justify;
+}
+
+.depoimento_cli {
+    text-align: justify;
+    font-style: oblique;
+    padding: 5px 0px 5px 0px;
+}
+
+.depoimento_info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 6px;
+    width: 100%;
+}
+
+.area_nome {
+    width: 42px;
+    height: 42px;
+    padding: 2px;
+    border-radius: 100%;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nome {
+    font-weight: 500;
+}

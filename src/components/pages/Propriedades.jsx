@@ -16,7 +16,11 @@ const Propriedades = () => {
     return (
         <section className={style.area_propriedades}>
             <div className={style.area_exp}>
-                <h2>Explorar Imóveis </h2>
+                <div className={style.titulo_desc}>
+                    <h2>Todas as propriedades</h2>
+                    <p>Explore imoóveis disponíveis para venda e arrendamento em Moçambique.</p>
+                </div>
+                <h2>Explorar Imóveis</h2>
                 <div className={style.desc_prop}>
                     <div className={style.area_ver_mais}>
                         <p>Descubra as propriedades mais exclusivas.</p>

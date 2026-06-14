@@ -2,7 +2,7 @@ const Casas = [
     {
         "id": 1,
         "preco": 10000,
-        "categoria": "Bla Bla",
+        "categoria": "DESTACADO",
         "compra": false,
         "srcCasa": "/img/img.png",
         "local": "Teste local",
@@ -15,7 +15,7 @@ const Casas = [
     {
         "id": 2,
         "preco": 20000,
-        "categoria": "Bla Bla 2",
+        "categoria": "",
         "compra": false,
         "srcCasa": "/img/img.png",
         "local": "Teste local 2",
@@ -28,7 +28,7 @@ const Casas = [
     {
         "id": 3,
         "preco": 50000,
-        "categoria": "Bla Bla 3",
+        "categoria": "PROMO",
         "compra": true,
         "srcCasa": "/img/img.png",
         "local": "Teste local 3",

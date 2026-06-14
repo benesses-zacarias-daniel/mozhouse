@@ -8,6 +8,19 @@
     gap: 10px;
 }
 
+.titulo_desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 0px 5px 0px;
+}
+
+.titulo_desc p {
+    width: 100%;
+    text-align: center;
+}
+
 .area_exp {
     padding: 0px;
     width: 100%;

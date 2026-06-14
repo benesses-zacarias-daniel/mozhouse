@@ -10,3 +10,36 @@
     color: #21c45d;
     padding: 1px 0px 0px 3px;
 }
+
+.accao_hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 5px 0px 5px 0px;
+}
+
+.links_imoveis {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.btn_hero {
+    color: #fff;
+    background-color: #21c45d;
+}
+
+.btn_consultor {
+    border: 2px solid #ddd;
+}
+
+.btn_hero,
+.btn_consultor {
+    width: 140px;
+    border-radius: 20px;
+}
