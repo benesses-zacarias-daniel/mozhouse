@@ -31,6 +31,32 @@
     width: 100%;
 }
 
+.filtros {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex: 1;
+    gap: 6px;
+    padding: 7px 0px 7px 0px;
+}
+
+.btn_filtro {
+    border: 1px solid #dddd;
+    border-radius: 20px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.filto_activo {
+    border-color: #21c45d;
+    color: #21c45d;
+}
+
 .area_ver_mais {
     width: 100%;
     display: flex;
