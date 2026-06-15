@@ -15,7 +15,7 @@ const Depoimentos = ({ tituloDep, minInfoDep, depoimentos }) => {
                         icone = icone[0].charAt(0) + icone[1].charAt(0);
 
                         return (
-                            <div className={style.area_depoimento}>
+                            <div key={depoimento.id} className={style.area_depoimento}>
                                 <div className={style.estrela}><FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar /> </div>
                                 <div className={style.depoimento_cli}>
                                     {`" ${depoimento.depoimento} "`}

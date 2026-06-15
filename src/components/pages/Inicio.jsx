@@ -9,14 +9,87 @@ import Img from "../img/Img";
 import Seta from "../assets/seta.svg";
 import PassosMozHouse from "../cards/PassosMozHouse";
 import IconeTeste from "../assets/sms.svg";
-import Categorias from "../cards/Categorias";
+// import Categorias from "../cards/Categorias";
 import PedidoMozHouse from "../cards/PedidoMozHouse";
 import Depoimentos from "../cards/Depoimentos";
 import DepoimentosClientes from "../data/Depoimentos";
 
 const Inicio = () => {
     const { mudarPage } = useMenuContext();
-
+    /*
+    <PassosMozHouse titulo={"Por que escolher a MozHouse?"} minInfo={""} srcs={[IconeTeste, IconeTeste, IconeTeste]} descs={["Ímóveis cuidadosamente selecionados escolhidos para oferecer conforto, qualidade e exclusividade em cada detalhe", "Auxiliamos os interessados a entrarem em contacto com os proprietarios de forma rápida eficiente.", "A MozHouse actua como intermediária segura entre proprietários e compradores ou arrendatários"]} alts={["", "", ""]} passos={["Propriedades Selecionadas", "Atendimento Personalizado", "Processo Simples"]} />
+    <PassosMozHouse titulo={"Como funciona"} minInfo={""} srcs={[IconeTeste, IconeTeste, IconeTeste]} descs={["O proprietário anúncia a sua propriedade com todos os detalhes tecnicos e fotos.", "A equipe MozHouse verifica e publica o imóvel na nossa plataforma de Elite.", "Os interessados entram em contacto directo através do WhatsApp.", "O proprietário e o cliente realizam a negociação finalizam o contrato."]} alts={["", "", "", ""]} passos={["Anúncio", "Publicidade", "Contacto", "Negociação"]} />
+            
+    */
+    const PassosEscolherDados = [
+        {
+            "id": 1,
+            "passo": "Propriedades Selecionadas",
+            "desc": "Ímóveis cuidadosamente selecionados escolhidos para oferecer conforto, qualidade e exclusividade em cada detalhe",
+            "src": IconeTeste,
+            "alt": ""
+        },
+        {
+            "id": 2,
+            "passo": "Atendimento Personalizado",
+            "desc": "Auxiliamos os interessados a entrarem em contacto com os proprietarios de forma rápida eficiente.",
+            "src": IconeTeste,
+            "alt": ""
+        }, {
+            "id": 3,
+            "passo": "Processo Simples",
+            "desc": "A MozHouse actua como intermediária segura entre proprietários e compradores ou arrendatários",
+            "src": IconeTeste,
+            "alt": ""
+        }
+    ]
+    const PassosFuncionaDados = [
+        {
+            "id": 1,
+            "passo": "Anúncio",
+            "desc": "O proprietário anúncia a sua propriedade com todos os detalhes tecnicos e fotos.",
+            "src": IconeTeste, "alt": ""
+        }, {
+            "id": 2,
+            "passo": "Publicidade",
+            "desc": "A equipe MozHouse verifica e publica o imóvel na nossa plataforma de Elite.",
+            "src": IconeTeste,
+            "alt": ""
+        }, {
+            "id": 3,
+            "passo": "Contacto",
+            "desc": "Os interessados entram em contacto directo através do WhatsApp.",
+            "src": IconeTeste,
+            "alt": ""
+        }, {
+            "id": 4,
+            "passo": "Negociação",
+            "desc": "O proprietário e o cliente realizam a negociação finalizam o contrato.",
+            "src": IconeTeste,
+            "alt": ""
+        }
+    ]
+    const Categorias = [
+        {
+            "id": 1,
+            "passo": "Venda",
+            "desc": "",
+            "alt": "",
+            "src": IconeTeste
+        }, {
+            "id": 2,
+            "passo": "Arrendamento",
+            "desc": "",
+            "alt": "",
+            "src": IconeTeste
+        }, {
+            "id": 3,
+            "passo": "Terrenos",
+            "desc": "",
+            "alt": "",
+            "src": IconeTeste
+        }
+    ]
     return (
         <section className={style.area_inicio}>
             <Hero titulo={"Encontre a casa dos seus sonhos em "} foco={" Moçambique"} mens={"Acesso exclusivo às propriedades mais luxuosas e bem localizadas. Viva a excelencia imobiliária com o suporte da maior rede de luxo do país."} />
@@ -43,9 +116,9 @@ const Inicio = () => {
                     <CardCasa area={Casas[1].area} banhos={Casas[1].banhos} comprar={Casas[1].compra} quartos={Casas[1].quartos} categoria={Casas[1].categoria} localizacao={Casas[1].local} nome={Casas[1].nome} preco={Casas[1].preco} srcCasa={Casas[1].srcCasa} />
                 </div>
             </div>
-            <PassosMozHouse titulo={"Por que escolher a MozHouse?"} minInfo={""} srcs={[IconeTeste, IconeTeste, IconeTeste]} descs={["Ímóveis cuidadosamente selecionados escolhidos para oferecer conforto, qualidade e exclusividade em cada detalhe", "Auxiliamos os interessados a entrarem em contacto com os proprietarios de forma rápida eficiente.", "A MozHouse actua como intermediária segura entre proprietários e compradores ou arrendatários"]} alts={["", "", ""]} passos={["Propriedades Selecionadas", "Atendimento Selecionado", "Processo Simples"]} />
-            <PassosMozHouse titulo={"Como funciona"} mostrarQuartoPasso={true} minInfo={""} srcs={[IconeTeste, IconeTeste, IconeTeste]} descs={["O proprietário anúncia a sua propriedade com todos os detalhes tecnicos e fotos.", "A equipe MozHouse verifica e publica o imóvel na nossa plataforma de Elite.", "Os interessados entram em contacto directo através do WhatsApp.", "O proprietário e o cliente realizam a negociação finalizam o contrato."]} alts={["", "", "", ""]} passos={["Anúncio", "Publicidade", "Contacto", "Negociação"]} />
-            <Categorias catTitulo={"Nossas categorias"} titulos={["Venda", "Arrendamento", "Terrenos"]} srcs={[IconeTeste, IconeTeste, IconeTeste]} alts={["Ícone de colher e garfo cruzados", "Ícone de carrinho de super mercado", "Ícone de carro de entrega"]} />
+            <PassosMozHouse titulo={"Por que escolher a MozHouse?"} minInfo={""} dadosPedido={PassosEscolherDados} />{/*Passos Por que escolher MozHouse*/}
+            <PassosMozHouse titulo={"Como funciona"} minInfo={""} dadosPedido={PassosFuncionaDados} />{/*Passos de como funciona*/}
+            <PassosMozHouse titulo={"Nossas Categorias"} minInfo={""} dadosPedido={Categorias} /> {/*Categorias*/}
             <PedidoMozHouse estiloBtn={style.btn_pedido} titulo_pedido={"Pronto para encontrar o imóvel ideal?"} texto={"Explorar Propriedades"} desc_pedido={"Explore as melhores opurtunidades imobiliárias em Moçambique com ajuda de que conhece o mercado."} />
             <Depoimentos depoimentos={DepoimentosClientes} minInfoDep={"A confiança dos nossos parceiros é o nosso maior património."} tituloDep={"O que dizem os nossos clientes"} />
         </section>
