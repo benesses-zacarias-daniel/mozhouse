@@ -90,7 +90,7 @@ const Propriedades = () => {
                             <CardCasa area={Casas[2].area} banhos={Casas[2].banhos} comprar={false} quartos={Casas[2].quartos} categoria={Casas[2].categoria} localizacao={Casas[2].local} nome={Casas[2].nome} preco={Casas[2].preco} srcCasa={Casas[2].srcCasa} />
                             {mostrarProps && (
                                 Arrendar.map((casa) => {
-                                    return <CardCasa key={casa.id} area={casa.area} banhos={casa.banhos} comprar={"Arrenda-se"} quartos={casa.quartos} categoria={casa.categoria} localizacao={casa.local} nome={casa.nome} preco={casa.preco} srcCasa={casa.srcCasa} />;
+                                    return <CardCasa key={casa.id} area={casa.area} banhos={casa.banhos} comprar={casa.compra} quartos={casa.quartos} categoria={casa.categoria} localizacao={casa.local} nome={casa.nome} preco={casa.preco} srcCasa={casa.srcCasa} />;
                                 })
                             )}
 
