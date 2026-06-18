@@ -1,10 +1,9 @@
 import Img from "../img/Img";
-import Teste from "../../../public/img/img.png"
 import Hero from "../hero/Hero";
 import style from "./Anunciar.module.css";
 import PassosMozHouse from "../cards/PassosMozHouse";
 import IconeTeste from "../assets/sms.svg";
-import { FaCircleCheck, FaEnvelopeCircleCheck, FaVialCircleCheck } from "react-icons/fa6";
+import { FaCircleCheck } from "react-icons/fa6";
 import PedidoMozHouse from "../cards/PedidoMozHouse";
 import Button from "../botaos/Button";
 
@@ -45,7 +44,7 @@ const Anunciar = () => {
             <Hero titulo={"Anuncie a sua "} foco={"propriedade"} mens={"Venda ou arrende o seu imóvel atravésda MozHouse e alcance mais pessoas com a maior plataforma imobiliária de luxo."} />
             <div className={style.area_img}>
                 <div className={style.img_anuciar}>
-                    <Img src={Teste} alt={""} />
+                    <Img src={"/img/img.png"} alt={""} />
                 </div>
             </div>
             <PassosMozHouse titulo={"Processo Simples e Rápido"} minInfo={"Nós tratamos de toda a visibilidade técnica para que se possa focar apenas no negócio."} dadosPedido={DadosAnuciar} />
