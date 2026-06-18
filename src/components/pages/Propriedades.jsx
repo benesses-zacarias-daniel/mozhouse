@@ -7,6 +7,11 @@ import { useState } from "react";
 const Propriedades = () => {
 
     const CasasOcultas = Casas.filter((casa) => casa.id !== 1 && casa.id !== 2 && casa.id !== 3);
+
+    const Comprar = Casas.filter((casa) => casa.compra === true);
+    const Arrendar = Casas.filter((casa) => casa.compra === false);
+    // const Terrenos = Casas.filter((casa) => casa.tipo ===false && casa.compra === false);
+
     const [mostrarProps, setMostrarProps] = useState(false);
     const [activa, setActiva] = useState("todas");
 
@@ -67,7 +72,7 @@ const Propriedades = () => {
                             <CardCasa area={Casas[0].area} banhos={Casas[0].banhos} comprar={"Vende-se"} quartos={Casas[0].quartos} categoria={Casas[0].categoria} localizacao={Casas[0].local} nome={Casas[0].nome} preco={Casas[0].preco} srcCasa={Casas[0].srcCasa} />
                             <CardCasa area={Casas[2].area} banhos={Casas[2].banhos} comprar={"Vende-se"} quartos={Casas[2].quartos} categoria={Casas[2].categoria} localizacao={Casas[2].local} nome={Casas[2].nome} preco={Casas[2].preco} srcCasa={Casas[2].srcCasa} />
                             {mostrarProps && (
-                                CasasOcultas.map((casa) => {
+                                Comprar.map((casa) => {
                                     return <CardCasa key={casa.id} area={casa.area} banhos={casa.banhos} comprar={"Vende-se"} quartos={casa.quartos} categoria={casa.categoria} localizacao={casa.local} nome={casa.nome} preco={casa.preco} srcCasa={casa.srcCasa} />;
                                 })
                             )}
@@ -83,7 +88,7 @@ const Propriedades = () => {
                             <CardCasa area={Casas[0].area} banhos={Casas[0].banhos} comprar={false} quartos={Casas[0].quartos} categoria={Casas[0].categoria} localizacao={Casas[0].local} nome={Casas[0].nome} preco={Casas[0].preco} srcCasa={Casas[0].srcCasa} />
                             <CardCasa area={Casas[2].area} banhos={Casas[2].banhos} comprar={false} quartos={Casas[2].quartos} categoria={Casas[2].categoria} localizacao={Casas[2].local} nome={Casas[2].nome} preco={Casas[2].preco} srcCasa={Casas[2].srcCasa} />
                             {mostrarProps && (
-                                CasasOcultas.map((casa) => {
+                                Arrendar.map((casa) => {
                                     return <CardCasa key={casa.id} area={casa.area} banhos={casa.banhos} comprar={"Arrenda-se"} quartos={casa.quartos} categoria={casa.categoria} localizacao={casa.local} nome={casa.nome} preco={casa.preco} srcCasa={casa.srcCasa} />;
                                 })
                             )}

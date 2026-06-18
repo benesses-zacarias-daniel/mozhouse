@@ -1,16 +1,22 @@
 import Img from "../img/Img";
+import style from "./Valores.module.css"
 
 const Valores = ({ dadosVal }) => {
+    const gropos = [style.grupo1, style.grupo2]
     return (
-        <div className="area_valores">
-            <div className="icone_val">
-                <Img src={null} alt={""} />
-            </div>
-            <div className="titulo_val">
-                Valor
-            </div>
-        </div>
-    )
+        dadosVal.map((valores) => {
+            return (
+                <div key={valores.id} className={style.area_valores}>
+                    <div className={style.icone_val}>
+                        <Img src={valores.src} alt={valores.alt} />
+                    </div>
+                    <div className={style.titulo_val}>
+                        {valores.titulo}
+                    </div>
+                </div>
+            );
+        })
+    );
 }
 
 export default Valores;

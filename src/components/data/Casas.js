@@ -3,7 +3,7 @@ const Casas = [
         "id": 1,
         "preco": 10000,
         "categoria": "DESTACADO",
-        "compra": false,
+        "compra": true,
         "srcCasa": "/img/img.png",
         "local": "Teste local",
         "nome": "O nome",

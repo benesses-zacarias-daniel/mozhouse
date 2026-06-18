@@ -71,16 +71,16 @@ const Anunciar = () => {
                 </div>
             </div>
             <div className={style.area_acao_anunciar}>
-                <div className={style.area_desc_sobre}>
-                    <div className={style.desc_mens}>
+                <div className={style.anunciar_des}>
+                    <div className={style.desc_mens_enun}>
                         <h2>Pronto para começar?</h2>
                     </div>
-                    <div className={style.desc_mens}>
+                    <div className={style.desc_anun}>
                         <p>A nossa equipa está disponível para o ajudar a publicar o seu imóvel em menus de 24 horas. Fale connosco agora.</p>
                     </div>
-                    <div className={style.area_btn_sobre}>
+                    <div className={style.area_btn_anunciar}>
                         <a href={linkWhatsApp}>
-                            <Button estilo={style.btn_sobre_acao} onClick={() => {
+                            <Button estilo={style.btn_anunciar} onClick={() => {
                                 // onClick();
                             }}>
                                 <Img src={IconeTeste} alt={""} />

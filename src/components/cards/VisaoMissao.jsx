@@ -1,16 +1,21 @@
+import style from "./VisaoMissao.module.css"
 import Img from "../img/Img";
 
 const VisaoMissao = ({ dadosVisao }) => {
     return (
-        <div className="area_visao_missao">
-            <div className="area_icone"><Img src={null} alt={""} /></div>
-            <div className="area_texto">
-                <h3>titulo</h3>
-                <div className="area_desc">
-
+        dadosVisao.map((missaoVisao) => {
+            return (
+                <div key={missaoVisao.id} className={style.area_visao_missao}>
+                    <div className={style.area_icone}><Img src={missaoVisao.src} alt={missaoVisao.alt} /></div>
+                    <div className={style.area_texto}>
+                        <h3>{missaoVisao.titulo}</h3>
+                        <div className={style.area_desc}>
+                            {missaoVisao.desc}
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            );
+        })
     )
 }
 

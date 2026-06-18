@@ -6,8 +6,10 @@ import Button from "../botaos/Button";
 import { FaLocationPinLock } from "react-icons/fa6";
 
 const CardCasa = ({ srcCasa, categoria, comprar, preco, mens, localizacao, nome, quartos, banhos, area }) => {
+
     const numero = "258 84 975 4315";
-    const linkWhatsApp = `https://wa.me/${numero}?text=${mens}`
+    const linkWhatsApp = `https://wa.me/${numero}?text=${mens}`;
+
     return (
         <div className={style.area_geral_card}>
             <div className={style.area_img_card}>
@@ -16,7 +18,7 @@ const CardCasa = ({ srcCasa, categoria, comprar, preco, mens, localizacao, nome,
                     <div className={style.area_compra}>{comprar ? "Vende-se" : "Aluga-se"}</div>
                     {categoria && (<div className={style.area_categoria}>{categoria}</div>)}
                 </div>
-                <div className={style.area_preco_casa}>{preco} MT</div>
+                <div className={style.area_preco_casa}>{preco}{comprar ? " MT" : " / MT"}</div>
             </div>
             <div className={style.area_info_card}>
                 <div className={style.area_localizacao}>

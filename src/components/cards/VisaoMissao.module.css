@@ -1,0 +1,23 @@
+.area_visao_missao {
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.area_icone {
+    width: 100%;
+}
+
+.area_texto {
+    width: 100%;
+}
+
+.area_desc {
+    width: 100%;
+}
