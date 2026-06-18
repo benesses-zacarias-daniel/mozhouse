@@ -11,9 +11,9 @@ const TermosCondicoes = () => {
             {/* <div className="area_btn_termos">
                 <Button children={"SEGURANÇA E TRANSPARÊNCIA"} estilo={style.btn_termos_} onClick={() => { }} />
             </div> */}
-            <Hero titulo={"Termos e Condições"} mens={"Bem-vindo à MozHouse. Ao utilizar a nossa plataforma, aceita os termos e condições descritos nesta página paa garantir uma experiência segura e profissional."} />
+            <Hero titulo={"Termos e Condições"} mens={"Bem-vindo à MozHouse. Ao utilizar a nossa plataforma, aceita os termos e condições descritos nesta página para garantir uma experiência segura e profissional."} />
             <Termos dadosTermos={TermosCondicoesDados} />
-            <div>Última Actualização: 18 de Junho de 2026</div>
+            <div className={style.actualizacao}>Última Actualização: 18 de Junho de 2026</div>
         </section>
     )
 }

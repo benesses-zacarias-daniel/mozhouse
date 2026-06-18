@@ -67,7 +67,7 @@ const Anunciar = () => {
                     </div>
                 </div>
                 <div className={style.img_info}>
-                    <Img src={Teste} alt={""} />
+                    <Img src={"/img/img.png"} alt={""} />
                 </div>
             </div>
             <div className={style.area_acao_anunciar}>
