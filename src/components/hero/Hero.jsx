@@ -1,26 +1,20 @@
-import { Link } from "react-router-dom";
-import { useMenuContext } from "../context/MenuContext";
 import style from "./Hero.module.css";
 import Button from "../botaos/Button";
+import Img from "../img/Img";
 
-const Hero = ({ titulo, mens, foco, mostrar = false }) => {
-    const { mudarPage } = useMenuContext();
+const Hero = ({ titulo, mens, foco, mostrar = false, temImg = false, srcImg, altImg, children }) => {
     return (
         <div className={style.area_hero}>
             <h1 className={style.titulo_hero}>{titulo}<span className={style.foco}>{foco}</span></h1>
             <p className={style.mens_hero}>{mens}</p>
             {mostrar && (<div className={style.accao_hero}>
-                <Link to={"/propriedades"} className={style.links_imoveis} onClick={() => {
-                    mudarPage("propriedades");
-                }}>
-                    <Button estilo={style.btn_hero}>
-                        Ver Imóveis
-                    </Button>
-                </Link>
-                <Button estilo={style.btn_consultor}>
-                    Falar com Consultor
-                </Button>
+                {children}
             </div>)}
+            {temImg && (
+                <div className={style.area_hero_sobre}>
+                    <Img src={srcImg} alt={altImg} />
+                </div>
+            )}
         </div>
     );
 }

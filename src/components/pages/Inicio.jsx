@@ -92,7 +92,20 @@ const Inicio = () => {
     ]
     return (
         <section className={style.area_inicio}>
-            <Hero titulo={"Encontre a casa dos seus sonhos em "} foco={" Moçambique"} mens={"Acesso exclusivo às propriedades mais luxuosas e bem localizadas. Viva a excelencia imobiliária com o suporte da maior rede de luxo do país."} mostrar={true} />
+            <Hero titulo={"Encontre a casa dos seus sonhos em "} foco={" Moçambique"} mens={"Acesso exclusivo às propriedades mais luxuosas e bem localizadas. Viva a excelencia imobiliária com o suporte da maior rede de luxo do país."} mostrar={true} children={
+                <>
+                    <Link to={"/propriedades"} className={style.links_imoveis} onClick={() => {
+                        mudarPage("propriedades");
+                    }}>
+                        <Button estilo={style.btn_hero}>
+                            Ver Imóveis
+                        </Button>
+                    </Link>
+                    <Button estilo={style.btn_consultor}>
+                        Falar com Consultor
+                    </Button>
+                </>
+            } />
             <div className={style.area_destaque}>
                 <div className={style.titulo_destaque}>
                     <div className={style.titulo_desc_destaque}>

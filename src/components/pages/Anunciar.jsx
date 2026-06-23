@@ -6,6 +6,7 @@ import IconeTeste from "../assets/sms.svg";
 import { FaCircleCheck } from "react-icons/fa6";
 import PedidoMozHouse from "../cards/PedidoMozHouse";
 import Button from "../botaos/Button";
+import IconeCasa from "/img/img.png";
 
 const Anunciar = () => {
     const numero = "258 84 975 4315";
@@ -41,12 +42,7 @@ const Anunciar = () => {
 
     return (
         <section className={style.area_anunciar}>
-            <Hero titulo={"Anuncie a sua "} foco={"propriedade"} mens={"Venda ou arrende o seu imóvel atravésda MozHouse e alcance mais pessoas com a maior plataforma imobiliária de luxo."} />
-            <div className={style.area_img}>
-                <div className={style.img_anuciar}>
-                    <Img src={"/img/img.png"} alt={""} />
-                </div>
-            </div>
+            <Hero titulo={"Anuncie a sua "} foco={"propriedade"} mens={"Venda ou arrende o seu imóvel atravésda MozHouse e alcance mais pessoas com a maior plataforma imobiliária de luxo."} temImg={true} srcImg={IconeCasa} altImg={"Casa supor Luxos"} />
             <PassosMozHouse titulo={"Processo Simples e Rápido"} minInfo={"Nós tratamos de toda a visibilidade técnica para que se possa focar apenas no negócio."} dadosPedido={DadosAnuciar} />
             <div className={style.area_infos}>
                 <div className={style.info_area}>

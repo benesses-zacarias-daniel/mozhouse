@@ -9,6 +9,8 @@ import IconeTeste from "../assets/icone.svg";
 import ValoresDados from "../data/Valores";
 import VisaoMissao from "../cards/VisaoMissao";
 import visaoMissaoDados from "../data/VisaoMissao";
+import Hero from "../hero/Hero";
+import ImgTeste from "/img/img.png";
 
 const SobreNos = () => {
     console.log("Sobre");
@@ -22,24 +24,17 @@ const SobreNos = () => {
 
     return (
         <section className={style.area_sobre_nos}>
-            <div className={style.area_hero_sobre}>
-                <div className={style.area_texto}>
-                    <h3>Sobre a <span>MozHouse</span></h3>
-                    <div className={style.texto}>
-                        Conectamos proprietários, compradores e arrendadores através de uma experiência simples, segura e profissional.
-                    </div>
-                    <div className={style.sobre_btn_accao}>
-                        <Button estilo={style.sobre_btn_exp} onClick={() => {
-                            onClick();
-                        }}>
-                            <Link to={"/propriedades"}>
-                                Explorar Imóveis
-                            </Link>
-                        </Button>
-                    </div>
-                </div>
-                <Img src={"./img/img.png"} alt={"Casa luxuosa de----"} />
-            </div>
+            <Hero titulo={"Sobre a "} foco={"MozHouse"} mens={"Conectamos proprietários, compradores e arrendadores através de uma experiência simples, segura e profissional."} children={
+                <>
+                    <Button estilo={style.sobre_btn_exp} onClick={() => {
+                        onClick();
+                    }}>
+                        <Link to={"/propriedades"}>
+                            Explorar Imóveis
+                        </Link>
+                    </Button>
+                </>
+            } temImg={true} altImg={"Casa luxuosa"} srcImg={ImgTeste} mostrar={true} />
             <div className={style.area_jornada}>
                 <div className={style.area_foco_jor}>
                     A NOSSA JORNADA

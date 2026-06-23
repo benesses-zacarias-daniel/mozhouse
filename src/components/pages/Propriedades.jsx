@@ -3,6 +3,7 @@ import Casas from "../data/Casas";
 import style from "./Propriedades.module.css";
 import Button from "../botaos/Button";
 import { useState } from "react";
+import Hero from "../hero/Hero";
 
 const Propriedades = () => {
 
@@ -24,16 +25,14 @@ const Propriedades = () => {
     }
     return (
         <section className={style.area_propriedades}>
+            <Hero titulo={"Todas as propriedades"} mens={"Explore imoóveis disponíveis para venda e arrendamento em Moçambique."} mostrar={true} children={
+                <>
+                    <Button children={"Todos"} onClick={() => { onClickFiltor("todas"); }} estilo={`${style.btn_filtro} ${activa === "todas" ? style.filto_activo : ""}`} />
+                    <Button children={"Venda"} onClick={() => { onClickFiltor("venda"); }} estilo={`${style.btn_filtro} ${activa === "venda" ? style.filto_activo : ""}`} />
+                    <Button children={"Arrendamento"} onClick={() => { onClickFiltor("arrendamento"); }} estilo={`${style.btn_filtro} ${activa === "arrendamento" ? style.filto_activo : ""}`} />
+                </>
+            } />
             <div className={style.area_exp}>
-                <div className={style.titulo_desc}>
-                    <h2>Todas as propriedades</h2>
-                    <p>Explore imoóveis disponíveis para venda e arrendamento em Moçambique.</p>
-                    <div className={style.filtros}>
-                        <Button children={"Todos"} onClick={() => { onClickFiltor("todas"); }} estilo={`${style.btn_filtro} ${activa === "todas" ? style.filto_activo : ""}`} />
-                        <Button children={"Venda"} onClick={() => { onClickFiltor("venda"); }} estilo={`${style.btn_filtro} ${activa === "venda" ? style.filto_activo : ""}`} />
-                        <Button children={"Arrendamento"} onClick={() => { onClickFiltor("arrendamento"); }} estilo={`${style.btn_filtro} ${activa === "arrendamento" ? style.filto_activo : ""}`} />
-                    </div>
-                </div>
                 <h2>Explorar Imóveis</h2>
                 <div className={style.desc_prop}>
                     <div className={style.area_ver_mais}>
