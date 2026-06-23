@@ -74,7 +74,6 @@
     padding: 0px 0px 0px 10px;
 }
 
-a:hover,
 .nava_footer .menu .item_menu:hover {
     color: var(--verde);
 }

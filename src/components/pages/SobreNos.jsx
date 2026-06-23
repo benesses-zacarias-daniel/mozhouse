@@ -49,25 +49,17 @@ const SobreNos = () => {
             <div className={style.area_valores_container}>
                 <Valores dadosVal={ValoresDados} />
             </div>
-            <div className={style.sobre_pedido}>
-                <div className={style.area_desc_sobre}>
-                    <div className={style.desc_mens}>
-                        <h2>Pronta para anunciar ou encontrar o imóvel ideal?</h2>
-                    </div>
-                    <div className={style.area_btn_sobre}>
-                        <a href={linkWhatsApp}>
-                            <Button estilo={style.btn_sobre_acao} onClick={() => {
-                                // onClick();
-                            }}>
-                                <Img src={IconeTeste} alt={""} />
-                                <p>
-                                    Contactar Pelo WhatsApp
-                                </p>
-                            </Button>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <PedidoMozHouse titulo_pedido={"Pronta para anunciar ou encontrar o imóvel ideal?"} desc_pedido={""} children={
+                <a href={linkWhatsApp}>
+                    <Button estilo={style.btn_sobre_acao} onClick={() => {
+                    }}>
+                        <Img src={IconeTeste} alt={""} />
+                        <p>
+                            Contactar Pelo WhatsApp
+                        </p>
+                    </Button>
+                </a>
+            } />
         </section>
     )
 }
