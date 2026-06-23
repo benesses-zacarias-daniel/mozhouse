@@ -1,5 +1,6 @@
-import style from "./Depoimentos.module.css"
-import { FaStar } from "react-icons/fa6";
+import Img from "../img/Img";
+import Estrela from "../assets/estrelaDepoi.svg"
+import style from "./Depoimentos.module.css";
 
 const Depoimentos = ({ tituloDep, minInfoDep, depoimentos }) => {
     return (
@@ -16,7 +17,13 @@ const Depoimentos = ({ tituloDep, minInfoDep, depoimentos }) => {
 
                         return (
                             <div key={depoimento.id} className={style.area_depoimento}>
-                                <div className={style.estrela}><FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar /> </div>
+                                <div className={style.estrela}>
+                                    <Img src={Estrela} alt={"Ícone de estrela"} />
+                                    <Img src={Estrela} alt={"Ícone de estrela"} />
+                                    <Img src={Estrela} alt={"Ícone de estrela"} />
+                                    <Img src={Estrela} alt={"Ícone de estrela"} />
+                                    <Img src={Estrela} alt={"Ícone de estrela"} />
+                                </div>
                                 <div className={style.depoimento_cli}>
                                     {`" ${depoimento.depoimento} "`}
                                 </div>

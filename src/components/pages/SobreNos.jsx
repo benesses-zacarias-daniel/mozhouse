@@ -6,15 +6,32 @@ import style from "./SobreNos.module.css";
 import Valores from "../cards/Valores";
 import PedidoMozHouse from "../cards/PedidoMozHouse";
 import IconeTeste from "../assets/icone.svg";
-import ValoresDados from "../data/Valores";
 import VisaoMissao from "../cards/VisaoMissao";
 import visaoMissaoDados from "../data/VisaoMissao";
 import Hero from "../hero/Hero";
 import ImgTeste from "/img/img.png";
+//Ícondes gerais de cada área
+import Visao from "../assets/visao.svg";
+import Missao from "../assets/objectivo.svg";
+
+import EscudoVerif from "../assets/escudoVerif.svg";
+import EstrelaVerif from "../assets/estrelaVerif.svg";
+import ApertoMao from "../assets/apertoMao.svg";
+import Lampada from "../assets/lampada.svg";
+import Diamante from "../assets/diamante.svg";
+import Suporte from "../assets/suporte.svg";
 
 const SobreNos = () => {
     console.log("Sobre");
     const { mudarPage } = useMenuContext();
+    const ValoresDados = [
+        { "id": 1, "src": EscudoVerif, "alt": "", "titulo": "Tranparência" },
+        { "id": 2, "src": EstrelaVerif, "alt": "", "titulo": "Profissionalismo" },
+        { "id": 3, "src": ApertoMao, "alt": "", "titulo": "Confiança" },
+        { "id": 4, "src": Lampada, "alt": "", "titulo": "Inovação" },
+        { "id": 5, "src": Diamante, "alt": "", "titulo": "Qualidade" },
+        { "id": 6, "src": Suporte, "alt": "", "titulo": "Anendimento" }
+    ]
 
     const numero = "258 84 975 4315";
     const linkWhatsApp = `https://wa.me/${numero}?text=Quero anunciar`;

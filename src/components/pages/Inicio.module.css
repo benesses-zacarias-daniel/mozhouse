@@ -15,6 +15,10 @@
     justify-content: space-between;
 }
 
+.area_destaque {
+    width: 100%;
+}
+
 .titulo_destaque {
     padding: 5px 0px 5px 0px;
 }
@@ -81,7 +85,7 @@
 }
 
 .propriedades {
-    /* height: 100%; */
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;

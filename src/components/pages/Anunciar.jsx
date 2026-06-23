@@ -2,7 +2,13 @@ import Img from "../img/Img";
 import Hero from "../hero/Hero";
 import style from "./Anunciar.module.css";
 import PassosMozHouse from "../cards/PassosMozHouse";
-import IconeTeste from "../assets/sms.svg";
+import Mens from "../assets/mensB.svg";
+//Ícones reais de algumas areas
+import Ajuda from "../assets/ajuda.svg";
+import Envio from "../assets/upload.svg";
+import Mundo from "../assets/mundo.svg";
+import Aperto from "../assets/apertoMao.svg";
+//
 import { FaCircleCheck } from "react-icons/fa6";
 import PedidoMozHouse from "../cards/PedidoMozHouse";
 import Button from "../botaos/Button";
@@ -18,25 +24,25 @@ const Anunciar = () => {
             "passo": "Passo 01 - Contacto Inicial",
             "desc": "O proprietário entra em contacto connosco através dos nossos canais oficiais.",
             "alt": "",
-            "src": IconeTeste
+            "src": Ajuda
         }, {
             "id": 2,
             "passo": "Passo 02 - Envio De Dados",
             "desc": "Envia fotos de alta qualidade e todas as informações detalhadas do imóvel.",
             "alt": "",
-            "src": IconeTeste
+            "src": Envio
         }, {
             "id": 3,
             "passo": "Passo 03 - Publicação VIP",
             "desc": "A equipa MozHouse cura o conteúdo e publica a propriedade na plataforma.",
             "alt": "",
-            "src": IconeTeste
+            "src": Mundo
         }, {
             "id": 3,
             "passo": "Passo 04 - Negócio Fechado",
             "desc": "Os interessados são encaminhados directamente para o proprietário.",
             "alt": "",
-            "src": IconeTeste
+            "src": Aperto
         }
     ]
 
@@ -68,7 +74,7 @@ const Anunciar = () => {
                     <Button estilo={style.btn_anunciar} onClick={() => {
                         // onClick();
                     }}>
-                        <Img src={IconeTeste} alt={""} />
+                        <Img src={Mens} alt={""} />
                         <p>
                             Contactar pelo WhatsApp
                         </p>

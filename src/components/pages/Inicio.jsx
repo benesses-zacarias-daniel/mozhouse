@@ -9,6 +9,13 @@ import Img from "../img/Img";
 import Seta from "../assets/seta.svg";
 import PassosMozHouse from "../cards/PassosMozHouse";
 import IconeTeste from "../assets/sms.svg";
+//Ícones reais de algumas areas
+import EscudoVerificado from "../assets/escudoVerif.svg";
+import Suporte from "../assets/suporte.svg";
+import Mao from "../assets/apertoMao.svg";
+import Venda from "../assets/venda.svg";
+import Chave from "../assets/chave.svg";
+import Terreno from "../assets/terra.svg";
 // import Categorias from "../cards/Categorias";
 import PedidoMozHouse from "../cards/PedidoMozHouse";
 import Depoimentos from "../cards/Depoimentos";
@@ -16,33 +23,30 @@ import DepoimentosClientes from "../data/Depoimentos";
 
 const Inicio = () => {
     const { mudarPage } = useMenuContext();
-    /*
-    <PassosMozHouse titulo={"Por que escolher a MozHouse?"} minInfo={""} srcs={[IconeTeste, IconeTeste, IconeTeste]} descs={["Ímóveis cuidadosamente selecionados escolhidos para oferecer conforto, qualidade e exclusividade em cada detalhe", "Auxiliamos os interessados a entrarem em contacto com os proprietarios de forma rápida eficiente.", "A MozHouse actua como intermediária segura entre proprietários e compradores ou arrendatários"]} alts={["", "", ""]} passos={["Propriedades Selecionadas", "Atendimento Personalizado", "Processo Simples"]} />
-    <PassosMozHouse titulo={"Como funciona"} minInfo={""} srcs={[IconeTeste, IconeTeste, IconeTeste]} descs={["O proprietário anúncia a sua propriedade com todos os detalhes tecnicos e fotos.", "A equipe MozHouse verifica e publica o imóvel na nossa plataforma de Elite.", "Os interessados entram em contacto directo através do WhatsApp.", "O proprietário e o cliente realizam a negociação finalizam o contrato."]} alts={["", "", "", ""]} passos={["Anúncio", "Publicidade", "Contacto", "Negociação"]} />
-            
-    */
+
     const PassosEscolherDados = [
         {
             "id": 1,
             "passo": "Propriedades Selecionadas",
             "desc": "Ímóveis cuidadosamente selecionados escolhidos para oferecer conforto, qualidade e exclusividade em cada detalhe",
-            "src": IconeTeste,
-            "alt": ""
+            "src": EscudoVerificado,
+            "alt": "Íconde de escudo com um check no meio"
         },
         {
             "id": 2,
             "passo": "Atendimento Personalizado",
             "desc": "Auxiliamos os interessados a entrarem em contacto com os proprietarios de forma rápida eficiente.",
-            "src": IconeTeste,
-            "alt": ""
+            "src": Suporte,
+            "alt": "Ícone de suporte"
         }, {
             "id": 3,
             "passo": "Processo Simples",
             "desc": "A MozHouse actua como intermediária segura entre proprietários e compradores ou arrendatários",
-            "src": IconeTeste,
-            "alt": ""
+            "src": Mao,
+            "alt": "Ícone de aperto de mãos"
         }
-    ]
+    ];
+
     const PassosFuncionaDados = [
         {
             "id": 1,
@@ -68,28 +72,30 @@ const Inicio = () => {
             "src": IconeTeste,
             "alt": ""
         }
-    ]
+    ];
+
     const Categorias = [
         {
             "id": 1,
             "passo": "Venda",
             "desc": "",
             "alt": "",
-            "src": IconeTeste
+            "src": Venda
         }, {
             "id": 2,
             "passo": "Arrendamento",
             "desc": "",
             "alt": "",
-            "src": IconeTeste
+            "src": Chave
         }, {
             "id": 3,
             "passo": "Terrenos",
             "desc": "",
             "alt": "",
-            "src": IconeTeste
+            "src": Terreno
         }
-    ]
+    ];
+
     return (
         <section className={style.area_inicio}>
             <Hero titulo={"Encontre a casa dos seus sonhos em "} foco={" Moçambique"} mens={"Acesso exclusivo às propriedades mais luxuosas e bem localizadas. Viva a excelencia imobiliária com o suporte da maior rede de luxo do país."} mostrar={true} children={
