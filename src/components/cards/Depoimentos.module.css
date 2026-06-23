@@ -1,3 +1,11 @@
+:root {
+    --verdePrimario: #21c45d;
+    --fundo: #111827;
+    --fundoSec: #0d1322;
+    --textoPrin: #ffffff;
+    --textoSec: #9ca3af;
+}
+
 .depoimentos_container {
     width: 100%;
     display: flex;

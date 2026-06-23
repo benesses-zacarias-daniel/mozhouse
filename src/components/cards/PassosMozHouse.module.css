@@ -3,6 +3,13 @@
     --marrom: #644639;
     --rosa-branco: #fcd1e2;
     --dourado: #c9a13b;
+    /* Dark */
+    --verdePrimario: #21c45d;
+    --fundo: #111827;
+    --fundoSec: #0d1322;
+    --textoPrin: #ffffff;
+    --textoSec: #9ca3af;
+
 }
 
 .area_geral_passos {
