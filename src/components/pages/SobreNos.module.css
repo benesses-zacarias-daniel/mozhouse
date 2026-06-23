@@ -1,11 +1,12 @@
 .area_sobre_nos {
     flex: 1;
-    padding: 0px 5px 10px 5px;
+    padding: 0px 0px 10px 0px;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 }
 
 .area_texto {

@@ -1,13 +1,15 @@
 .area_termos_condicoes {
     flex: 1;
-    padding: 0px 5px 10px 5px;
+    padding: 0px 0px 10px 0px;
+    width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 }
 
 .actualizacao {
     width: 100%;
+    text-align: center;
 }

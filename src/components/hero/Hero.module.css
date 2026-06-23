@@ -1,3 +1,19 @@
+.area_hero {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.area_img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .titulo_hero {
     font-size: 1rem;
     display: flex;
@@ -19,12 +35,4 @@
     flex-direction: row;
     gap: 10px;
     padding: 5px 0px 5px 0px;
-}
-
-.area_hero_sobre {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }

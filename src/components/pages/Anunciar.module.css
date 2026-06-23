@@ -1,6 +1,12 @@
 .area_anunciar {
     flex: 1;
-    padding: 0px 5px 10px 5px;
+    padding: 0px 0px 10px 0px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .area_img {
@@ -25,7 +31,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 }
 
 .info_area {
@@ -42,7 +47,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
 
 }
 
@@ -58,6 +62,22 @@
     flex-direction: row;
     gap: 15px;
     padding: 5px 0px 5px 0px;
+}
+
+.grupos {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info_nec {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .img_info {

@@ -62,9 +62,6 @@ const Anunciar = () => {
                         </div>
                     </div>
                 </div>
-                <div className={style.img_info}>
-                    <Img src={"/img/img.png"} alt={""} />
-                </div>
             </div>
             <PedidoMozHouse titulo_pedido={"Pronto para começar?"} desc_pedido={"A nossa equipa está disponível para o ajudar a publicar o seu imóvel em menus de 24 horas. Fale connosco agora."} children={
                 <a href={linkWhatsApp}>

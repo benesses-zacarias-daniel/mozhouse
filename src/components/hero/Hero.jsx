@@ -11,7 +11,7 @@ const Hero = ({ titulo, mens, foco, mostrar = false, temImg = false, srcImg, alt
                 {children}
             </div>)}
             {temImg && (
-                <div className={style.area_hero_sobre}>
+                <div className={style.area_img}>
                     <Img src={srcImg} alt={altImg} />
                 </div>
             )}
