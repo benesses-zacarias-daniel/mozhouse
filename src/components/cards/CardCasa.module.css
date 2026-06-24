@@ -2,6 +2,7 @@
     --verdePrimario: #21c45d;
     --fundo: #111827;
     --fundoSec: #0d1322;
+    --contraste: #101625;
     --textoPrin: #ffffff;
     --textoSec: #9ca3af;
 }
@@ -9,7 +10,7 @@
 .area_geral_card {
     width: 340px;
     height: 450px;
-    border: 1px solid #000;
+    border: 1px solid var(--textoSec);
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -29,8 +30,8 @@
 }
 
 .area_img_card img {
-    width: 100%;
-    height: 305px;
+    width: 99%;
+    height: 280px;
     border-radius: 15px;
 }
 
@@ -48,8 +49,8 @@
     width: 140px;
     border-radius: 20px;
     height: 30px;
-    background: #21c45d;
-    color: #fff;
+    background: var(--verdePrimario);
+    color: var(--textoPrin);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,11 +67,7 @@
     flex-direction: row;
     gap: 5px;
     text-decoration: none;
-    color: #fff;
-}
-
-.link_wht:hover {
-    color: #fff;
+    color: var(--textoPrin);
 }
 
 .link_wht img {
@@ -110,9 +107,9 @@
     padding: 8px;
     height: 30px;
     border-radius: 20px;
-    color: #000;
+    color: var(--contraste);
     font-weight: 700;
-    background: #21c45d;
+    background: var(--verdePrimario);
 }
 
 .area_compra {
@@ -123,13 +120,13 @@
     border-radius: 20px;
     padding: 8px;
     height: 30px;
-    color: #fff;
+    color: var(--textoPrin);
     background: rgba(255, 255, 255, 0.286);
 }
 
 .area_preco_casa {
     position: absolute;
-    top: 255px;
+    top: 245px;
     right: 10px;
     height: 30px;
     display: flex;
@@ -138,7 +135,7 @@
     flex-direction: column;
     padding: 10px;
     border-radius: 20px;
-    color: #21c45d;
+    color: var(--verdePrimario);
     background: rgba(0, 0, 0, 0.406);
 }
 
@@ -163,11 +160,21 @@
 }
 
 .localizacao {
-    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2px;
 }
 
 .nome_casa {
-    color: black;
+    padding: 0px 0px 0px 4px;
+}
+
+.localizacao,
+.nome_casa {
+    color: var(--textoPrin);
 }
 
 .area_medidas {
@@ -203,7 +210,7 @@
 
 .linha {
     height: 1px;
-    background: #e0e0e0;
+    background: var(--textoSec);
     width: 95%;
     text-align: center;
     margin: 0px 0px 10px 0px;

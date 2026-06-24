@@ -13,6 +13,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 5px;
+    background-color: var(--fundoSec);
 }
 
 .titulo_dep {
@@ -41,7 +42,10 @@
     justify-content: center;
     flex-direction: column;
     padding: 8px;
-    border: 1px solid red;
+    background-color: var(--fundo);
+    border: 1px solid var(--verdePrimario);
+    border-top: 2px solid var(--verdePrimario);
+    border-right: 2px solid var(--verdePrimario);
     border-radius: 0px 20px 0px 20px;
 }
 
@@ -70,13 +74,15 @@
     height: 42px;
     padding: 2px;
     border-radius: 100%;
-    background: #ddd;
+    background: var(--fundoSec);
+    color: var(--textoPrin);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
+.area_nome,
 .nome {
     font-weight: 500;
 }

@@ -1,9 +1,4 @@
 :root {
-    --rosa: #f83490;
-    --marrom: #5a3b2e;
-    --rosa-branco: #fcd1e2;
-    --dourado: #c9a13b;
-    /* Dark */
     --verdePrimario: #21c45d;
     --fundo: #111827;
     --fundoSec: #0d1322;
@@ -21,11 +16,11 @@
 
 .area_pedido {
     width: 98%;
-    background: none;
-    border: 1px solid;
+    background: var(--fundoSec);
+    border: 1px solid var(--textoSec);
     border-radius: 10px;
-    box-shadow: 0 4px 4px rgba(214, 213, 212, 0.883), 0 -4px 4px rgba(232, 225, 218, 0.883);
-    color: var(--marrom);
+    color: var(--textoPrin);
+    box-shadow: 2px 2px 0px var(--fundoSec);
     padding: 5px;
 }
 
@@ -47,21 +42,4 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-}
-
-.ajustar_link {
-    width: 100%;
-    height: 100%;
-    /* color: white; */
-    font-weight: 900;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    text-decoration: none;
-    color: black;
-}
-
-.ajustar_link:hover {
-    color: #000;
 }

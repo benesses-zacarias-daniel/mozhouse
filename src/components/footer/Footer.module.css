@@ -1,8 +1,17 @@
+:root {
+    --verdePrimario: #21c45d;
+    --fundo: #111827;
+    --fundoSec: #0d1322;
+    --contraste: #101625;
+    --textoPrin: #ffffff;
+    --textoSec: #9ca3af;
+}
+
 footer {
     width: 100%;
-    background: #222;
+    background: var(--fundoSec);
     text-align: justify;
-    color: white;
+    color: var(--textoPrin);
     text-align: center;
     flex-shrink: 0;
     display: flex;
@@ -10,6 +19,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     padding: 5px 5px 5px 6px;
+    border-top: 1px dotted var(--textoSec);
 }
 
 .area_info_footer {
@@ -36,7 +46,7 @@ footer {
     border: none;
     border-radius: 10px;
     height: 1px;
-    background: #e0e0e0;
+    background: var(--textoSec);
     margin: 12px 0px 12px 0px;
     width: 95%;
 }

@@ -1,10 +1,6 @@
 :root {
-    --rosa: #f83490;
-    --marrom: #644639;
-    --rosa-branco: #fcd1e2;
-    --dourado: #c9a13b;
-    /* Dark */
     --verdePrimario: #21c45d;
+    --verClaro: #172c2f;
     --fundo: #111827;
     --fundoSec: #0d1322;
     --textoPrin: #ffffff;
@@ -15,15 +11,16 @@
 .area_geral_passos {
     width: 100%;
     /* background: var(--rosa-branco); */
-    background: var(--rosa-branco);
-    padding: 18px 10px 10px 10px;
-    margin-bottom: 13px;
-    color: var(--marrom);
+    background: var(--fundo);
+    padding: 10px 10px 10px 10px;
+    /* margin-bottom: 13px; */
+    color: var(--textoPrin);
 }
 
 .titulo_passos {
     width: 100%;
-    padding: 0px;
+    padding: 3px 0px 3px 0px;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,17 +62,15 @@
 }
 
 .area_img_passos {
-    width: 105px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     padding: 5px;
-    background: #ffffff;
+    background: var(--verClaro);
     border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    box-shadow: 0 4px 12px var(--dourado);
-
 }
 
 .info_passo {

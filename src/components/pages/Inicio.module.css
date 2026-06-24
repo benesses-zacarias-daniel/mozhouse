@@ -1,3 +1,12 @@
+:root {
+    --verdePrimario: #21c45d;
+    --fundo: #111827;
+    --fundoSec: #0d1322;
+    --contraste: #101625;
+    --textoPrin: #ffffff;
+    --textoSec: #9ca3af;
+}
+
 .area_inicio {
     flex: 1;
     padding: 0px 0px 10px 0px;
@@ -17,6 +26,8 @@
 
 .area_destaque {
     width: 100%;
+    padding: 0px 5px 0px 5px;
+    background-color: var(--fundoSec);
 }
 
 .titulo_destaque {
@@ -52,7 +63,7 @@
 
 .links_destaque {
     width: 130px;
-    color: #21c45d;
+    color: var(--verdePrimario);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,7 +72,7 @@
 }
 
 .links_destaque:hover {
-    color: #21c45d;
+    color: var(--verdePrimario);
 }
 
 .ajuste_icone {
@@ -75,13 +86,26 @@
     flex-direction: row;
     height: 25px;
     padding: 0px 0px 1px 0px;
-    color: #21c45d;
+    color: var(--verdePrimario);
 }
 
 .btn_pedido {
-    background-color: #21c45d;
+    background-color: var(--verdePrimario);
     width: 160px;
     border-radius: 20px;
+}
+
+
+.btn_pedido a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    color: var(--contraste);
+    font-weight: 700;
 }
 
 .propriedades {
@@ -105,16 +129,50 @@
 }
 
 .btn_hero {
-    color: #fff;
-    background-color: #21c45d;
+    color: var(--contraste);
+    background-color: var(--verdePrimario);
 }
 
 .btn_consultor {
-    border: 2px solid #ddd;
+    background-color: var(--contraste);
+    color: var(--textoPrin);
+    border: 1px solid var(--textoSec);
 }
 
 .btn_hero,
 .btn_consultor {
     width: 140px;
     border-radius: 20px;
+}
+
+/*Css da area como funciona*/
+.area_geral_funciona {
+    width: 100%;
+    /* background: var(--rosa-branco); */
+    background: var(--fundoSec);
+    padding: 10px 10px 10px 10px;
+    /* margin-bottom: 13px; */
+    color: var(--textoPrin);
+}
+
+.area_cat {
+    width: 100%;
+    /* height: 560px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.area_img_cat {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    background: var(--fundoSec);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

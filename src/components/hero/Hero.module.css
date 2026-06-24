@@ -4,6 +4,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    padding: 0px 5px 0px 5px;
 }
 
 .area_img {

@@ -2,6 +2,7 @@
   --verdePrimario: #21c45d;
   --fundo: #111827;
   --fundoSec: #0d1322;
+  --contraste: #101625;
   --textoPrin: #ffffff;
   --textoSec: #9ca3af;
 }
@@ -24,6 +25,8 @@ html {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  color: #fff !important;
+  background-color: var(--fundo);
 }
 
 h1,
