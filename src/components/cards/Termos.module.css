@@ -1,24 +1,32 @@
 :root {
     --verdePrimario: #21c45d;
+    --verdeClaro: #21c45d0b;
     --fundo: #111827;
     --fundoSec: #0d1322;
+    --contraste: #101625;
     --textoPrin: #ffffff;
     --textoSec: #9ca3af;
 }
 
 .container_termos {
-    width: 100%;
-    height: 170px;
-    border: 1px solid red;
+    width: 98%;
+    height: 180px;
+    border: 1px solid var(--textoSec);
     border-radius: 20px;
-    padding: 4px;
+    padding: 5px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    background-color: var(--fundoSec);
 }
 
-.area_icone {
+.termo_final {
+    background-color: var(--verClaro);
+    border-color: #21c45d49;
+}
+
+.area_icone_container {
     width: 28px;
     height: 100%;
     padding: 0px;
@@ -28,6 +36,17 @@
     justify-content: flex-start;
 }
 
+.area_icone {
+    width: 30px;
+    height: 30px;
+    background: var(--verClaro);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .area_texto {
     flex: 1;
     height: 100%;
@@ -35,11 +54,17 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    padding: 6px 0px 0px 5px;
+}
+
+.area_titulo_termos {
+    width: 100%;
+    text-align: justify;
 }
 
 .titulo_termos {
-    width: 100%;
-    text-align: justify;
+    color: var(--verdePrimario);
+    padding: 0px 0px 3px 0px;
 }
 
 .desc_termos {
@@ -59,15 +84,17 @@
 
 .btn_termos {
     width: 100px;
-    border: 1px solid red;
+    border: 1px solid #232939;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 3px;
+    background-color: var(--contraste);
 }
 
 .btn_termos svg {
     padding: 1px 0px 0px 0px;
+    color: var(--verdePrimario) !important;
 }

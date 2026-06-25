@@ -6,16 +6,18 @@ import Img from "../img/Img";
 const Termos = ({ dadosTermos }) => {
 
     return (
-        dadosTermos.map((termosDados) => {
+        dadosTermos.map((termosDados, pos) => {
             return (
                 termosDados.desc && (
-                    <div key={termosDados.id} className={style.container_termos}>
-                        <div className={style.area_icone}>
-                            <Img src={termosDados.src} alt={termosDados.alt} />
+                    <div key={termosDados.id} className={`${style.container_termos} ${pos === 7 ? style.termo_final : ""}`}>
+                        <div className={style.area_icone_container}>
+                            <div className={termosDados.src ? style.area_icone : ""}>
+                                <Img src={termosDados.src} alt={termosDados.alt} />
+                            </div>
                         </div>
                         <div className={style.area_texto}>
-                            <div className={style.titulo_termos}>
-                                <h3>{termosDados.titulo}</h3>
+                            <div className={style.area_titulo_termos}>
+                                <h3 className={style.titulo_termos}>{termosDados.titulo}</h3>
                             </div>
                             <div className={style.desc_termos}>
                                 {termosDados.desc}
@@ -23,10 +25,10 @@ const Termos = ({ dadosTermos }) => {
                             {(termosDados.telefonesAdmin[0] !== "" && termosDados.telefonesAdmin[1] !== "") && (
                                 <div className={style.area_btn_termos}>
                                     <Button estilo={style.btn_termos} onClick={() => { }}>
-                                        <FaPhone /> {termosDados.telefonesAdmin[0]}
+                                        <FaPhone color="#21c45d" /> {termosDados.telefonesAdmin[0]}
                                     </Button>
                                     <Button estilo={style.btn_termos} onClick={() => { }}>
-                                        <FaPhone /> {termosDados.telefonesAdmin[1]}
+                                        <FaPhone color="#21c45d" /> {termosDados.telefonesAdmin[1]}
                                     </Button>
                                 </div>
                             )}

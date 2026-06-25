@@ -1,7 +1,9 @@
 :root {
     --verdePrimario: #21c45d;
+    --verdeClaro: #21c45d0b;
     --fundo: #111827;
     --fundoSec: #0d1322;
+    --contraste: #101625;
     --textoPrin: #ffffff;
     --textoSec: #9ca3af;
 }
@@ -9,13 +11,14 @@
 .area_valores {
     width: 110px;
     height: 80px;
-    border: 1px solid red;
+    border: 1px solid var(--verdeClaro);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
     border-radius: 20px;
+    background-color: var(--fundo);
 }
 
 .icone_val {
@@ -27,5 +30,8 @@
 }
 
 .titulo_val {
+    text-align: center;
+    width: 100%;
     font-weight: 700;
+    font-size: .8rem;
 }

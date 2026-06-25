@@ -7,7 +7,6 @@ import Valores from "../cards/Valores";
 import PedidoMozHouse from "../cards/PedidoMozHouse";
 import IconeTeste from "../assets/icone.svg";
 import VisaoMissao from "../cards/VisaoMissao";
-import visaoMissaoDados from "../data/VisaoMissao";
 import Hero from "../hero/Hero";
 import ImgTeste from "/img/img.png";
 //Ícondes gerais de cada área
@@ -31,7 +30,12 @@ const SobreNos = () => {
         { "id": 4, "src": Lampada, "alt": "", "titulo": "Inovação" },
         { "id": 5, "src": Diamante, "alt": "", "titulo": "Qualidade" },
         { "id": 6, "src": Suporte, "alt": "", "titulo": "Anendimento" }
-    ]
+    ];
+
+    const visaoMissaoDados = [
+        { "id": 1, "src": Missao, "alt": "", "titulo": "Missão", "desc": "Facilitar a conexão entre proprietários e pessoas à procura de imóveis, através de uma plataforma prática e confiável." },
+        { "id": 2, "src": Visao, "alt": "", "titulo": "Visão", "desc": "Ser uma das principais referências do mercado imobiliário digital em Moçambique." }
+    ];
 
     const numero = "258 84 975 4315";
     const linkWhatsApp = `https://wa.me/${numero}?text=Quero anunciar`;
@@ -52,11 +56,11 @@ const SobreNos = () => {
                     </Button>
                 </>
             } temImg={true} altImg={"Casa luxuosa"} srcImg={ImgTeste} mostrar={true} />
-            <div className={style.area_jornada}>
+            <div className={style.container_jornada}>
                 <div className={style.area_foco_jor}>
                     A NOSSA JORNADA
                 </div>
-                <div>
+                <div className={style.area_jornada}>
                     <p className={style.area_texto_jornada}>" A MozHouse nasceu com o objectivo de tornar mais simples a divulgação e a procura de imóveis em Moçambique, oferecendo uma plataforma moderna e acessível para todos. "</p>
                 </div>
             </div>
@@ -66,7 +70,7 @@ const SobreNos = () => {
             <div className={style.area_valores_container}>
                 <Valores dadosVal={ValoresDados} />
             </div>
-            <PedidoMozHouse titulo_pedido={"Pronta para anunciar ou encontrar o imóvel ideal?"} desc_pedido={""} children={
+            <PedidoMozHouse titulo_pedido={"Pronta para anunciar ou encontrar o imóvel ideal?"} classeAreaGeral={style.sobre_pedido} classeAreaPedido={style.pedido_sobre} children={
                 <a href={linkWhatsApp}>
                     <Button estilo={style.btn_sobre_acao} onClick={() => {
                     }}>

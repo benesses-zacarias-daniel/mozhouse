@@ -1,12 +1,22 @@
+:root {
+    --verdePrimario: #21c45d;
+    --verdeClaro: #21c45d0b;
+    --fundo: #111827;
+    --fundoSec: #0d1322;
+    --contraste: #101625;
+    --textoPrin: #ffffff;
+    --textoSec: #9ca3af;
+}
+
 .area_sobre_nos {
     flex: 1;
-    padding: 0px 0px 10px 0px;
     width: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    padding: 0px 0px 10px 0px;
 }
 
 .area_texto {
@@ -19,15 +29,19 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
     gap: 10px;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 5px 10px 5px;
 }
 
 .area_valores_container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    justify-items: center;
+    justify-content: center;
+    align-content: center;
     gap: 10px;
+    padding: 10px 5px 10px 5px;
+    background-color: var(--fundoSec);
+    height: 200px;
 }
 
 .sobre_btn_accao {
@@ -41,7 +55,7 @@
 .sobre_btn_exp {
     width: 150px;
     background-color: #21c45d;
-    padding: 5px;
+    /* padding: 5px; */
     border-radius: 20px;
 }
 
@@ -49,24 +63,35 @@
     width: 100%;
     height: 100%;
     color: #000;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.sobre_btn_exp a:hover {
-    color: #000;
+.container_jornada {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--fundoSec);
+    gap: 10px;
+    height: 200px;
+    padding: 10px 5px 10px 5px;
 }
 
 .area_jornada {
     width: 345px;
-    border: 1px solid #111;
+    height: 130px;
     border-radius: 20px;
     padding: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: var(--fundo);
     gap: 10px;
-    box-shadow: 0 4px 4px rgba(214, 213, 212, 0.883), 0 -4px 4px rgba(232, 225, 218, 0.883);
 }
 
 .area_foco_jor {
@@ -92,14 +117,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 10px 0px 0px 0px;
+    height: 200px;
 }
 
-.area_desc_sobre {
+.pedido_sobre {
     width: 85%;
-    background: #ccc3bcf5;
+    background: var(--fundoSec);
     border-radius: 12px;
-    padding: 15px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,15 +147,16 @@
 }
 
 .area_btn_sobre a {
-    text-decoration: none;
+    width: 100%;
+    height: 100%;
 }
 
 .btn_sobre_acao {
     width: 185px;
     height: 30px;
-    background: #21c45d;
+    background: var(--verdePrimario);
     border-radius: 12px;
-    color: #fff;
+    color: var(--textoPrin);
     font-weight: 600;
 }
 

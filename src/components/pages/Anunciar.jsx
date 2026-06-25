@@ -49,27 +49,29 @@ const Anunciar = () => {
     return (
         <section className={style.area_anunciar}>
             <Hero titulo={"Anuncie a sua "} foco={"propriedade"} mens={"Venda ou arrende o seu imóvel atravésda MozHouse e alcance mais pessoas com a maior plataforma imobiliária de luxo."} temImg={true} srcImg={IconeCasa} altImg={"Casa supor Luxos"} />
-            <PassosMozHouse titulo={"Processo Simples e Rápido"} minInfo={"Nós tratamos de toda a visibilidade técnica para que se possa focar apenas no negócio."} dadosPedido={DadosAnuciar} />
+            <PassosMozHouse titulo={"Processo Simples e Rápido"} classeAreaGeral={style.area_geral_processo} minInfo={"Nós tratamos de toda a visibilidade técnica para que se possa focar apenas no negócio."} dadosPedido={DadosAnuciar} />
             <div className={style.area_infos}>
                 <div className={style.info_area}>
-                    <h3>Informações <p className={style.foco}>Necessárias</p></h3>
+                    <div className={style.area_titulo}>
+                        <h3 className={style.titulo_infos_nes}>Informações <span className={style.foco}>Necessárias</span></h3>
+                    </div>
                     <div className={style.area_grupos}>
                         <div className={style.grupos}>
-                            <div className={style.info_nec}><FaCircleCheck />Nome do proprietário</div>
-                            <div className={style.info_nec}><FaCircleCheck />Localização exata</div>
-                            <div className={style.info_nec}><FaCircleCheck />Numero de quartos</div>
-                            <div className={style.info_nec}><FaCircleCheck />Preço pretendido</div>
+                            <div className={style.info_nec}><FaCircleCheck color="#21c45d" />Nome do proprietário</div>
+                            <div className={style.info_nec}><FaCircleCheck color="#21c45d" />Localização exata</div>
+                            <div className={style.info_nec}><FaCircleCheck color="#21c45d" />Numero de quartos</div>
+                            <div className={style.info_nec}><FaCircleCheck color="#21c45d" />Preço pretendido</div>
                         </div>
                         <div className={style.grupos}>
-                            <div className={style.info_nec}><FaCircleCheck />Número de telefone</div>
-                            <div className={style.info_nec}><FaCircleCheck />Casas de banho</div>
-                            <div className={style.info_nec}><FaCircleCheck />Área total</div>
-                            <div className={style.info_nec}><FaCircleCheck />Fotos do imóvel</div>
+                            <div className={style.info_nec}><FaCircleCheck color="#21c45d" />Número de telefone</div>
+                            <div className={style.info_nec}><FaCircleCheck color="#21c45d" />Casas de banho</div>
+                            <div className={style.info_nec}><FaCircleCheck color="#21c45d" />Área total</div>
+                            <div className={style.info_nec}><FaCircleCheck color="#21c45d" />Fotos do imóvel</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <PedidoMozHouse titulo_pedido={"Pronto para começar?"} desc_pedido={"A nossa equipa está disponível para o ajudar a publicar o seu imóvel em menus de 24 horas. Fale connosco agora."} children={
+            <PedidoMozHouse titulo_pedido={"Pronto para começar?"} classeAreaPedido={style.area_pedido_anun} desc_pedido={"A nossa equipa está disponível para o ajudar a publicar o seu imóvel em menus de 24 horas. Fale connosco agora."} children={
                 <a href={linkWhatsApp}>
                     <Button estilo={style.btn_anunciar} onClick={() => {
                         // onClick();

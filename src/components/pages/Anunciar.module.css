@@ -1,3 +1,13 @@
+:root {
+    --verdePrimario: #21c45d;
+    --verdeClaro: #21c45d0b;
+    --fundo: #111827;
+    --fundoSec: #0d1322;
+    --contraste: #101625;
+    --textoPrin: #ffffff;
+    --textoSec: #9ca3af;
+}
+
 .area_anunciar {
     flex: 1;
     padding: 0px 0px 10px 0px;
@@ -33,21 +43,26 @@
     flex-direction: column;
 }
 
+.area_titulo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+.titulo_infos_nes {
+    width: 100%;
+    text-align: center;
+}
+
 .info_area {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-.info_area h3 {
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
 }
 
 .foco {
@@ -91,12 +106,13 @@
 }
 
 .btn_anunciar {
-    width: 180px;
+    width: 200px;
     height: 30px;
     background: #21c45d;
     border-radius: 12px;
     color: #fff;
     font-weight: 600;
+    gap: 5px;
 }
 
 .btn_anunciar img {
@@ -107,4 +123,24 @@
 
 .btn_anunciar:hover {
     transform: translateY(-1px);
+}
+
+/*Css da area como processo simples*/
+.area_geral_processo {
+    width: 100%;
+    /* background: var(--rosa-branco); */
+    background: var(--fundoSec);
+    padding: 10px 10px 10px 10px;
+    /* margin-bottom: 13px; */
+    color: var(--textoPrin);
+}
+
+.area_pedido_anun {
+    width: 98%;
+    background: var(--fundoSec);
+    border: 1px solid var(--textoSec);
+    border-radius: 10px;
+    color: var(--textoPrin);
+    box-shadow: 2px 2px 0px var(--fundoSec);
+    padding: 5px;
 }

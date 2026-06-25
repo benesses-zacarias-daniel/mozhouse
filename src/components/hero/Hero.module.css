@@ -5,6 +5,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 0px 5px 0px 5px;
+    gap: 5px;
 }
 
 .area_img {
@@ -17,15 +18,12 @@
 
 .titulo_hero {
     font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
 }
 
 .foco {
     color: #21c45d;
-    padding: 1px 0px 0px 3px;
+    height: 100%;
+    /* padding: 1px 0px 0px 3px; */
 }
 
 .accao_hero {

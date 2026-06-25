@@ -1,3 +1,13 @@
+:root {
+    --verdePrimario: #21c45d;
+    --verdeClaro: #21c45d0b;
+    --fundo: #111827;
+    --fundoSec: #0d1322;
+    --contraste: #101625;
+    --textoPrin: #ffffff;
+    --textoSec: #9ca3af;
+}
+
 .area_propriedades {
     flex: 1;
     padding: 0px 0px 10px 0px;
@@ -9,23 +19,11 @@
     gap: 10px;
 }
 
-.titulo_desc {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0px 0px 5px 0px;
-}
-
-.titulo_desc p {
-    width: 100%;
-    text-align: center;
-}
-
 .area_exp {
     padding: 0px;
     width: 100%;
     text-align: justify;
+    padding: 0px 5px 0px 5px;
 }
 
 .desc_prop {
@@ -44,18 +42,20 @@
 }
 
 .btn_filtro {
-    border: 1px solid #dddd;
+    border: 1px solid var(--textoSec);
     border-radius: 20px;
     padding: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: var(--textoPrin);
 }
 
 .filto_activo {
-    border-color: #21c45d;
-    color: #21c45d;
+    border-color: var(--verdePrimario);
+    color: var(--verdePrimario);
+    background-color: var(--verdeClaro);
 }
 
 .area_ver_mais {
@@ -106,5 +106,5 @@
 }
 
 .btn_controle {
-    color: #21c45d;
+    color: var(--verdePrimario);
 }
