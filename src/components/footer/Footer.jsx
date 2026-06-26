@@ -1,7 +1,7 @@
 import Menu from "../menu/Menu";
 import Logo from "../logo/Logo";
 import style from "./Footer.module.css";
-import ImgLogo from "../assets/icone.svg";
+import ImgLogo from "../assets/logoFooter.png";
 
 const Footer = ({ nome }) => {
     return (

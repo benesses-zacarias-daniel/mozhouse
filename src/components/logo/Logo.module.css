@@ -17,6 +17,11 @@
     gap: 4px;
 }
 
+.area_logo img {
+    width: 70px;
+    height: 70px;
+}
+
 .nome_logo {
     display: flex;
     align-items: center;
