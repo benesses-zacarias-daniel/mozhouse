@@ -61,7 +61,7 @@
 
 .area_itens {
     width: 250px;
-    height: 100vh;
+    height: 100%;
     background: var(--fundoSec);
 }
 
