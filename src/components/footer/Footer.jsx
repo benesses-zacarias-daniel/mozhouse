@@ -1,13 +1,14 @@
 import Menu from "../menu/Menu";
 import Logo from "../logo/Logo";
 import style from "./Footer.module.css";
+import ImgLogo from "../assets/icone.svg";
 
 const Footer = ({ nome }) => {
     return (
         <footer>
             <div className={style.area_info_footer}>
                 <div className={style.desc_footer}>
-                    <Logo logoTexto={"MozHouse"} />
+                    <Logo logoTexto={"House"} destaque={"Moz"} altLogo={"Logo do MozHouse"} srcLogo={ImgLogo} />
                     <p>A imobiliária de luxo lider em Moçambique, oferecendo as melhores propriedades residenciais e comerciais.</p>
                     <div className={style.contacto}>
                         <div>Contactos:</div>

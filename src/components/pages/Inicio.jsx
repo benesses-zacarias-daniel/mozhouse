@@ -8,7 +8,6 @@ import Casas from "../data/Casas";
 import Img from "../img/Img";
 import Seta from "../assets/seta.svg";
 import PassosMozHouse from "../cards/PassosMozHouse";
-import IconeTeste from "../assets/sms.svg";
 //Ícones reais de algumas areas
 import EscudoVerificado from "../assets/escudoVerif.svg";
 import Suporte from "../assets/suporte.svg";
@@ -16,6 +15,9 @@ import Mao from "../assets/apertoMao.svg";
 import Venda from "../assets/venda.svg";
 import Chave from "../assets/chave.svg";
 import Terreno from "../assets/terra.svg";
+import Anunciar from "../assets/anunciar.svg";
+import Certo from "../assets/certo.svg";
+import Telefone from "../assets/telefone.svg";
 // import Categorias from "../cards/Categorias";
 import PedidoMozHouse from "../cards/PedidoMozHouse";
 import Depoimentos from "../cards/Depoimentos";
@@ -52,24 +54,24 @@ const Inicio = () => {
             "id": 1,
             "passo": "Anúncio",
             "desc": "O proprietário anúncia a sua propriedade com todos os detalhes tecnicos e fotos.",
-            "src": IconeTeste, "alt": ""
+            "src": Anunciar, "alt": ""
         }, {
             "id": 2,
             "passo": "Publicidade",
             "desc": "A equipe MozHouse verifica e publica o imóvel na nossa plataforma de Elite.",
-            "src": IconeTeste,
+            "src": Certo,
             "alt": ""
         }, {
             "id": 3,
             "passo": "Contacto",
             "desc": "Os interessados entram em contacto directo através do WhatsApp.",
-            "src": IconeTeste,
+            "src": Telefone,
             "alt": ""
         }, {
             "id": 4,
             "passo": "Negociação",
             "desc": "O proprietário e o cliente realizam a negociação finalizam o contrato.",
-            "src": IconeTeste,
+            "src": Mao,
             "alt": ""
         }
     ];

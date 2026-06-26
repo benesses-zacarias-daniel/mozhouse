@@ -1,3 +1,12 @@
+:root {
+    --verdePrimario: #21c45d;
+    --fundo: #111827;
+    --fundoSec: #0d1322;
+    --contraste: #101625;
+    --textoPrin: #ffffff;
+    --textoSec: #9ca3af;
+}
+
 .area_logo {
     flex: 1;
     height: 100%;
@@ -5,4 +14,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    gap: 4px;
+}
+
+.nome_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.nome_destaque {
+    color: var(--verdePrimario);
 }

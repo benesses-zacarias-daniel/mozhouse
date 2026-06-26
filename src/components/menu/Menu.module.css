@@ -1,8 +1,12 @@
 :root {
     --topoPreto: #101625;
     --fundotransparente: #00000094;
-    --verde: #00ef4c;
-    --branco: #fff;
+    --verdePrimario: #21c45d;
+    --fundo: #111827;
+    --fundoSec: #0d1322;
+    --contraste: #101625;
+    --textoPrin: #ffffff;
+    --textoSec: #9ca3af;
 }
 
 .container {
@@ -37,7 +41,7 @@
 }
 
 .nava_footer .menu .item_menu {
-    color: var(--branco);
+    color: var(--textoPrin);
     font-size: 0.8rem;
 }
 
@@ -57,8 +61,8 @@
 
 .area_itens {
     width: 250px;
-    height: 100%;
-    background: var(--branco);
+    height: 100vh;
+    background: var(--fundoSec);
 }
 
 .links_nav {
@@ -75,7 +79,7 @@
 }
 
 .nava_footer .menu .item_menu:hover {
-    color: var(--verde);
+    color: var(--verdePrimario);
 }
 
 .links_nav button {
@@ -94,12 +98,12 @@
 
 .item_menu {
     text-decoration: none;
-    color: var(--topoPreto);
+    color: var(--textoPrin);
     text-align: justify;
 }
 
 .activa {
-    color: var(--verde) !important;
+    color: var(--verdePrimario) !important;
 }
 
 .area_itens .menu button .activa {

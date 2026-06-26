@@ -1,10 +1,15 @@
 import Img from "../img/Img";
 import style from "./Logo.module.css";
-import ImgLogo from "../assets/icone.svg";
 
-const Logo = ({ logoTexto }) => {
+const Logo = ({ srcLogo, altLogo, logoTexto, destaque }) => {
     return (
-        <div className={style.area_logo}><Img alt={"Logo do MozFood"} src={ImgLogo} />{logoTexto}</div>
+        <div className={style.area_logo}>
+            <Img alt={altLogo} src={srcLogo} />
+            <div className={style.nome_logo}>
+                <p className={style.nome_destaque}>{destaque}</p>
+                {logoTexto}
+            </div>
+        </div>
     )
 }
 
