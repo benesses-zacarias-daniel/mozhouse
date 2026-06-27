@@ -20,7 +20,7 @@ const Topo = () => {
     return (
         <header>
             <Button children={<Img src={Mostrar} alt={"Ícone barras horizontais"} />} estilo={style.btn_topo} onClick={() => { onClick(); }} />
-            <Link to={"/"} onClick={() => { onClickloGo() }}>
+            <Link to={"/"} onClick={() => { onClickloGo() }} className={style.link_logo}>
                 <Logo logoTexto={"House"} destaque={"Moz"} srcLogo={LogoSrc} altLogo={"Logo da MozHouse"} />
             </Link>
             <Menu mostrarMenu={mostrarMenu} mostrarIcone={true} />
