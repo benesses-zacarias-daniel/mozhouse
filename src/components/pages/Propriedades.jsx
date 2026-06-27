@@ -11,15 +11,14 @@ const Propriedades = () => {
 
     const Comprar = Casas.filter((casa) => casa.compra === true);
     const Arrendar = Casas.filter((casa) => casa.compra === false);
-    // const Terrenos = Casas.filter((casa) => casa.tipo ===false && casa.compra === false);
-    console.log(Arrendar.length);
-    console.log(Comprar.length);
+
     const [mostrarProps, setMostrarProps] = useState(false);
     const [activa, setActiva] = useState("todas");
 
     const onClickVerMais = () => {
         mostrarProps ? setMostrarProps(false) : setMostrarProps(true);
     }
+
     const onClickFiltor = (val) => {
         setActiva(val)
     }

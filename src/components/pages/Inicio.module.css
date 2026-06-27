@@ -86,7 +86,11 @@
     flex-direction: row;
     height: 25px;
     padding: 0px 0px 1px 0px;
-    color: var(--verdePrimario);
+}
+
+.destaque_btn p {
+    padding: 0px 0px 2px 0px;
+    color: var(--verdePrimario) !important;
 }
 
 .btn_pedido {

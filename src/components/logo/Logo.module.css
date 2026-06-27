@@ -14,19 +14,22 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 4px;
+    gap: 5px;
 }
 
 .area_logo img {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
 
 .nome_logo {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    padding: 10px 0px 0px 0px;
+    font-weight: 900 !important;
 }
 
 .nome_destaque {

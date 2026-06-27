@@ -22,6 +22,10 @@ footer {
     border-top: 1px dotted var(--textoSec);
 }
 
+.ocultar {
+    color: var(--fundoSec);
+}
+
 .area_info_footer {
     display: flex;
     align-items: center;
@@ -29,13 +33,15 @@ footer {
     flex-direction: row;
 }
 
+
 .desc_footer {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     flex: 1;
-    padding: 0px 10px 0px 0px;
+    height: 100%;
+    padding: 0px 10px 15px 0px;
 }
 
 .desc_footer p {
