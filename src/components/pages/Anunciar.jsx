@@ -38,7 +38,7 @@ const Anunciar = () => {
             "alt": "",
             "src": Mundo
         }, {
-            "id": 3,
+            "id": 4,
             "passo": "Passo 04 - Negócio Fechado",
             "desc": "Os interessados são encaminhados directamente para o proprietário.",
             "alt": "",

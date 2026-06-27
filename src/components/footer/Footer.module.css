@@ -24,6 +24,11 @@ footer {
 
 .ocultar {
     color: var(--fundoSec);
+    font-size: 0.3rem;
+}
+
+.desc_marca {
+    padding: 3px 0px 0px 0px;
 }
 
 .area_info_footer {
