@@ -168,7 +168,11 @@
     justify-content: center;
     flex-direction: row;
     gap: 10px;
-    padding: 25px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
+}
+
+.area_cat .passos {
+    padding: 0px;
 }
 
 .area_img_cat {

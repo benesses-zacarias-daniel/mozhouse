@@ -71,18 +71,20 @@ const Anunciar = () => {
                     </div>
                 </div>
             </div>
-            <PedidoMozHouse titulo_pedido={"Pronto para começar?"} classeAreaPedido={style.area_pedido_anun} desc_pedido={"A nossa equipa está disponível para o ajudar a publicar o seu imóvel em menus de 24 horas. Fale connosco agora."} children={
-                <a href={linkWhatsApp}>
-                    <Button estilo={style.btn_anunciar} onClick={() => {
-                        // onClick();
-                    }}>
-                        <Img src={Mens} alt={""} />
-                        <p>
-                            Contactar pelo WhatsApp
-                        </p>
-                    </Button>
-                </a>
-            } />
+            <div className={style.pedido_anunciar}>
+                <PedidoMozHouse titulo_pedido={"Pronto para começar?"} classeAreaPedido={style.area_pedido_anun} desc_pedido={"A nossa equipa está disponível para o ajudar a publicar o seu imóvel em menus de 24 horas. Fale connosco agora."} children={
+                    <a href={linkWhatsApp}>
+                        <Button estilo={style.btn_anunciar} onClick={() => {
+                            // onClick();
+                        }}>
+                            <Img src={Mens} alt={""} />
+                            <p>
+                                Contactar pelo WhatsApp
+                            </p>
+                        </Button>
+                    </a>
+                } />
+            </div>
         </section>
     )
 }

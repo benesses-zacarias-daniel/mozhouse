@@ -21,9 +21,9 @@ const PassosMozHouse = ({ titulo, minInfo, classeAreaGeral = style.area_geral_pa
                             </div>
                             <div className={style.info_passo}>
                                 <p className={style.titulo_passo}>{pedido.passo}</p>
-                                <div className={style.desc_passos}>
+                                {pedido.desc && (<div className={style.desc_passos}>
                                     {pedido.desc}
-                                </div>
+                                </div>)}
                             </div>
                         </div>)
                 })}
