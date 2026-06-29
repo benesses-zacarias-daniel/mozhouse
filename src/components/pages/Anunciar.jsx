@@ -9,7 +9,7 @@ import Envio from "../assets/upload.svg";
 import Mundo from "../assets/mundo.svg";
 import Aperto from "../assets/apertoMao.svg";
 //
-import { FaCircleCheck } from "react-icons/fa6";
+import Check from "../assets/check.svg";
 import PedidoMozHouse from "../cards/PedidoMozHouse";
 import Button from "../botaos/Button";
 import IconeCasa from "/img/img.png";
@@ -57,16 +57,16 @@ const Anunciar = () => {
                     </div>
                     <div className={style.area_grupos}>
                         <div className={style.grupos}>
-                            <div className={style.info_nec}><FaCircleCheck color="#21c45d" />Nome do proprietário</div>
-                            <div className={style.info_nec}><FaCircleCheck color="#21c45d" />Localização exata</div>
-                            <div className={style.info_nec}><FaCircleCheck color="#21c45d" />Numero de quartos</div>
-                            <div className={style.info_nec}><FaCircleCheck color="#21c45d" />Preço pretendido</div>
+                            <div className={style.info_nec}><Img src={Check} alt={"Ícone de check com circulo ao redor"} />Nome do proprietário</div>
+                            <div className={style.info_nec}><Img src={Check} alt={"Ícone de check com circulo ao redor"} />Localização exata</div>
+                            <div className={style.info_nec}><Img src={Check} alt={"Ícone de check com circulo ao redor"} />Numero de quartos</div>
+                            <div className={style.info_nec}><Img src={Check} alt={"Ícone de check com circulo ao redor"} />Preço pretendido</div>
                         </div>
                         <div className={style.grupos}>
-                            <div className={style.info_nec}><FaCircleCheck color="#21c45d" />Número de telefone</div>
-                            <div className={style.info_nec}><FaCircleCheck color="#21c45d" />Casas de banho</div>
-                            <div className={style.info_nec}><FaCircleCheck color="#21c45d" />Área total</div>
-                            <div className={style.info_nec}><FaCircleCheck color="#21c45d" />Fotos do imóvel</div>
+                            <div className={style.info_nec}><Img src={Check} alt={"Ícone de check com circulo ao redor"} />Número de telefone</div>
+                            <div className={style.info_nec}><Img src={Check} alt={"Ícone de check com circulo ao redor"} />Casas de banho</div>
+                            <div className={style.info_nec}><Img src={Check} alt={"Ícone de check com circulo ao redor"} />Área total</div>
+                            <div className={style.info_nec}><Img src={Check} alt={"Ícone de check com circulo ao redor"} />Fotos do imóvel</div>
                         </div>
                     </div>
                 </div>
