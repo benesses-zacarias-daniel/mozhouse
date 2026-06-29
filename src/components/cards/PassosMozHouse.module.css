@@ -12,7 +12,7 @@
     width: 100%;
     /* background: var(--rosa-branco); */
     background: var(--fundo);
-    padding: 10px 10px 10px 10px;
+    padding: 15px 10px 15px 10px;
     /* margin-bottom: 13px; */
     color: var(--textoPrin);
 }
@@ -52,7 +52,7 @@
 
 .titulo_passo {
     text-align: center;
-    padding: 8px 0px 5px 0px;
+    padding: 12px 0px 8px 0px;
     font-weight: 600;
 }
 

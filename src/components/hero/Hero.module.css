@@ -14,10 +14,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 5px 0px 5px 0px;
 }
 
 .titulo_hero {
     font-size: 1rem;
+    padding: 0px 0px 2px 0px;
+}
+
+.mens_hero {
+    padding: 0px 0px 6px 0px;
 }
 
 .foco {

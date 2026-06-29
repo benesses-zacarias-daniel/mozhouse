@@ -63,6 +63,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 15px 5px 15px 5px;
+    margin: 0px 0px 5px 0px;
 }
 
 .foco {
@@ -92,7 +94,7 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
-    gap: 10px;
+    gap: 7px;
 }
 
 .img_info {
@@ -128,10 +130,8 @@
 /*Css da area como processo simples*/
 .area_geral_processo {
     width: 100%;
-    /* background: var(--rosa-branco); */
     background: var(--fundoSec);
-    padding: 10px 10px 10px 10px;
-    /* margin-bottom: 13px; */
+    padding: 15px 10px 15px 10px;
     color: var(--textoPrin);
 }
 

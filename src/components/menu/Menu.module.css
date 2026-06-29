@@ -75,6 +75,7 @@
 
 .area_itens .menu button {
     width: 165px;
+    height: 35px;
     padding: 0px 0px 0px 10px;
 }
 
@@ -104,6 +105,8 @@
 
 .activa {
     color: var(--verdePrimario) !important;
+    border-bottom: 1px solid var(--textoPrin);
+    font-weight: 501;
 }
 
 .area_itens .menu button .activa {

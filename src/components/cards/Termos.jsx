@@ -24,12 +24,14 @@ const Termos = ({ dadosTermos }) => {
                             </div>
                             {(termosDados.telefonesAdmin[0] !== "" && termosDados.telefonesAdmin[1] !== "") && (
                                 <div className={style.area_btn_termos}>
+                                    {/* <div className={style.ajuste_central}></div> */}
                                     <Button estilo={style.btn_termos} onClick={() => { }}>
                                         <FaPhone color="#21c45d" /> {termosDados.telefonesAdmin[0]}
                                     </Button>
                                     <Button estilo={style.btn_termos} onClick={() => { }}>
                                         <FaPhone color="#21c45d" /> {termosDados.telefonesAdmin[1]}
                                     </Button>
+                                    <div className={style.ajuste_central}></div>
                                 </div>
                             )}
                         </div>
