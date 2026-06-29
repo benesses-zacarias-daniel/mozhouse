@@ -9,13 +9,13 @@
 
 .area_inicio {
     flex: 1;
-    padding: 6px 0px 10px 0px;
+    padding: 6px 0px 20px 0px;
     width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    /* gap: 5px; */
 }
 
 .ir_propriedades {
@@ -26,7 +26,7 @@
 
 .area_destaque {
     width: 100%;
-    padding: 0px 5px 0px 5px;
+    padding: 15px 5px 15px 5px;
     background-color: var(--fundoSec);
 }
 
@@ -36,6 +36,10 @@
 
 .titulo_desc_destaque {
     width: 100%;
+}
+
+.titulo_desc_destaque h2 {
+    padding: 5px 0px 5px 0px;
 }
 
 .destaque_btn {
@@ -99,7 +103,6 @@
     border-radius: 20px;
 }
 
-
 .btn_pedido a {
     width: 100%;
     height: 100%;
@@ -119,7 +122,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    padding: 0px 0px 10px 0px;
+    padding: 8px 0px 15px 0px;
 }
 
 /*Hero*/
@@ -152,10 +155,8 @@
 /*Css da area como funciona*/
 .area_geral_funciona {
     width: 100%;
-    /* background: var(--rosa-branco); */
     background: var(--fundoSec);
-    padding: 10px 10px 10px 10px;
-    /* margin-bottom: 13px; */
+    padding: 15px 10px 15px 10px;
     color: var(--textoPrin);
 }
 
@@ -167,6 +168,7 @@
     justify-content: center;
     flex-direction: row;
     gap: 10px;
+    padding: 25px 0px 0px 0px;
 }
 
 .area_img_cat {

@@ -10,10 +10,8 @@
 
 .area_geral_passos {
     width: 100%;
-    /* background: var(--rosa-branco); */
     background: var(--fundo);
     padding: 15px 10px 15px 10px;
-    /* margin-bottom: 13px; */
     color: var(--textoPrin);
 }
 
