@@ -58,7 +58,7 @@ const Anunciar = () => {
                     <div className={style.area_grupos}>
                         <div className={style.grupos}>
                             <div className={style.info_nec}><Img src={Check} alt={"Ícone de check com circulo ao redor"} />Nome do proprietário</div>
-                            <div className={style.info_nec}><Img src={Check} alt={"Ícone de check com circulo ao redor"} />Localização exata</div>
+                            <div className={style.info_nec}><Img src={Check} alt={"Ícone de check com circulo ao redor"} />Localização / Bairro</div>
                             <div className={style.info_nec}><Img src={Check} alt={"Ícone de check com circulo ao redor"} />Numero de quartos</div>
                             <div className={style.info_nec}><Img src={Check} alt={"Ícone de check com circulo ao redor"} />Preço pretendido</div>
                         </div>
