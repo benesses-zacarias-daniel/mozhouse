@@ -22,7 +22,9 @@ const CardCasa = ({ srcCasa, categoria, comprar, preco, mens, localizacao, nome,
                     <div className={style.area_compra}>{comprar ? "Vende-se" : "Aluga-se"}</div>
                     {categoria && (<div className={style.area_categoria}>{categoria}</div>)}
                 </div>
-                <div className={style.area_preco_casa}>{preco}{comprar ? " MT" : " / MT"}</div>
+                <div className={style.area_preco_casa}>
+                    {preco}{comprar ? " MT" : " / MT"}
+                </div>
             </div>
             <div className={style.area_info_card}>
                 <div className={style.area_localizacao}>
@@ -36,9 +38,16 @@ const CardCasa = ({ srcCasa, categoria, comprar, preco, mens, localizacao, nome,
                     <div className={style.info_medidas}>
                         <div className={style.icone}>
                             <Img src={Quartos} alt={"Íconde de cama"} />
-                            <p>{quartos} Quartos</p></div>
-                        <div className={style.icone}><Img src={Banhos} alt={"Ícone de chuveiro"} /><p>{banhos} Banhos</p></div>
-                        <div className={style.icone}><Img src={Regua} alt={"Ícone de regua"} /><p>{area} m<sup>2</sup></p></div>
+                            <p>{quartos} Quartos</p>
+                        </div>
+                        <div className={style.icone}>
+                            <Img src={Banhos} alt={"Ícone de chuveiro"} />
+                            <p>{banhos} Banhos</p>
+                        </div>
+                        <div className={style.icone}>
+                            <Img src={Regua} alt={"Ícone de regua"} />
+                            <div>{area} m<sup>2</sup> </div>
+                        </div>
                     </div>
                 </div>
                 <div className={style.area_contactar}>

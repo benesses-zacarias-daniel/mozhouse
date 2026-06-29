@@ -15,8 +15,9 @@ const Propriedades = () => {
     const [mostrarProps, setMostrarProps] = useState(false);
     const [activa, setActiva] = useState("todas");
 
-    const onClickVerMais = () => {
+    const onClickVerMais = (evt) => {
         mostrarProps ? setMostrarProps(false) : setMostrarProps(true);
+        evt.target.innerHTML = mostrarProps ? "Ver Menus" : "Ver Todas";
     }
 
     const onClickFiltor = (val) => {
@@ -36,13 +37,8 @@ const Propriedades = () => {
                 <div className={style.desc_prop}>
                     <div className={style.area_ver_mais}>
                         <p>Descubra as propriedades mais exclusivas.</p>
-                        <Button onClick={() => { onClickVerMais(); }} estilo={style.btn_ver_mais}>
-                            Ver
-                            {mostrarProps ? (
-                                " -"
-                            ) : (
-                                " +"
-                            )}
+                        <Button onClick={(evt) => { onClickVerMais(evt); }} estilo={style.btn_ver_mais}>
+                            Ver Todas
                         </Button>
                     </div>
 

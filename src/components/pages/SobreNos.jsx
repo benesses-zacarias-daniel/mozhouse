@@ -5,7 +5,6 @@ import Img from "../img/Img";
 import style from "./SobreNos.module.css";
 import Valores from "../cards/Valores";
 import PedidoMozHouse from "../cards/PedidoMozHouse";
-import IconeTeste from "../assets/icone.svg";
 import VisaoMissao from "../cards/VisaoMissao";
 import Hero from "../hero/Hero";
 import ImgTeste from "/img/img.png";
@@ -19,17 +18,18 @@ import ApertoMao from "../assets/apertoMao.svg";
 import Lampada from "../assets/lampada.svg";
 import Diamante from "../assets/diamante.svg";
 import Suporte from "../assets/suporte.svg";
+import Mens from "../assets/mensB.svg";
 
 const SobreNos = () => {
     console.log("Sobre");
     const { mudarPage } = useMenuContext();
     const ValoresDados = [
-        { "id": 1, "src": EscudoVerif, "alt": "", "titulo": "Tranparência" },
+        { "id": 1, "src": EscudoVerif, "alt": "", "titulo": "Transparência" },
         { "id": 2, "src": EstrelaVerif, "alt": "", "titulo": "Profissionalismo" },
         { "id": 3, "src": ApertoMao, "alt": "", "titulo": "Confiança" },
         { "id": 4, "src": Lampada, "alt": "", "titulo": "Inovação" },
         { "id": 5, "src": Diamante, "alt": "", "titulo": "Qualidade" },
-        { "id": 6, "src": Suporte, "alt": "", "titulo": "Anendimento" }
+        { "id": 6, "src": Suporte, "alt": "", "titulo": "Atendimento" }
     ];
 
     const visaoMissaoDados = [
@@ -37,8 +37,8 @@ const SobreNos = () => {
         { "id": 2, "src": Visao, "alt": "", "titulo": "Visão", "desc": "Ser uma das principais referências do mercado imobiliário digital em Moçambique." }
     ];
 
-    const numero = "258 84 975 4315";
-    const linkWhatsApp = `https://wa.me/${numero}?text=Quero anunciar`;
+    const numero = "258 87 726 7456";
+    const linkWhatsApp = `https://wa.me/${numero}?text=Olá, tudo bem? Quero anunciar uma propriedade!`;
     const onClick = () => {
         mudarPage("propriedades");
     }
@@ -74,7 +74,7 @@ const SobreNos = () => {
                 <a href={linkWhatsApp}>
                     <Button estilo={style.btn_sobre_acao} onClick={() => {
                     }}>
-                        <Img src={IconeTeste} alt={""} />
+                        <Img src={Mens} alt={"Ícone de mensagem"} />
                         <p>
                             Contactar Pelo WhatsApp
                         </p>

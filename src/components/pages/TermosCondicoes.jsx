@@ -69,7 +69,7 @@ const TermosCondicoes = () => {
             "desc": "Restou alguma dúvida? A nossa equipa de suporte está disponível para o ajudar através dos seguintes canais:",
             "src": null,
             "alt": null,
-            "telefonesAdmin": ["87 000 6914", "84 975 4315"]
+            "telefonesAdmin": ["87 726 7456", "84 366 7456"]
         }
     ];
 

@@ -15,8 +15,8 @@ import Button from "../botaos/Button";
 import IconeCasa from "/img/img.png";
 
 const Anunciar = () => {
-    const numero = "258 84 975 4315";
-    const linkWhatsApp = `https://wa.me/${numero}?text=Quero anunciar`;
+    const numero = "258 87 726 7456";
+    const linkWhatsApp = `https://wa.me/${numero}?text=Olá, tudo bem? Quero anunciar uma propriedade!`;
 
     const DadosAnuciar = [
         {
