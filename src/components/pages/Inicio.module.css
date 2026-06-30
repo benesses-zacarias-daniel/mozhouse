@@ -47,8 +47,7 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    /* padding: 5px; */
-    height: 25px !important;
+    width: 90%;
 }
 
 .destaque_btn p {
@@ -66,7 +65,7 @@
 }
 
 .links_destaque {
-    width: 130px;
+    width: 150px;
     color: var(--verdePrimario);
     display: flex;
     align-items: center;
@@ -185,4 +184,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.titulo_desc_destaque.titulo_destaque {
+    font-family: "Merriweather", serif;
 }

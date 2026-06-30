@@ -23,11 +23,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-family: "Merriweather", serif;
+    font-weight: 500;
 }
 
 .min_info {
     padding: 10px;
     text-align: center;
+    font-family: "Inter", sans-serif;
 }
 
 .area_passos {
@@ -51,7 +54,9 @@
 .titulo_passo {
     text-align: center;
     padding: 12px 0px 8px 0px;
-    font-weight: 600;
+    /* font-weight: 600; */
+    font-family: "Merriweather", serif;
+    font-weight: 500;
 }
 
 .passos_img {
@@ -78,11 +83,12 @@
 .desc_passos {
     text-align: center;
     padding: 5px 0px 5px 0px;
+    font-family: "Inter", sans-serif;
 }
 
 .titulo_passo {
     font-family: "Merriweather", serif;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 /*Media Querys*/

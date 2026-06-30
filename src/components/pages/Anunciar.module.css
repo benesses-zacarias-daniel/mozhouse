@@ -51,6 +51,11 @@
     font-size: 1rem;
 }
 
+.area_titulo,
+.titulo_infos_nes {
+    font-family: "Merriweather", serif;
+}
+
 .titulo_infos_nes {
     width: 100%;
     text-align: center;
@@ -108,11 +113,15 @@
 .btn_anunciar {
     width: 200px;
     height: 30px;
-    background: #21c45d;
+    background: var(--verdePrimario);
     border-radius: 12px;
-    color: #fff;
+    color: var(--textoPrin);
     font-weight: 600;
     gap: 5px;
+}
+
+.btn_anunciar p {
+    padding: 0px 0px 3px 0px;
 }
 
 .btn_anunciar img {

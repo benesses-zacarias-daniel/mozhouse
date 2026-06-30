@@ -37,7 +37,41 @@ h3,
 h4,
 h5,
 h6 {
-  padding: 0px;
+  font-family: "Merriweather", serif;
+  font-weight: 500;
+}
+
+p,
+div {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+button p {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+button a {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+a button {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+a {
+  button a {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+  }
 }
 
 #root {
