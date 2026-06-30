@@ -67,8 +67,11 @@ const SobreNos = () => {
             <div className={style.visao_missao_container}>
                 <VisaoMissao dadosVisao={visaoMissaoDados} />
             </div>
-            <div className={style.area_valores_container}>
-                <Valores dadosVal={ValoresDados} />
+            <div className={style.area_geral_vals}>
+                <div><h2>Nossos valores</h2></div>
+                <div className={style.area_valores_container}>
+                    <Valores dadosVal={ValoresDados} />
+                </div>
             </div>
             <PedidoMozHouse titulo_pedido={"Pronta para anunciar ou encontrar o imóvel ideal?"} classeAreaGeral={style.sobre_pedido} classeAreaPedido={style.pedido_sobre} children={
                 <a href={linkWhatsApp}>

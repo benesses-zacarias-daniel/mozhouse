@@ -2,7 +2,6 @@ import Img from "../img/Img";
 import style from "./Valores.module.css"
 
 const Valores = ({ dadosVal }) => {
-    const gropos = [style.grupo1, style.grupo2]
     return (
         dadosVal.map((valores) => {
             return (

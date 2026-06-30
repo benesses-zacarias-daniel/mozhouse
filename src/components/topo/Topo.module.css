@@ -1,3 +1,12 @@
+:root {
+    --verdePrimario: #21c45d;
+    --fundo: #111827;
+    --fundoSec: #0d1322;
+    --contraste: #101625;
+    --textoPrin: #ffffff;
+    --textoSec: #9ca3af;
+}
+
 header {
     height: 40px;
     width: 100%;
@@ -7,6 +16,7 @@ header {
     flex-direction: row;
     box-sizing: border-box;
     font-size: 0.9rem;
+    background-color: var(--contraste);
 }
 
 .btn_topo {

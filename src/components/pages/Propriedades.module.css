@@ -10,22 +10,33 @@
 
 .area_propriedades {
     flex: 1;
-    padding: 6px 0px 20px 0px;
+    padding: 6px 0px 0px 0px;
     width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
 }
 
 .area_exp {
     padding: 0px;
     width: 100%;
     text-align: justify;
-    padding: 0px 5px 0px 5px;
+    padding: 10px 5px 15px 5px;
 }
 
+.area_exp,
+.casas_propriedades {
+    background-color: var(--fundoSec);
+}
+
+/* 
+.area_destaque {
+    width: 100%;
+    padding: 10px 5px 15px 5px;
+    background-color: var(--fundoSec);
+}
+ */
 .desc_prop {
     width: 100%;
 }
@@ -72,6 +83,7 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
+    color: #21c45d;
 }
 
 .casas_propriedades {
@@ -81,6 +93,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    padding: 0px 0px 20px 0px;
 }
 
 .controles_propriedades {

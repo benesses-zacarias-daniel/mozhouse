@@ -32,16 +32,26 @@
     padding: 15px 5px 15px 5px;
 }
 
+.area_geral_vals {
+    width: 100%;
+    padding: 15px 5px 15px 5px;
+    background-color: var(--fundoSec);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .area_valores_container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    justify-items: center;
     align-content: center;
-    gap: 10px;
-    padding: 15px 5px 15px 5px;
-    background-color: var(--fundoSec);
-    height: 220px;
+    gap: 15px;
+    padding: 10px 0px 10px 0px;
+    /* height: 220px; */
 }
 
 .sobre_btn_accao {
@@ -76,16 +86,17 @@
     justify-content: center;
     flex-direction: column;
     background-color: var(--fundoSec);
-    gap: 10px;
+    gap: 14px;
     height: 200px;
     padding: 15px 5px 15px 5px;
 }
 
 .area_jornada {
     width: 345px;
-    height: 130px;
+    /* height: 130px; */
     border-radius: 20px;
-    padding: 8px;
+    padding: 16px;
+    margin-top: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,6 +141,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    border: 1px solid var(--textoSec);
 }
 
 .desc_mens {
@@ -156,9 +168,12 @@
     height: 30px;
     background: var(--verdePrimario);
     border-radius: 12px;
-    color: var(--textoPrin);
     font-weight: 600;
     gap: 3px;
+}
+
+.btn_sobre_acao p {
+    color: var(--textoPrin);
 }
 
 .btn_sobre_acao img {

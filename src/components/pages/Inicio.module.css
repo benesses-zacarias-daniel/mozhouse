@@ -111,7 +111,7 @@
     justify-content: center;
     flex-direction: row;
     text-decoration: none;
-    color: var(--contraste);
+    color: var(--textoPrin);
     font-weight: 700;
 }
 
