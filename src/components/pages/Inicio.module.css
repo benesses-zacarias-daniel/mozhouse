@@ -47,10 +47,18 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 25px;
+    padding: 0px 0px 1px 0px;
 }
 
 .destaque_btn p {
+    padding: 0px 0px 2px 0px;
+    color: var(--verdePrimario) !important;
     flex: 1;
     height: 100%;
     display: flex;
@@ -65,7 +73,7 @@
 }
 
 .links_destaque {
-    width: 150px;
+    width: 95px;
     color: var(--verdePrimario);
     display: flex;
     align-items: center;
@@ -82,19 +90,6 @@
     height: 25px;
 }
 
-.destaque_btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    height: 25px;
-    padding: 0px 0px 1px 0px;
-}
-
-.destaque_btn p {
-    padding: 0px 0px 2px 0px;
-    color: var(--verdePrimario) !important;
-}
 
 .btn_pedido {
     background-color: var(--verdePrimario);
@@ -145,9 +140,18 @@
     border: 1px solid var(--textoSec);
 }
 
+.btn_consultor a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
 .btn_hero,
 .btn_consultor {
-    width: 140px;
+    width: 150px;
     border-radius: 20px;
 }
 

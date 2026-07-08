@@ -25,7 +25,8 @@ import DepoimentosClientes from "../data/Depoimentos";
 
 const Inicio = () => {
     const { mudarPage } = useMenuContext();
-
+    const numero = "258 84 975 4315";
+    const linkWhatsApp = `https://wa.me/${numero}?text=Olá, tudo bem? Gostaria de saber mais sobre a MozHouse!`;
     const PassosEscolherDados = [
         {
             "id": 1,
@@ -100,31 +101,33 @@ const Inicio = () => {
 
     return (
         <section className={style.area_inicio}>
-            <Hero titulo={"Encontre a casa dos seus sonhos em "} foco={" Moçambique"} mens={"Acesso exclusivo às propriedades mais luxuosas e bem localizadas. Viva a excelencia imobiliária com o suporte da maior rede de luxo do país."} mostrar={true} children={
+            <Hero titulo={"Aluem "} foco={" Moçambique"} mens={"Acesso exclusivo às propriedades mais luxuosas e bem localizadas. Viva a excelencia imobiliária com o suporte da maior rede de luxo do país."} mostrar={true} children={
                 <>
                     <Link to={"/propriedades"} className={style.links_imoveis} onClick={() => {
                         mudarPage("propriedades");
                     }}>
                         <Button estilo={style.btn_hero}>
-                            Ver Imóveis
+                            Ver Casas pra Alugar
                         </Button>
                     </Link>
                     <Button estilo={style.btn_consultor}>
-                        Falar com Consultor
+                        <a href={linkWhatsApp}>
+                            Falar no WhatsApp
+                        </a>
                     </Button>
                 </>
             } />
             <div className={style.area_destaque}>
                 <div className={style.titulo_destaque}>
                     <div className={style.titulo_desc_destaque}>
-                        <h2>Destaques Exclusivos</h2>
+                        <h2>Aluguer em Destaque</h2>
                         <div className={style.ir_propriedades}>
-                            <p>A nossa seleção de imóveis.</p>
+                            <p>Os melhores imóveis disponíveis agora.</p>
                             <Link to={"/propriedades"} className={style.links_destaque} onClick={() => {
                                 mudarPage("propriedades");
                             }}>
                                 <Button estilo={style.destaque_btn}>
-                                    <p>Ver todos imóveis</p>
+                                    <p>Ver todos</p>
                                     <Img alt={"seta para direita"} src={Seta} />
                                 </Button>
                             </Link>
@@ -141,7 +144,7 @@ const Inicio = () => {
             <PassosMozHouse titulo={"Como funciona"} minInfo={""} classeAreaGeral={style.area_geral_funciona} dadosPedido={PassosFuncionaDados} />{/*Passos de como funciona*/}
             <PassosMozHouse titulo={"Nossas Categorias"} minInfo={""} dadosPedido={Categorias} classeAreaPasso={style.area_cat} classeAreaImg={style.area_img_cat} /> {/*Categorias*/}
             <Depoimentos depoimentos={DepoimentosClientes} minInfoDep={"A confiança dos nossos parceiros é o nosso maior património."} tituloDep={"O que dizem os nossos clientes"} />
-            <PedidoMozHouse titulo_pedido={"Pronto para encontrar o imóvel ideal?"} texto={"Explorar Propriedades"} desc_pedido={"Explore as melhores opurtunidades imobiliárias em Moçambique com ajuda de que conhece o mercado."} children={
+            <PedidoMozHouse titulo_pedido={"Pronto para encontrar o imóvel ideal?"} texto={"Explorar Propriedades"} desc_pedido={"Explore as melhores opurtunidades imobiliárias em Moçambique com ajuda de quem conhece o mercado."} children={
                 <Button estilo={style.btn_pedido} onClick={() => {
                     mudarPage("propriedades");
                 }}>

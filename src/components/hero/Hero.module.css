@@ -29,6 +29,7 @@
 .foco {
     color: #21c45d;
     height: 100%;
+    font-weight: 700 !important;
     /* padding: 1px 0px 0px 3px; */
 }
 

@@ -45,13 +45,13 @@ const SobreNos = () => {
 
     return (
         <section className={style.area_sobre_nos}>
-            <Hero titulo={"Sobre a "} foco={"MozHouse"} mens={"Conectamos proprietários, compradores e arrendadores através de uma experiência simples, segura e profissional."} children={
+            <Hero titulo={"Sobre a "} foco={"MozHouse"} mens={"Conectamos proprietários e inquilinos em Moçambique. Tornamos o aluguer de casas e apartamentos simples, seguro e rápido."} children={
                 <>
                     <Button estilo={style.sobre_btn_exp} onClick={() => {
                         onClick();
                     }}>
                         <Link to={"/propriedades"}>
-                            Explorar Imóveis
+                            Ver Casas para Alugar
                         </Link>
                     </Button>
                 </>
@@ -73,7 +73,7 @@ const SobreNos = () => {
                     <Valores dadosVal={ValoresDados} />
                 </div>
             </div>
-            <PedidoMozHouse titulo_pedido={"Pronta para anunciar ou encontrar o imóvel ideal?"} classeAreaGeral={style.sobre_pedido} classeAreaPedido={style.pedido_sobre} children={
+            <PedidoMozHouse titulo_pedido={"Pronto para anunciar ou encontrar o imóvel ideal?"} classeAreaGeral={style.sobre_pedido} classeAreaPedido={style.pedido_sobre} children={
                 <a href={linkWhatsApp}>
                     <Button estilo={style.btn_sobre_acao} onClick={() => {
                     }}>

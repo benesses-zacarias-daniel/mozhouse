@@ -111,13 +111,12 @@
 }
 
 .btn_anunciar {
-    width: 200px;
-    height: 30px;
     background: var(--verdePrimario);
     border-radius: 12px;
     color: var(--textoPrin);
     font-weight: 600;
     gap: 5px;
+    padding: 5px;
 }
 
 .btn_anunciar p {

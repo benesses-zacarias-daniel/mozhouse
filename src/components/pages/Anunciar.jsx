@@ -48,7 +48,7 @@ const Anunciar = () => {
 
     return (
         <section className={style.area_anunciar}>
-            <Hero titulo={"Anuncie a sua "} foco={"propriedade"} mens={"Venda ou arrende o seu imóvel atravésda MozHouse e alcance mais pessoas com a maior plataforma imobiliária de luxo."} temImg={true} srcImg={IconeCasa} altImg={"Casa supor Luxos"} />
+            <Hero titulo={"Tem uma casa vazia? Alugue-a hoje"} mens={"Coloque seu imóvel na MozHouse e receba propostas de inquilínos verificados. Anúncio gratuito e suport do início ao fim."} temImg={true} srcImg={IconeCasa} altImg={"Casa supor Luxos"} />
             <PassosMozHouse titulo={"Processo Simples e Rápido"} classeAreaGeral={style.area_geral_processo} minInfo={"Nós tratamos de toda a visibilidade técnica para que se possa focar apenas no negócio."} dadosPedido={DadosAnuciar} />
             <div className={style.area_infos}>
                 <div className={style.info_area}>
@@ -72,14 +72,14 @@ const Anunciar = () => {
                 </div>
             </div>
             <div className={style.pedido_anunciar}>
-                <PedidoMozHouse titulo_pedido={"Pronto para começar?"} classeAreaPedido={style.area_pedido_anun} desc_pedido={"A nossa equipa está disponível para o ajudar a publicar o seu imóvel em menus de 24 horas. Fale connosco agora."} children={
+                <PedidoMozHouse titulo_pedido={"Pronto para Alugar a sua Casa?"} classeAreaPedido={style.area_pedido_anun} desc_pedido={"A nossa equipa publica o seu imóvel para aluguer em menos de 24 horas. Sem burocracia. Fale connosco agora e encontre inquilinos mais rápido."} children={
                     <a href={linkWhatsApp}>
                         <Button estilo={style.btn_anunciar} onClick={() => {
                             // onClick();
                         }}>
                             <Img src={Mens} alt={""} />
                             <p>
-                                Contactar pelo WhatsApp
+                                Falar no WhatsApp e Anunciar
                             </p>
                         </Button>
                     </a>
