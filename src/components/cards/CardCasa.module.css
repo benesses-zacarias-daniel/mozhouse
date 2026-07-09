@@ -121,12 +121,12 @@
     padding: 8px;
     height: 30px;
     color: var(--textoPrin);
-    background: rgba(255, 255, 255, 0.286);
+    background: rgba(153, 152, 152, 0.707);
 }
 
 .area_preco_casa {
     position: absolute;
-    top: 245px;
+    top: 240px;
     right: 10px;
     height: 30px;
     display: flex;
@@ -136,7 +136,8 @@
     padding: 10px;
     border-radius: 20px;
     color: var(--verdePrimario);
-    background: rgba(0, 0, 0, 0.406);
+    background: rgba(0, 0, 0, 0.784);
+    font-weight: 600;
 }
 
 .area_info_card {

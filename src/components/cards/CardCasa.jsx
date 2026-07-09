@@ -23,7 +23,7 @@ const CardCasa = ({ srcCasa, categoria, comprar, preco, mens, localizacao, nome,
                     {categoria && (<div className={style.area_categoria}>{categoria}</div>)}
                 </div>
                 <div className={style.area_preco_casa}>
-                    {preco}{comprar ? " MT" : " / MT"}
+                    {preco}{comprar ? " MT" : " MT / Mês"}
                 </div>
             </div>
             <div className={style.area_info_card}>
