@@ -38,4 +38,5 @@
 
 .nome_destaque {
     color: var(--verdePrimario);
+    font-weight: 900;
 }

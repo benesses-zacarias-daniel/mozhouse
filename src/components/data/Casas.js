@@ -20,7 +20,7 @@ const Casas = [
     {
         "id": 2,
         "preco": 500,
-        "categoria": "Sucego & Segurança",
+        "categoria": "Sussego & Segurança",
         "compra": false,
         "srcCasa": "/img/home/casa2.jpg",
         "local": "Mutava Rex",
