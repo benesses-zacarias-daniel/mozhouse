@@ -6,8 +6,10 @@ const Logo = ({ srcLogo, altLogo, logoTexto, destaque }) => {
         <div className={style.area_logo}>
             <Img alt={altLogo} src={srcLogo} />
             <div className={style.nome_logo}>
-                <p className={style.nome_destaque}>{destaque}</p>
-                {logoTexto}
+                <h2 className={style.nome_destaque}>{destaque}</h2>
+                <h2>
+                    {logoTexto}
+                </h2>
             </div>
         </div>
     )

@@ -29,7 +29,11 @@
     justify-content: center;
     flex-direction: row;
     padding: 10px 0px 0px 0px;
-    font-weight: 900 !important;
+}
+
+.nome_logo h2 {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
 }
 
 .nome_destaque {
