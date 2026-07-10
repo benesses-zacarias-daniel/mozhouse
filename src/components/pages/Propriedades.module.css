@@ -92,8 +92,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 10px;
-    padding: 0px 0px 20px 0px;
+    padding: 0px 5px 20px 5px;
 }
 
 .controles_propriedades {
@@ -123,8 +124,6 @@
 
 @media only screen and (min-width:900px) {
     .casas_propriedades {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        gap: 10px;
+        flex-direction: row;
     }
 }
