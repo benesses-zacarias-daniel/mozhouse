@@ -101,7 +101,7 @@ const Inicio = () => {
 
     return (
         <section className={style.area_inicio}>
-            <Hero titulo={"Alugue a casa ideal em "} foco={" Moçambique"} mens={"Encontre casas, apartamentos & quartos oara alugar. Processo simples, seguro e com suporte do início ao fim."} mostrar={true} children={
+            <Hero titulo={"Alugue a casa ideal em "} foco={" Moçambique"} mens={"Encontre casas, apartamentos & quartos para alugar. Processo simples, seguro e com suporte do início ao fim."} mostrar={true} children={
                 <>
                     <Link to={"/propriedades"} className={style.links_imoveis} onClick={() => {
                         mudarPage("propriedades");

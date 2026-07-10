@@ -120,3 +120,11 @@
 .btn_controle {
     color: var(--verdePrimario);
 }
+
+@media only screen and (min-width:900px) {
+    .casas_propriedades {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 10px;
+    }
+}
