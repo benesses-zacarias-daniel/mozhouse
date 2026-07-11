@@ -45,10 +45,14 @@
 
 .area_valores_container {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    justify-items: center;
-    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    justify-content: center;
+    align-content: center; */
     gap: 15px;
     padding: 10px 0px 10px 0px;
     /* height: 220px; */
@@ -185,4 +189,17 @@
 
 .btn_sobre_acao:hover {
     transform: translateY(-1px);
+}
+
+
+@media only screen and (min-width:900px) {
+    .pedido_sobre {
+        max-width: 50%;
+    }
+
+    .area_jornada {
+        width: 90%;
+        height: 120px;
+        padding: 15px;
+    }
 }

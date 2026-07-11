@@ -142,7 +142,7 @@ const Inicio = () => {
             </div>
             <PassosMozHouse titulo={"Por que escolher a MozHouse?"} minInfo={""} dadosPedido={PassosEscolherDados} />{/*Passos Por que escolher MozHouse*/}
             <PassosMozHouse titulo={"Como funciona"} minInfo={""} classeAreaGeral={style.area_geral_funciona} dadosPedido={PassosFuncionaDados} />{/*Passos de como funciona*/}
-            <PassosMozHouse titulo={"Nossas Categorias"} minInfo={""} dadosPedido={Categorias} classeAreaPasso={style.area_cat} classeAreaImg={style.area_img_cat} /> {/*Categorias*/}
+            <PassosMozHouse titulo={"Nossas Categorias"} minInfo={""} dadosPedido={Categorias} classeAreaPasso={style.area_cat} classeAreaImg={style.area_img_cat} classePasso={style.passos_cat} /> {/*Categorias*/}
             <Depoimentos depoimentos={DepoimentosClientes} minInfoDep={"A confiança dos nossos parceiros é o nosso maior património."} tituloDep={"O que dizem os nossos clientes"} />
             <PedidoMozHouse titulo_pedido={"Pronto para encontrar o imóvel ideal?"} texto={"Explorar Propriedades"} desc_pedido={"Explore as melhores opurtunidades imobiliárias em Moçambique com ajuda de quem conhece o mercado."} children={
                 <Button estilo={style.btn_pedido} onClick={() => {

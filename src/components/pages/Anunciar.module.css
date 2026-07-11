@@ -80,6 +80,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 15px;
     padding: 5px 0px 5px 0px;
 }
@@ -89,6 +90,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -152,6 +154,31 @@
 }
 
 .pedido_anunciar {
+    width: 100%;
     background-color: var(--fundoSec);
     padding: 0px 10px 20px 10px;
+}
+
+@media only screen and (min-width:800px) {
+    .area_grupos .grupos:nth-child(even) {
+        margin-left: 25px;
+    }
+
+    .area_grupos {
+        gap: 0px;
+    }
+
+    .grupos {
+        width: 25%;
+    }
+
+    .area_grupos .grupos:nth-child(odd) {
+        margin-right: 25px;
+    }
+}
+
+@media only screen and (min-width:800px) {
+    .area_pedido_anun {
+        max-width: 85%;
+    }
 }

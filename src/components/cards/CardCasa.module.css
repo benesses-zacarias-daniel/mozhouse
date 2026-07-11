@@ -228,7 +228,7 @@
 
 @media only screen and (min-width:500px) {
     .area_geral_card {
-        width: 440px;
+        width: 420px;
     }
 }
 
@@ -238,20 +238,20 @@
     }
 } */
 
-@media only screen and (min-width:850px) {
+/* @media only screen and (min-width:850px) {
     .area_geral_card {
         width: 420px;
     }
-}
+} */
 
 @media only screen and (min-width:1200px) {
     .area_geral_card {
-        width: 400px;
+        width: 440px;
     }
 }
 
-@media only screen and (min-width:1400px) {
+/* @media only screen and (min-width:1400px) {
     .area_geral_card {
         width: 380px;
     }
-}
+} */

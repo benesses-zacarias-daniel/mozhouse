@@ -6,6 +6,17 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.termosMozHouse {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -13,4 +24,10 @@
     width: 100%;
     text-align: center;
     padding: 10px 0px 0px 0px;
+}
+
+@media only screen and (min-width:900px) {
+    .termosMozHouse {
+        flex-direction: row;
+    }
 }

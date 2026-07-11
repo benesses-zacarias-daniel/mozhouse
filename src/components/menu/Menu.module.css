@@ -123,4 +123,8 @@
     .nava_footer .menu .item_menu {
         font-size: 0.8rem;
     }
+
+    .footerContainer {
+        width: 120px;
+    }
 }

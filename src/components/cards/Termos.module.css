@@ -98,3 +98,10 @@
 .ajuste_central {
     width: 30px;
 }
+
+@media only screen and (min-width:900px) {
+    .container_termos {
+        width: 380px;
+        height: 200px;
+    }
+}
