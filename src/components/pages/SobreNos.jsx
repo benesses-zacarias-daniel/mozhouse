@@ -33,8 +33,20 @@ const SobreNos = () => {
     ];
 
     const visaoMissaoDados = [
-        { "id": 1, "src": Missao, "alt": "", "titulo": "Missão", "desc": "Facilitar a conexão entre proprietários e pessoas à procura de imóveis, através de uma plataforma prática e confiável." },
-        { "id": 2, "src": Visao, "alt": "", "titulo": "Visão", "desc": "Ser uma das principais referências do mercado imobiliário digital em Moçambique." }
+        {
+            "id": 1,
+            "src": Missao,
+            "alt": "",
+            "titulo": "Missão",
+            "desc": "Facilitar o processo de aluguer de imóveis em Moçambique, conectando inquilinos e proprietários de forma prática, segura e mediada."
+        },
+        {
+            "id": 2,
+            "src": Visao,
+            "alt": "",
+            "titulo": "Visão",
+            "desc": "Ser a plataforma digital de referência e a escolha mais confiável para quem procura ou oferece casas para alugar em Moçambique."
+        }
     ];
 
     const numero = "258 87 726 7456";
