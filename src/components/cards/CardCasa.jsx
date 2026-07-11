@@ -11,7 +11,8 @@ import Button from "../botaos/Button";
 
 const CardCasa = ({ srcCasa, categoria, comprar, preco, mens, localizacao, nome, quartos, banhos, area }) => {
 
-    const numero = "258 84 975 4315";
+    // const numero = "258 84 975 4315";
+    const numero = "258 87 726 7456";
     const linkWhatsApp = `https://wa.me/${numero}?text=${mens}`;
 
     return (

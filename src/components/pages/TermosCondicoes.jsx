@@ -38,14 +38,14 @@ const TermosCondicoes = () => {
         }, {
             "id": 4,
             "titulo": "4. Intermediação e Visitas",
-            "desc": "Caso demonstre interesse real por um imóvel, a equipa da MozHouse fará o acompanhamento e a mediação direta da negociação com o proprietário. Caso a MozHouse participe na mediação do contracto, poderá ser cobrada uma taxa de intermediação previamente acordada entre as partes.",
+            "desc": "Caso um interessado demonstre interesse real por um imóvel, a equipa da MozHouse será responsável por acompanhar o processo, agendar visitas quando necessário e realizar a mediação da negociação entre o proprietário e o futuro inquilino, garantindo maior segurança para ambas as partes.",
             "src": Negociacao,
             "alt": "Ícone de dinheiro",
             "telefonesAdmin": ["", ""]
         }, {
             "id": 5,
             "titulo": "5. Comissão e Taxas",
-            "desc": "Ao concluir com sucesso o processo de aluguer de um imóvel através da nossa mediação, a MozHouse cobrará uma comissão ou taxa de intermediação acordada previamente, destinada a cobrir os custos de suporte, validação e segurança da operação.",
+            "desc": "Quando a negociação for concluída com sucesso através da mediação da MozHouse, poderá ser cobrada uma taxa de intermediação ou comissão, previamente informada às partes, destinada a cobrir os custos do acompanhamento, validação e suporte prestado durante o processo.",
             "src": Comicao,
             "alt": "Ícone de dinheiro",
             "telefonesAdmin": ["", ""]
