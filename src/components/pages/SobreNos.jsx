@@ -7,7 +7,6 @@ import Valores from "../cards/Valores";
 import PedidoMozHouse from "../cards/PedidoMozHouse";
 import VisaoMissao from "../cards/VisaoMissao";
 import Hero from "../hero/Hero";
-import ImgTeste from "/img/img.png";
 //Ícondes gerais de cada área
 import Visao from "../assets/visao.svg";
 import Missao from "../assets/objectivo.svg";
@@ -67,7 +66,7 @@ const SobreNos = () => {
                         </Link>
                     </Button>
                 </>
-            } temImg={true} altImg={"Casa luxuosa"} srcImg={ImgTeste} mostrar={true} />
+            } mostrar={true} />
             <div className={style.container_jornada}>
                 <div className={style.area_foco_jor}>
                     A NOSSA JORNADA
