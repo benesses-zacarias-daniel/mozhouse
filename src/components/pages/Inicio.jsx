@@ -12,9 +12,9 @@ import PassosMozHouse from "../cards/PassosMozHouse";
 import EscudoVerificado from "../assets/escudoVerif.svg";
 import Suporte from "../assets/suporte.svg";
 import Mao from "../assets/apertoMao.svg";
-import Venda from "../assets/venda.svg";
+import Casa from "../assets/placeCasa.svg";
 import Chave from "../assets/chave.svg";
-import Terreno from "../assets/terra.svg";
+import Apartamento from "../assets/predio.svg";
 import Anunciar from "../assets/anunciar.svg";
 import Certo from "../assets/certo.svg";
 import Telefone from "../assets/telefone.svg";
@@ -80,22 +80,22 @@ const Inicio = () => {
     const Categorias = [
         {
             "id": 1,
-            "passo": "Venda",
+            "passo": "Casas",
             "desc": "",
             "alt": "",
-            "src": Venda
+            "src": Casa
         }, {
             "id": 2,
-            "passo": "Arrendamento",
+            "passo": "Apartamentos",
+            "desc": "",
+            "alt": "",
+            "src": Apartamento
+        }, {
+            "id": 3,
+            "passo": "Quartos/Depenências",
             "desc": "",
             "alt": "",
             "src": Chave
-        }, {
-            "id": 3,
-            "passo": "Terrenos",
-            "desc": "",
-            "alt": "",
-            "src": Terreno
         }
     ];
 

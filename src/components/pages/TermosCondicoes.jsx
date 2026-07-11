@@ -17,7 +17,7 @@ const TermosCondicoes = () => {
         {
             "id": 1,
             "titulo": "1. Introdução",
-            "desc": "A MozHouse é uma plataforma digital premium dedicada exclusivamente à divulgação e promoção de imóveis localizados em Moçambique. O nosso objetivo é conectar de forma eficiente e sofisticada potenciais compradores e arrendatários a proprietários e agentes imobiliários.",
+            "desc": "A MozHouse é uma plataforma digital dedicada exclusivamente à divulgação, mediação e facilitação de aluguer de imóveis em Moçambique. O nosso objetivo é conectar inquilinos a proprietários de forma eficiente, acompanhando o processo para garantir uma experiência segura para ambas as partes.",
             "src": Introducao,
             "alt": "Ícone de alerta",
             "telefonesAdmin": ["", ""]
@@ -37,16 +37,16 @@ const TermosCondicoes = () => {
             "telefonesAdmin": ["", ""]
         }, {
             "id": 4,
-            "titulo": "4. Negociações",
-            "desc": "Qualquer processo de compra, venda, arrendamento ou permuta é realizado diretamente entre as partes envolvidas, fora do domínio da plataforma. A MozHouse não intervém em negociações financeira.",
+            "titulo": "4. Intermediação e Visitas",
+            "desc": "Caso demonstre interesse real por um imóvel, a equipa da MozHouse fará o acompanhamento e a mediação direta da negociação com o proprietário. Para prosseguir com o processo de fecho de contrato ou serviços associados, poderá ser aplicada uma taxa administrativa ou valor de intermediação sob consulta.",
             "src": Negociacao,
             "alt": "Ícone de dinheiro",
             "telefonesAdmin": ["", ""]
         }, {
             "id": 5,
-            "titulo": "5. Comissão",
-            "desc": "Quando um negócio é concluído através da MozHouse, a plataforma poderá receber uma comissão pela intermediação."
-            , "src": Comicao,
+            "titulo": "5. Comissão e Taxas",
+            "desc": "Ao concluir com sucesso o processo de aluguer de um imóvel através da nossa mediação, a MozHouse cobrará uma comissão ou taxa de intermediação acordada previamente, destinada a cobrir os custos de suporte, validação e segurança da operação.",
+            "src": Comicao,
             "alt": "Ícone de dinheiro",
             "telefonesAdmin": ["", ""]
         }, {
