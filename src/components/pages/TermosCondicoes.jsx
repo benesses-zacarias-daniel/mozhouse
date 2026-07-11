@@ -38,7 +38,7 @@ const TermosCondicoes = () => {
         }, {
             "id": 4,
             "titulo": "4. Intermediação e Visitas",
-            "desc": "Caso demonstre interesse real por um imóvel, a equipa da MozHouse fará o acompanhamento e a mediação direta da negociação com o proprietário. Para prosseguir com o processo de fecho de contrato ou serviços associados, poderá ser aplicada uma taxa administrativa ou valor de intermediação sob consulta.",
+            "desc": "Caso demonstre interesse real por um imóvel, a equipa da MozHouse fará o acompanhamento e a mediação direta da negociação com o proprietário. Caso a MozHouse participe na mediação do contracto, poderá ser cobrada uma taxa de intermediação previamente acordada entre as partes.",
             "src": Negociacao,
             "alt": "Ícone de dinheiro",
             "telefonesAdmin": ["", ""]
