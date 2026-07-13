@@ -95,7 +95,7 @@ const Inicio = () => {
             "src": Apartamento
         }, {
             "id": 3,
-            "passo": "Quartos/Depenências",
+            "passo": "Quartos",
             "desc": "",
             "alt": "",
             "src": Chave
