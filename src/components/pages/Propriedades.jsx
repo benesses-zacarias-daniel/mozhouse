@@ -4,25 +4,29 @@ import style from "./Propriedades.module.css";
 import Button from "../botaos/Button";
 import { useState } from "react";
 import Hero from "../hero/Hero";
+import Detalhes from "../cards/Detalhes";
 
 const Propriedades = () => {
 
     const CasasOcultas = Casas.filter((casa) => casa.id !== 1 && casa.id !== 2 && casa.id !== 3);
     const CasasHome = Casas.filter((casa) => casa.id === 1 || casa.id === 2 || casa.id === 3);
-    // const Comprar = Casas.filter((casa) => casa.compra === true);
-    // const Arrendar = Casas.filter((casa) => casa.compra === false);
 
     const [mostrarProps, setMostrarProps] = useState(false);
-    // const [activa, setActiva] = useState("todas");
 
     const onClickVerMais = (evt) => {
         mostrarProps ? setMostrarProps(false) : setMostrarProps(true);
         evt.target.innerHTML = mostrarProps ? "Ver Todas" : "Ver Menus";
     }
 
-    // const onClickFiltor = (val) => {
-    //     setActiva(val)
-    // }
+    const [mostDetalhes, setMostDetalhes] = useState(false);
+    const [dadosModal, setDadosModal] = useState([]);
+
+    const onClickDetalhes = (idCasa) => {
+        const CasaModal = CasasHome.filter((casa) => casa.id === idCasa);
+        setDadosModal(CasaModal);
+        setMostDetalhes(true);
+    }
+
     return (
         <section className={style.area_propriedades}>
             <Hero titulo={"Imóveis pra Alugar em Moçambique"} mens={"Encontre casas,apartamentos e quartos disponíveis para alugar. Processo rápido e seguro."} mostrar={true} />
@@ -39,10 +43,12 @@ const Propriedades = () => {
                 </div>
             </div>
             <div className={style.casas_propriedades}>
-                <CardCasa dadosCasas={CasasHome} />
+                <CardCasa dadosCasas={CasasHome} onClickModalOpen={(idCasa) => { onClickDetalhes(idCasa); }} />
                 {mostrarProps === true && (
-                    <CardCasa dadosCasas={CasasOcultas} />
+                    <CardCasa dadosCasas={CasasOcultas} onClickModalOpen={(idCasa) => { onClickDetalhes(idCasa); }} />
                 )}
+                {mostDetalhes && (
+                    <Detalhes onClickOcult={() => { setMostDetalhes(false) }} aberto={mostDetalhes} dados={dadosModal} />)}
             </div>
         </section>
     )
