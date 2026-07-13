@@ -3,6 +3,7 @@
     --fundo: #111827;
     --fundoSec: #0d1322;
     --escuroClaro: #0d132287;
+    --brancoClaro: #ffffff53;
     --contraste: #101625;
     --textoPrin: #ffffff;
     --textoSec: #9ca3af;
@@ -101,8 +102,8 @@
 
 .area_legenda_local {
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 5px;
+    left: 5px;
     padding: 7px;
     display: flex;
     align-items: center;
@@ -131,7 +132,7 @@
 .loc_detalhes {
     position: absolute;
     top: 225px;
-    left: 10px;
+    left: 5px;
     font-weight: 900;
     color: var(--verdePrimario);
     height: 30px;
@@ -140,6 +141,9 @@
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    background: var(--escuroClaro);
+    border-radius: 20px;
+    width: 50px;
 }
 
 .area_btns_controle {
@@ -152,12 +156,13 @@
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
+    background: var(--brancoClaro);
+    border-radius: 20px;
 }
 
 .btn_control img {
     width: 24px;
     height: 30px;
-    color: #21c45d;
 }
 
 .area_info_detalhes {
