@@ -25,23 +25,21 @@ const Detalhes = ({ onClickOcult, aberto, dados }) => {
     const [srcDetAct, setSrcDetAct] = useState(0);
     // const [casaSrc, setCasaSrc] = useState(srcDetalhes[0].srcDet);
 
-    useEffect(() => {
-        console.log(aberto);
+    // useEffect(() => {
+    //     if (!aberto) return;
+    //     const intervalo = setInterval(() => {
+    //         if (srcDetAct + 1 >= srcDetalhes.length) {
+    //             setSrcDetAct(0);
+    //         } else {
+    //             setSrcDetAct(srcDetAct + 1);
+    //         }
+    //         console.log("Entrou no intervalo");
 
-        if (!aberto) return;
-        const intervalo = setInterval(() => {
-            if (srcDetAct + 1 >= srcDetalhes.length) {
-                setSrcDetAct(0);
-            } else {
-                setSrcDetAct(srcDetAct + 1);
-            }
-            console.log("Entrou no intervalo");
+    //     }, 5000);
 
-        }, 5000);
+    //     return () => { clearInterval(intervalo) };
 
-        return () => { clearInterval(intervalo) };
-
-    }, [aberto, srcDetAct]);
+    // }, [aberto, srcDetAct]);
 
     const onClickCasaDetalhes = (tipo) => {
         if (tipo === 1) {
@@ -52,7 +50,7 @@ const Detalhes = ({ onClickOcult, aberto, dados }) => {
             }
         } else {
             if (srcDetAct - 1 <= 0) {
-                setSrcDetAct(0);
+                setSrcDetAct(srcDetalhes.length - 1);
             } else {
                 setSrcDetAct(srcDetAct - 1);
             }
@@ -89,36 +87,36 @@ const Detalhes = ({ onClickOcult, aberto, dados }) => {
                                     <Img src={SetaDir} alt={"Seta para direita"} />
                                 } />
                             </div>
-                            <div className={style.area_info_detalhes}>
-                                <div className={style.desc_detalhe}>{descDetalhes}</div>
-                                {acessos && (<h3>O imóvel tem acesso á:</h3>)}
-                                <div className={style.area_acessos_detalhes}>
-                                    {acessos && (
-                                        acessos.map((acesso, pos) => {
-                                            return (
-                                                <div key={pos} className={style.acesso}>
-                                                    <Img src={EstrelaAval} alt={"Estrela"} />
-                                                    <p>{acesso}</p>
-                                                </div>
-                                            )
-                                        })
+                        </div>
+                        <div className={style.area_info_detalhes}>
+                            <div className={style.desc_detalhe}>{descDetalhes}</div>
+                            {acessos && (<h3>O imóvel tem acesso a:</h3>)}
+                            <div className={style.area_acessos_detalhes}>
+                                {acessos && (
+                                    acessos.map((acesso, pos) => {
+                                        return (
+                                            <div key={pos} className={style.acesso}>
+                                                <Img src={EstrelaAval} alt={"Estrela"} />
+                                                <p>{acesso}</p>
+                                            </div>
+                                        )
+                                    })
 
-                                    )}
-                                </div>
+                                )}
                             </div>
-                            <div className={style.area_vid_detalhes}>
-                                <h3>Vídeo Ilustrativo</h3>
-                                <iframe src={video} autoPlay={false} className={style.iframe_reviews}></iframe>
-                                {/* <video src="videos/vidTmp4" autoPlay={false} className={style.video_demons} ></video> */}
-                            </div>
-                            <div className={style.area_btn_contactar_detalhes}>
-                                <Button estilo={style.btn_detalhe_detalhe} children={
-                                    <a href={linkWhatsApp} className={style.linkDetalhe}>
-                                        <Img src={Mens} alt={"Ícone de mensagem"} />
-                                        <p>Contactar</p>
-                                    </a>
-                                } />
-                            </div>
+                        </div>
+                        <div className={style.area_vid_detalhes}>
+                            <h3>Visão Geral</h3>
+                            <iframe src={video} autoPlay={false} className={style.iframe_reviews}></iframe>
+                            {/* <video src="videos/vidTmp4" autoPlay={false} className={style.video_demons} ></video> */}
+                        </div>
+                        <div className={style.area_btn_contactar_detalhes}>
+                            <Button estilo={style.btn_detalhe_detalhe} children={
+                                <a href={linkWhatsApp} className={style.linkDetalhe}>
+                                    <Img src={Mens} alt={"Ícone de mensagem"} />
+                                    <p>Contactar</p>
+                                </a>
+                            } />
                         </div>
                     </div>
                 </div>
