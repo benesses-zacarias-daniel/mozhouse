@@ -15,7 +15,32 @@
                         </a>
                     </Button>
                 </>
- } /> -->
+ } /> 
+ const PassosFuncionaDados = [
+        {
+            "id": 1,
+            "passo": "Anúncio",
+            "desc": "O proprietário anúncia a sua propriedade com todos os detalhes tecnicos e fotos.",
+            "src": Anunciar, "alt": ""
+        }, {
+            "id": 2,
+            "passo": "Publicidade",
+            "desc": "A equipe MozHouse verifica e publica o imóvel na nossa plataforma de Elite.",
+            "src": Certo,
+            "alt": ""
+        }, {
+            "id": 3,
+            "passo": "Contacto",
+            "desc": "Os interessados entram em contacto directo através do WhatsApp.",
+            "src": Telefone,
+            "alt": ""
+        }, {
+            "id": 4,
+            "passo": "Negociação",
+            "desc": "O proprietário e o cliente realizam a negociação finalizam o contrato.",
+            "src": Mao,
+            "alt": ""
+        }-->
 ## Destaque Home
 <!-- 
 <div className={style.area_destaque}>

@@ -52,7 +52,6 @@ const Inicio = () => {
             "alt": "Ícone de aperto de mãos"
         }
     ];
-
     const PassosFuncionaDados = [
         {
             "id": 1,
@@ -70,12 +69,6 @@ const Inicio = () => {
             "passo": "Contacto",
             "desc": "Os interessados entram em contacto directo através do WhatsApp.",
             "src": Telefone,
-            "alt": ""
-        }, {
-            "id": 4,
-            "passo": "Negociação",
-            "desc": "O proprietário e o cliente realizam a negociação finalizam o contrato.",
-            "src": Mao,
             "alt": ""
         }
     ];
