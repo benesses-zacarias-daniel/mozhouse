@@ -189,7 +189,7 @@
 }
 
 .passos_cat {
-    flex: 1;
+    width: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,7 +209,8 @@
     flex-direction: column;
 }
 
-.titulo_desc_destaque.titulo_destaque {
+.titulo_desc_destaque,
+.titulo_destaque {
     font-family: "Merriweather", serif;
 }
 
