@@ -23,23 +23,23 @@ const Detalhes = ({ onClickOcult, aberto, dados }) => {
     const linkWhatsApp = `https://wa.me/${numero}?text=${mensWhatSapp}`;
     //States para gerir as Imgs
     const [srcDetAct, setSrcDetAct] = useState(0);
-    // const [casaSrc, setCasaSrc] = useState(srcDetalhes[0].srcDet);
+    const [mostImg, setMostImg] = useState(false);
 
-    // useEffect(() => {
-    //     if (!aberto) return;
-    //     const intervalo = setInterval(() => {
-    //         if (srcDetAct + 1 >= srcDetalhes.length) {
-    //             setSrcDetAct(0);
-    //         } else {
-    //             setSrcDetAct(srcDetAct + 1);
-    //         }
-    //         console.log("Entrou no intervalo");
+    useEffect(() => {
+        if (!aberto) return;
+        const intervalo = setInterval(() => {
+            if (srcDetAct + 1 >= srcDetalhes.length) {
+                setSrcDetAct(0);
+            } else {
+                setSrcDetAct(srcDetAct + 1);
+            }
 
-    //     }, 5000);
+            mostImg ? setMostImg(true) : setMostImg(false);
 
-    //     return () => { clearInterval(intervalo) };
+        }, 5000);
+        return () => { clearInterval(intervalo) };
 
-    // }, [aberto, srcDetAct]);
+    }, [aberto, srcDetAct]);
 
     const onClickCasaDetalhes = (tipo) => {
         if (tipo === 1) {
@@ -63,6 +63,7 @@ const Detalhes = ({ onClickOcult, aberto, dados }) => {
                 <div className={style.fexar_detalhes}>
                     <Button estilo={style.btn_fexar_detalhes} onClick={() => {
                         onClickOcult();
+
                     }} children={
                         <Img src={Fexar} alt={"Ícone de X"} />
                     } />
@@ -73,7 +74,7 @@ const Detalhes = ({ onClickOcult, aberto, dados }) => {
                     </div>
                     <div className={style.area_conteudo}>
                         <div className={style.area_imgs_detalhes}>
-                            <Img src={srcDetalhes[srcDetAct].srcDet} alt={srcDetalhes[srcDetAct].alt} />
+                            <Img src={srcDetalhes[srcDetAct].srcDet} alt={srcDetalhes[srcDetAct].alt} estilo={`${mostImg ? style.ocultar_img : style.mostrar_img}`} />
                             <div className={style.area_legenda_local}>
                                 <div className={style.ponto_verd}></div>
                                 <h4>{srcDetalhes[srcDetAct].localizacao}</h4>
