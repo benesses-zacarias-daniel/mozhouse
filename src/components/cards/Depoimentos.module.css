@@ -99,5 +99,6 @@
 
     .area_depoimento {
         flex: 1;
+        height: 170px;
     }
 }

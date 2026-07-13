@@ -140,6 +140,24 @@
     font-weight: 600;
 }
 
+.area_detalhes_casa {
+    position: absolute;
+    top: 240px;
+    left: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+}
+
+.btn_detalhes {
+    width: 100px;
+    border-radius: 20px;
+    color: var(--textoPrin);
+    background-color: #9ca3af96;
+}
+
 .area_info_card {
     display: flex;
     align-items: flex-start;

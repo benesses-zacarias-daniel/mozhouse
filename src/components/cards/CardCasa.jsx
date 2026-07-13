@@ -8,13 +8,19 @@ import GPS from "../assets/gps.svg";
 import Mens from "../assets/mensB.svg";
 import { FaBath, FaBed, FaDraftingCompass } from "react-icons/fa";
 import Button from "../botaos/Button";
+import Detalhes from "./Detalhes";
+import { useState } from "react";
 
 const CardCasa = ({ srcCasa, categoria, comprar, preco, mens, localizacao, nome, quartos, banhos, area }) => {
 
     // const numero = "258 84 975 4315";
     const numero = "258 87 726 7456";
     const linkWhatsApp = `https://wa.me/${numero}?text=${mens}`;
+    const [detalhesAberto, setDetalhesAberto] = useState(false);
 
+    const onClickDetalhes = (val) => {
+        setDetalhesAberto(val);
+    }
     return (
         <div className={style.area_geral_card}>
             <div className={style.area_img_card}>
@@ -22,6 +28,10 @@ const CardCasa = ({ srcCasa, categoria, comprar, preco, mens, localizacao, nome,
                 <div className={style.area_cat_comp}>
                     <div className={style.area_compra}>{comprar ? "Vende-se" : "Aluga-se"}</div>
                     {categoria && (<div className={style.area_categoria}>{categoria}</div>)}
+                </div>
+                {/* <Detalhes onClickOcult={() => { setDetalhesAberto(false) }} />*/}
+                <div className={style.area_detalhes_casa}>
+                    <Button children={"Ver Detalhes"} estilo={style.btn_detalhes} onClick={() => { onClickDetalhes(true); }} />
                 </div>
                 <div className={style.area_preco_casa}>
                     {preco}{comprar ? " MT" : " MT / Mês"}
@@ -61,6 +71,11 @@ const CardCasa = ({ srcCasa, categoria, comprar, preco, mens, localizacao, nome,
                     </Button>
                 </div>
             </div>
+            {
+                detalhesAberto && (
+                    <Detalhes onClickOcult={() => { setDetalhesAberto(false) }} />
+                )
+            }
         </div>
     )
 }

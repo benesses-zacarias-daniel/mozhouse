@@ -66,6 +66,7 @@ const Anunciar = () => {
                             <div className={style.info_nec}><Img src={Check} alt={"Ícone de check com circulo ao redor"} />Casas de banho</div>
                             <div className={style.info_nec}><Img src={Check} alt={"Ícone de check com circulo ao redor"} />Área total</div>
                             <div className={style.info_nec}><Img src={Check} alt={"Ícone de check com circulo ao redor"} />Fotos do imóvel</div>
+                            <div className={style.info_nec}><Img src={Check} alt={"Ícone de check com circulo ao redor"} />Vídeo de 15s (máx 25s)</div>
                         </div>
                     </div>
                 </div>
