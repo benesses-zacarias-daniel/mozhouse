@@ -190,7 +190,7 @@
 }
 
 .passos_cat {
-    flex: 1;
+    /* flex: 1; */
     display: flex;
     align-items: center;
     justify-content: center;
