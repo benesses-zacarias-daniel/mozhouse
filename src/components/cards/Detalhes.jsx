@@ -74,7 +74,7 @@ const Detalhes = ({ onClickOcult, aberto, dados }) => {
                     </div>
                     <div className={style.area_conteudo}>
                         <div className={style.area_imgs_detalhes}>
-                            <Img src={srcDetalhes[srcDetAct].srcDet} alt={srcDetalhes[srcDetAct].alt} estilo={`${mostImg ? style.ocultar_img : style.mostrar_img}`} />
+                            <Img src={srcDetalhes[srcDetAct].srcDet} alt={srcDetalhes[srcDetAct].alt} />
                             <div className={style.area_legenda_local}>
                                 <div className={style.ponto_verd}></div>
                                 <h4>{srcDetalhes[srcDetAct].localizacao}</h4>
