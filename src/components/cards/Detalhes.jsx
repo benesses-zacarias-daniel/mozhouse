@@ -43,6 +43,22 @@ const Detalhes = ({ onClickOcult, aberto, dados }) => {
 
     }, [aberto, srcDetAct]);
 
+    const onClickCasaDetalhes = (tipo) => {
+        if (tipo === 1) {
+            if (srcDetAct + 1 >= srcDetalhes.length) {
+                setSrcDetAct(0);
+            } else {
+                setSrcDetAct(srcDetAct + 1);
+            }
+        } else {
+            if (srcDetAct - 1 <= 0) {
+                setSrcDetAct(0);
+            } else {
+                setSrcDetAct(srcDetAct - 1);
+            }
+        }
+    }
+
     return (
         <div className={style.container_detalhes}>
             <div className={style.area_conteudo_detalhes}>
@@ -66,10 +82,10 @@ const Detalhes = ({ onClickOcult, aberto, dados }) => {
                             </div>
                             <div className={style.loc_detalhes}>{srcDetAct + 1}/{tamanhoSrc}</div>
                             <div className={style.area_btns_controle}>
-                                <Button estilo={style.btn_control} children={
+                                <Button estilo={style.btn_control} onClick={() => { onClickCasaDetalhes(0); }} children={
                                     <Img src={SetaEsquerda} alt={"Seta para esquerda"} />
                                 } />
-                                <Button estilo={style.btn_control} children={
+                                <Button estilo={style.btn_control} onClick={() => { onClickCasaDetalhes(1); }} children={
                                     <Img src={SetaDir} alt={"Seta para direita"} />
                                 } />
                             </div>
