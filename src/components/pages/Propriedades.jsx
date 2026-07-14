@@ -5,6 +5,7 @@ import Button from "../botaos/Button";
 import { useState } from "react";
 import Hero from "../hero/Hero";
 import Detalhes from "../cards/Detalhes";
+import Loading from "../cards/Loading";
 
 const Propriedades = () => {
 
@@ -12,20 +13,24 @@ const Propriedades = () => {
     const CasasHome = Casas.filter((casa) => casa.id === 1 || casa.id === 2 || casa.id === 3);
 
     const [mostrarProps, setMostrarProps] = useState(false);
+    const [mostDetalhes, setMostDetalhes] = useState(false);
+    const [dadosModal, setDadosModal] = useState([]);
+    const [carregando, setCarregando] = useState(false);
 
     const onClickVerMais = (evt) => {
         mostrarProps ? setMostrarProps(false) : setMostrarProps(true);
         evt.target.innerHTML = mostrarProps ? "Ver Todas" : "Ver Menus";
     }
 
-    const [mostDetalhes, setMostDetalhes] = useState(false);
-    const [dadosModal, setDadosModal] = useState([]);
 
     const onClickDetalhes = (idCasa) => {
         const CasaModal = CasasHome.filter((casa) => casa.id === idCasa);
         setDadosModal(CasaModal);
         setMostDetalhes(true);
     }
+    setTimeout(() => {
+        setCarregando(true);
+    }, 5000);
 
     return (
         <section className={style.area_propriedades}>
@@ -43,10 +48,15 @@ const Propriedades = () => {
                 </div>
             </div>
             <div className={style.casas_propriedades}>
-                <CardCasa dadosCasas={CasasHome} onClickModalOpen={(idCasa) => { onClickDetalhes(idCasa); }} />
+
+                {carregando == true ? (<CardCasa dadosCasas={CasasHome} onClickModalOpen={(idCasa) => { onClickDetalhes(idCasa); }} />
+                ) : (
+                    <Loading />)}
+
                 {mostrarProps === true && (
                     <CardCasa dadosCasas={CasasOcultas} onClickModalOpen={(idCasa) => { onClickDetalhes(idCasa); }} />
                 )}
+
                 {mostDetalhes && (
                     <Detalhes onClickOcult={() => { setMostDetalhes(false) }} aberto={mostDetalhes} dados={dadosModal} />)}
             </div>

@@ -15,7 +15,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    animation: fadeOverlay 2s ease;
+    animation: fadeOverlay 1s ease;
     /* gap: 5px; */
 }
 

@@ -1,6 +1,6 @@
 :root {
     --topoPreto: #101625;
-    --fundotransparente: #00000094;
+    --fundotransparente: #0000007c;
     --verdePrimario: #21c45d;
     --fundo: #111827;
     --fundoSec: #0d1322;
@@ -16,7 +16,7 @@
     flex-direction: row;
     box-sizing: border-box;
     position: absolute;
-    top: 0;
+    top: 1.9px;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -24,6 +24,17 @@
     padding: 2px 0px 2px 0px;
     background: var(--fundotransparente);
     z-index: 99999;
+    animation: animacaoMenu 1s ease;
+}
+
+@keyframes animacaoMenu {
+    from {
+        left: -20px;
+    }
+
+    to {
+        left: 1px;
+    }
 }
 
 .footerContainer {

@@ -8,6 +8,9 @@ const ScrollCima = () => {
         const conteudo = document.getElementById("conteudo");
         if (conteudo) {
             conteudo.scrollTop = 0;
+            console.log("Scroll Cima" + pathname);
+
+
         }
 
     }, [pathname]);

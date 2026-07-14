@@ -1,6 +1,16 @@
+:root {
+    --verdePrimario: #21c45d;
+    --verdeClaro: #21c45d0b;
+    --fundo: #111827;
+    --fundoSec: #0d1322;
+    --contraste: #101625;
+    --textoPrin: #ffffff;
+    --textoSec: #9ca3af;
+}
+
 .area_termos_condicoes {
     flex: 1;
-    padding: 6px 0px 20px 0px;
+    padding: 6px 0px 0px 0px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -8,8 +18,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
-    animation: fadeOverlay 2s ease;
-    /* gap: 5px; */
+    animation: fadeOverlay 1s ease;
 }
 
 @keyframes fadeOverlay {
@@ -41,8 +50,54 @@
     padding: 10px 0px 0px 0px;
 }
 
+.termos_pedido {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 5px 20px 5px;
+    background-color: var(--fundoSec);
+}
+
+.pedido_terms {
+    width: 85%;
+    background: var(--fundo);
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid var(--textoSec);
+}
+
+.btn_ped_terms {
+    width: 200px;
+    height: 30px;
+    background: var(--verdePrimario);
+    border-radius: 12px;
+    font-weight: 600;
+    gap: 3px;
+}
+
+.btn_ped_terms p {
+    color: var(--textoPrin);
+    padding: 0px 0px 3px 0px;
+}
+
+.btn_ped_terms img {
+    width: 20px;
+    height: 20px;
+}
+
 @media only screen and (min-width:900px) {
     .termosMozHouse {
         flex-direction: row;
+    }
+
+    .pedido_terms {
+        max-width: 50%;
     }
 }

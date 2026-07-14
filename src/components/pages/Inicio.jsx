@@ -24,12 +24,19 @@ import Depoimentos from "../cards/Depoimentos";
 import DepoimentosClientes from "../data/Depoimentos";
 import Detalhes from "../cards/Detalhes";
 import { useState } from "react";
+import Loading from "../cards/Loading";
 
 const Inicio = () => {
     const { mudarPage } = useMenuContext();
     const CasasHome = Casas.filter((casa) => casa.id === 1 || casa.id === 2 || casa.id === 3);
-    const numero = "258 84 975 4315";
+    const numero = "258 87 726 7456";
     const linkWhatsApp = `https://wa.me/${numero}?text=Olá, tudo bem? Gostaria de saber mais sobre a MozHouse!`;
+
+    const [mostDetalhes, setMostDetalhes] = useState(false);
+    const [dadosModal, setDadosModal] = useState([]);
+    const [detFech, setDetFech] = useState(false);
+    const [carregando, setCarregando] = useState(false);
+
     const PassosEscolherDados = [
         {
             "id": 1,
@@ -52,6 +59,7 @@ const Inicio = () => {
             "alt": "Ícone de aperto de mãos"
         }
     ];
+
     const PassosFuncionaDados = [
         {
             "id": 1,
@@ -95,15 +103,15 @@ const Inicio = () => {
         }
     ];
 
-    const [mostDetalhes, setMostDetalhes] = useState(false);
-    const [dadosModal, setDadosModal] = useState([]);
-    const [detFech, setDetFech] = useState(false);
-
     const onClickDetalhes = (idCasa) => {
         const CasaModal = CasasHome.filter((casa) => casa.id === idCasa);
         setDadosModal(CasaModal);
         setMostDetalhes(true);
     }
+
+    setTimeout(() => {
+        setCarregando(true);
+    }, 5000);
 
     return (
         <section className={style.area_inicio}>
@@ -141,7 +149,10 @@ const Inicio = () => {
                     </div>
                 </div>
                 <div className={style.propriedades}>
-                    <CardCasa dadosCasas={CasasHome} onClickModalOpen={(idCasa) => { onClickDetalhes(idCasa); }} />
+                    {carregando == true ? (
+                        <CardCasa dadosCasas={CasasHome} onClickModalOpen={(idCasa) => { onClickDetalhes(idCasa); }} />) : (
+                        <Loading />
+                    )}
                 </div>
             </div>
             <PassosMozHouse titulo={"Por que escolher a MozHouse?"} minInfo={""} dadosPedido={PassosEscolherDados} />{/*Passos Por que escolher MozHouse*/}

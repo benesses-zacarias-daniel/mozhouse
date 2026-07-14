@@ -10,9 +10,12 @@ import Negociacao from "../assets/money.svg";
 import Comicao from "../assets/pagar.svg";
 import EscudoCool from "../assets/escudoCool.svg";
 import Periodo from "../assets/periodo.svg";
+import PedidoMozHouse from "../cards/PedidoMozHouse";
+import Button from "../botaos/Button";
+import Img from "../img/Img";
+import Mens from "../assets/mensB.svg";
 
 const TermosCondicoes = () => {
-    console.log("Termos e Condicoes");
     const TermosCondicoesDados = [
         {
             "id": 1,
@@ -73,6 +76,9 @@ const TermosCondicoes = () => {
         }
     ];
 
+    const numero = "258 87 726 7456";
+    const linkAdmin = `https://wa.me/${numero}?text=Olá, tudo bem? Gostaria de recomendar:%A0`;
+
     return (
         <section className={style.area_termos_condicoes}>
             {/* 
@@ -85,6 +91,17 @@ const TermosCondicoes = () => {
                 <Termos dadosTermos={TermosCondicoesDados} />
             </div>
             <div className={style.actualizacao}>Última Actualização: 18 de Junho de 2026</div>
+            <PedidoMozHouse titulo_pedido={"Alguma recomendação?"} desc_pedido={"Deixe ficar a sua recomendação ou dúvida e receba o esclarecimento da nossa equipe."} classeAreaGeral={style.termos_pedido} classeAreaPedido={style.pedido_terms} children={
+                <a href={linkAdmin}>
+                    <Button estilo={style.btn_ped_terms} onClick={() => {
+                    }}>
+                        <Img src={Mens} alt={"Ícone de mensagem"} />
+                        <p>
+                            Pedir Exclarecimento
+                        </p>
+                    </Button>
+                </a>
+            } />
         </section>
     )
 }

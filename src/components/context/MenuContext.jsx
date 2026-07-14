@@ -1,10 +1,12 @@
 import { createContext, useContext, useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const MenuContext = createContext();
 
 const MenuContextProvider = ({ children }) => {
     const [mostrarMenu, setMostrarMenu] = useState(false);
     const [pageActiva, setPageActiva] = useState();
+    const { pathname } = useLocation();
 
     const mudarPage = (page) => {
         console.log(page);
@@ -13,7 +15,12 @@ const MenuContextProvider = ({ children }) => {
     }
 
     useEffect(() => {
-        mudarPage("/");
+        if (pathname === "/") {
+            mudarPage(pathname);
+        } else {
+            const pageReload = pathname.split("/")[1];
+            mudarPage(pageReload);
+        }
     }, []);
 
     return (
