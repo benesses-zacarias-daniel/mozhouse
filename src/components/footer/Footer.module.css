@@ -32,6 +32,7 @@ footer {
 }
 
 .area_info_footer {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -48,7 +49,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     height: 100%;
-    padding: 0px 10px 0px 0px;
+    padding: 0px 5px 0px 0px;
     border-right: 1px dotted var(--textoSec);
     flex: 1;
 }

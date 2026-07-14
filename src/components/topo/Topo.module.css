@@ -25,7 +25,7 @@ header {
 }
 
 .ajuste {
-    width: 30px;
+    width: 30px !important;
 }
 
 .link_logo {

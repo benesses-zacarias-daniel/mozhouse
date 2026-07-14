@@ -126,18 +126,18 @@
     padding: 0px 0px 0px 10px;
 }
 
-@media only screen and (min-width:360px) {
+/* @media only screen and (min-width:360px) {
     .footerContainer {
         width: 100px;
     }
-}
+} */
 
 @media only screen and (min-width:800px) {
     .nava_footer .menu .item_menu {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .footerContainer {
-        width: 120px;
+        width: auto;
     }
 }
