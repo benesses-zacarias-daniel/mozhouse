@@ -33,7 +33,7 @@ const Propriedades = () => {
     }, 5000);
 
     return (
-        <section className={style.area_propriedades}>
+        <section className={`${style.area_propriedades} ${carregando ? "" : style.espera}`}>
             <Hero titulo={"Imóveis pra Alugar em Moçambique"} mens={"Encontre casas,apartamentos e quartos disponíveis para alugar. Processo rápido e seguro."} mostrar={true} />
             <div className={style.area_exp}>
                 <h2>Destaques de Aluguer</h2>
