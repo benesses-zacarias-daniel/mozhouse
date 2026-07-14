@@ -1,5 +1,6 @@
 :root {
     --verdePrimario: #21c45d;
+    --verCl: #21c45dad;
     --fundo: #111827;
     --fundoSec: #0d1322;
     --contraste: #101625;
@@ -114,7 +115,7 @@
     border-radius: 20px;
     color: var(--contraste);
     font-weight: 700;
-    background: var(--verdePrimario);
+    background: var(--verCl);
 }
 
 .area_categoria:hover,

@@ -77,7 +77,7 @@ const TermosCondicoes = () => {
     ];
 
     const numero = "258 87 726 7456";
-    const linkAdmin = `https://wa.me/${numero}?text=Olá, tudo bem? Gostaria de recomendar:%A0`;
+    const linkAdmin = `https://wa.me/${numero}?text=Olá, tudo bem? Gostaria de saber mais sibre:`;
 
     return (
         <section className={style.area_termos_condicoes}>

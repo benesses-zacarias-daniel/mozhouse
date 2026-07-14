@@ -16,10 +16,10 @@
     flex-direction: row;
     box-sizing: border-box;
     position: absolute;
-    top: 1.9px;
+    top: 0px;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 99%;
     height: 100%;
     padding: 2px 0px 2px 0px;
     background: var(--fundotransparente);

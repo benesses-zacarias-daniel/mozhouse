@@ -2,7 +2,7 @@ const Casas = [
     {
         "id": 1,
         "preco": 600,
-        "categoria": "Disponível",
+        "categoria": "📌 Disponível",
         "compra": false,
         "srcCasa": "/img/home/casa1.jpg",
         "altCasa": "",
@@ -27,7 +27,7 @@ const Casas = [
     {
         "id": 2,
         "preco": 500,
-        "categoria": "Sussego & Segurança",
+        "categoria": "🌳 Ambiente Calmo",
         "compra": false,
         "srcCasa": "/img/home/casa2.jpg",
         "altCasa": "",
@@ -52,7 +52,7 @@ const Casas = [
     {
         "id": 3,
         "preco": 450,
-        "categoria": "Recomendado",
+        "categoria": "⭐ Destaque",
         "compra": false,
         "srcCasa": "/img/home/casa3.jpg",
         "altCasa": "",
@@ -73,6 +73,206 @@ const Casas = [
             "descDetalhes": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus odit sapiente voluptate dolores! Maiores obcaecati perferendis possimus velit eveniet nisi neque, excepturi dicta sed fugiat doloremque quidem autem ipsam soluta.",
             "acessos": ["Agua", "Escola", "Mercado", "Carro", "Ginasio"]
         }
+    },
+    {
+        "id": 4,
+        "preco": 400,
+        "categoria": "🆕 Recém Adicionado",
+        "compra": false,
+        "srcCasa": "/img/home/casa2.jpg",
+        "altCasa": "",
+        "local": "Substação - Perto da Esc. Sec. de Muatala",
+        "nome": "Casa T4",
+        "mensWhatSapp": `Olá equipe MozHouse, tudo bem? Quero saber mais sobre esta propriedade.
+                         Casa T4,
+                         3 Quartos,
+                         2 Casas de Banho,
+                         330 m2 de área
+                         Localizada na zona de Substação - Perto da Escola Sec. de Muatala`,
+        "quartos": 3,
+        "banhos": 2,
+        "area": 33,
+        "detalhes": {
+            "video": "/videos/casa3.mp4",
+            "srcDetalhes": [{ "id": 1, "srcDet": "/img/home/casa2.jpg", "alt": "", "localizacao": "Visão Frontal" }, { "id": 2, "srcDet": "/img/home/casa3.jpg", "alt": "", "localizacao": "Varranda" }, { "id": 3, "srcDet": "/img/home/casa2.jpg", "alt": "", "localizacao": "Cozina" }, { "id": 4, "srcDet": "/img/home/casa33.jpg", "alt": "", "localizacao": "BZD" }],
+            "descDetalhes": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus odit sapiente voluptate dolores! Maiores obcaecati perferendis possimus velit eveniet nisi neque, excepturi dicta sed fugiat doloremque quidem autem ipsam soluta.",
+            "acessos": ["Agua", "Escola", "Mercado", "Carro", "Ginasio"]
+        },
+    },
+    {
+        "id": 5,
+        "preco": 400,
+        "categoria": "🔒 Bairro Seguro",
+        "compra": false,
+        "srcCasa": "/img/home/casa2.jpg",
+        "altCasa": "",
+        "local": "Substação - Perto da Esc. Sec. de Muatala",
+        "nome": "Casa T4",
+        "mensWhatSapp": `Olá equipe MozHouse, tudo bem? Quero saber mais sobre esta propriedade.
+                         Casa T4,
+                         3 Quartos,
+                         2 Casas de Banho,
+                         330 m2 de área
+                         Localizada na zona de Substação - Perto da Escola Sec. de Muatala`,
+        "quartos": 3,
+        "banhos": 2,
+        "area": 33,
+        "detalhes": {
+            "video": "/videos/casa3.mp4",
+            "srcDetalhes": [{ "id": 1, "srcDet": "/img/home/casa2.jpg", "alt": "", "localizacao": "Visão Frontal" }, { "id": 2, "srcDet": "/img/home/casa3.jpg", "alt": "", "localizacao": "Varranda" }, { "id": 3, "srcDet": "/img/home/casa2.jpg", "alt": "", "localizacao": "Cozina" }, { "id": 4, "srcDet": "/img/home/casa33.jpg", "alt": "", "localizacao": "BZD" }],
+            "descDetalhes": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus odit sapiente voluptate dolores! Maiores obcaecati perferendis possimus velit eveniet nisi neque, excepturi dicta sed fugiat doloremque quidem autem ipsam soluta.",
+            "acessos": ["Agua", "Escola", "Mercado", "Carro", "Ginasio"]
+        },
+    },
+    {
+        "id": 6,
+        "preco": 400,
+        "categoria": "💎 Alto Padrão",
+        "compra": false,
+        "srcCasa": "/img/home/casa33.jpg",
+        "altCasa": "",
+        "local": "Substação - Perto da Esc. Sec. de Muatala",
+        "nome": "Casa T4",
+        "mensWhatSapp": `Olá equipe MozHouse, tudo bem? Quero saber mais sobre esta propriedade.
+                         Casa T4,
+                         3 Quartos,
+                         2 Casas de Banho,
+                         330 m2 de área
+                         Localizada na zona de Substação - Perto da Escola Sec. de Muatala`,
+        "quartos": 3,
+        "banhos": 2,
+        "area": 33,
+        "detalhes": {
+            "video": "/videos/casa3.mp4",
+            "srcDetalhes": [{ "id": 1, "srcDet": "/img/home/casa33.jpg", "alt": "", "localizacao": "Visão Frontal" }, { "id": 2, "srcDet": "/img/home/casa22.jpg", "alt": "", "localizacao": "Varranda" }, { "id": 3, "srcDet": "/img/home/casa11.jpg", "alt": "", "localizacao": "Cozina" }, { "id": 4, "srcDet": "/img/home/casa12.jpg", "alt": "", "localizacao": "BZD" }],
+            "descDetalhes": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus odit sapiente voluptate dolores! Maiores obcaecati perferendis possimus velit eveniet nisi neque, excepturi dicta sed fugiat doloremque quidem autem ipsam soluta.",
+            "acessos": ["Agua", "Escola", "Mercado", "Carro", "Ginasio"]
+        },
+    },
+    {
+        "id": 7,
+        "preco": 400,
+        "categoria": "👑 Exclusivo",
+        "compra": false,
+        "srcCasa": "/img/home/casa23.jpg",
+        "altCasa": "",
+        "local": "Substação - Perto da Esc. Sec. de Muatala",
+        "nome": "Casa T4",
+        "mensWhatSapp": `Olá equipe MozHouse, tudo bem? Quero saber mais sobre esta propriedade.
+                         Casa T4,
+                         3 Quartos,
+                         2 Casas de Banho,
+                         330 m2 de área
+                         Localizada na zona de Substação - Perto da Escola Sec. de Muatala`,
+        "quartos": 3,
+        "banhos": 2,
+        "area": 33,
+        "detalhes": {
+            "video": "/videos/casa3.mp4",
+            "srcDetalhes": [{ "id": 1, "srcDet": "/img/home/casa23.jpg", "alt": "", "localizacao": "Visão Frontal" }, { "id": 2, "srcDet": "/img/home/casa33.jpg", "alt": "", "localizacao": "Varranda" }, { "id": 3, "srcDet": "/img/home/casa21.jpg", "alt": "", "localizacao": "Cozina" }, { "id": 4, "srcDet": "/img/home/casa11.jpg", "alt": "", "localizacao": "BZD" }],
+            "descDetalhes": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus odit sapiente voluptate dolores! Maiores obcaecati perferendis possimus velit eveniet nisi neque, excepturi dicta sed fugiat doloremque quidem autem ipsam soluta.",
+            "acessos": ["Agua", "Escola", "Mercado", "Carro", "Ginasio"]
+        },
+    },
+    {
+        "id": 8,
+        "preco": 400,
+        "categoria": "🏡 Ideal para família",
+        "compra": false,
+        "srcCasa": "/img/home/casa11.jpg",
+        "altCasa": "",
+        "local": "Substação - Perto da Esc. Sec. de Muatala",
+        "nome": "Casa T4",
+        "mensWhatSapp": `Olá equipe MozHouse, tudo bem? Quero saber mais sobre esta propriedade.
+                         Casa T4,
+                         3 Quartos,
+                         2 Casas de Banho,
+                         330 m2 de área
+                         Localizada na zona de Substação - Perto da Escola Sec. de Muatala`,
+        "quartos": 3,
+        "banhos": 2,
+        "area": 33,
+        "detalhes": {
+            "video": "/videos/casa3.mp4",
+            "srcDetalhes": [{ "id": 1, "srcDet": "/img/home/casa21.jpg", "alt": "", "localizacao": "Visão Frontal" }, { "id": 2, "srcDet": "/img/home/casa31.jpg", "alt": "", "localizacao": "Varranda" }, { "id": 3, "srcDet": "/img/home/casa21.jpg", "alt": "", "localizacao": "Cozina" }, { "id": 4, "srcDet": "/img/home/casa22.jpg", "alt": "", "localizacao": "BZD" }],
+            "descDetalhes": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus odit sapiente voluptate dolores! Maiores obcaecati perferendis possimus velit eveniet nisi neque, excepturi dicta sed fugiat doloremque quidem autem ipsam soluta.",
+            "acessos": ["Agua", "Escola", "Mercado", "Carro", "Ginasio"]
+        },
+    },
+    {
+        "id": 9,
+        "preco": 400,
+        "categoria": "🚗 Fácil acesso",
+        "compra": false,
+        "srcCasa": "/img/home/casa33.jpg",
+        "altCasa": "",
+        "local": "Substação - Perto da Esc. Sec. de Muatala",
+        "nome": "Casa T4",
+        "mensWhatSapp": `Olá equipe MozHouse, tudo bem? Quero saber mais sobre esta propriedade.
+                         Casa T4,
+                         3 Quartos,
+                         2 Casas de Banho,
+                         330 m2 de área
+                         Localizada na zona de Substação - Perto da Escola Sec. de Muatala`,
+        "quartos": 3,
+        "banhos": 2,
+        "area": 33,
+        "detalhes": {
+            "video": "/videos/casa3.mp4",
+            "srcDetalhes": [{ "id": 1, "srcDet": "/img/home/casa33.jpg", "alt": "", "localizacao": "Visão Frontal" }, { "id": 2, "srcDet": "/img/home/casa32.jpg", "alt": "", "localizacao": "Varranda" }, { "id": 3, "srcDet": "/img/home/casa12.jpg", "alt": "", "localizacao": "Cozina" }, { "id": 4, "srcDet": "/img/home/casa22.jpg", "alt": "", "localizacao": "BZD" }],
+            "descDetalhes": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus odit sapiente voluptate dolores! Maiores obcaecati perferendis possimus velit eveniet nisi neque, excepturi dicta sed fugiat doloremque quidem autem ipsam soluta.",
+            "acessos": ["Agua", "Escola", "Mercado", "Carro", "Ginasio"]
+        },
+    },
+    {
+        "id": 10,
+        "preco": 400,
+        "categoria": "🏫 Perto de escolas",
+        "compra": false,
+        "srcCasa": "/img/home/casa2.jpg",
+        "altCasa": "",
+        "local": "Substação - Perto da Esc. Sec. de Muatala",
+        "nome": "Casa T4",
+        "mensWhatSapp": `Olá equipe MozHouse, tudo bem? Quero saber mais sobre esta propriedade.
+                         Casa T4,
+                         3 Quartos,
+                         2 Casas de Banho,
+                         330 m2 de área
+                         Localizada na zona de Substação - Perto da Escola Sec. de Muatala`,
+        "quartos": 3,
+        "banhos": 2,
+        "area": 33,
+        "detalhes": {
+            "video": "/videos/casa3.mp4",
+            "srcDetalhes": [{ "id": 1, "srcDet": "/img/home/casa2.jpg", "alt": "", "localizacao": "Visão Frontal" }, { "id": 2, "srcDet": "/img/home/casa1.jpg", "alt": "", "localizacao": "Varranda" }, { "id": 3, "srcDet": "/img/home/casa3.jpg", "alt": "", "localizacao": "Cozina" }, { "id": 4, "srcDet": "/img/home/casa23.jpg", "alt": "", "localizacao": "BZD" }],
+            "descDetalhes": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus odit sapiente voluptate dolores! Maiores obcaecati perferendis possimus velit eveniet nisi neque, excepturi dicta sed fugiat doloremque quidem autem ipsam soluta.",
+            "acessos": ["Agua", "Escola", "Mercado", "Carro", "Ginasio"]
+        },
+    },
+    {
+        "id": 11,
+        "preco": 400,
+        "categoria": "🚌 Transporte Próximo",
+        "compra": false,
+        "srcCasa": "/img/home/casa1.jpg",
+        "altCasa": "",
+        "local": "Substação - Perto da Esc. Sec. de Muatala",
+        "nome": "Casa T4",
+        "mensWhatSapp": `Olá equipe MozHouse, tudo bem? Quero saber mais sobre esta propriedade.
+                         Casa T4,
+                         3 Quartos,
+                         2 Casas de Banho,
+                         330 m2 de área
+                         Localizada na zona de Substação - Perto da Escola Sec. de Muatala`,
+        "quartos": 3,
+        "banhos": 2,
+        "area": 33,
+        "detalhes": {
+            "video": "/videos/casa1.mp4",
+            "srcDetalhes": [{ "id": 1, "srcDet": "/img/home/casa2.jpg", "alt": "", "localizacao": "Visão Frontal" }, { "id": 2, "srcDet": "/img/home/casa2.jpg", "alt": "", "localizacao": "Varranda" }, { "id": 3, "srcDet": "/img/home/casa3.jpg", "alt": "", "localizacao": "Cozina" }, { "id": 4, "srcDet": "/img/home/casa13.jpg", "alt": "", "localizacao": "BZD" }],
+            "descDetalhes": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus odit sapiente voluptate dolores! Maiores obcaecati perferendis possimus velit eveniet nisi neque, excepturi dicta sed fugiat doloremque quidem autem ipsam soluta.",
+            "acessos": ["Agua", "Escola", "Mercado", "Carro", "Ginasio"]
+        },
     }
 ];
 
