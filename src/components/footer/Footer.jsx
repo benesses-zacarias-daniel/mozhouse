@@ -10,10 +10,14 @@ import Telefone from "../assets/telefoneB.svg";
 
 const Footer = ({ nome }) => {
     const { mudarPage } = useMenuContext();
-    const numero = "258 87 726 7456";
-    const linkWhatsApp = `https://wa.me/${numero}?text=Olá, tudo bem? Gostaria de saber mais sobre a MozHouse!`;
     const linkEmail = `mailto:mozhouse@gmail.com`;
 
+    const linkEscolha = (link) => {
+        const numero = ["258 87 726 7456", "258 84 366 7456"];
+        const linkWhatsApp = `https://wa.me/${numero[link]}?text=Olá, tudo bem? Gostaria de saber mais sobre a MozHouse!`;
+
+        return linkEmail;
+    }
 
     const onClickLoGo = () => {
         mudarPage("/");
@@ -30,8 +34,8 @@ const Footer = ({ nome }) => {
                     <div className={style.contacto}>
                         <h2 className={style.titulo_contacto}>Contactos:</h2>
                         <div className={style.area_numeros}>
-                            <div className={style.numeros}><a href={linkWhatsApp} className={style.link_footer}><Img src={Telefone} alt={"Ícone de Telefone"} />  <p>+258 87 726 7456</p></a></div>
-                            <div className={style.numeros}><a href={linkWhatsApp} className={style.link_footer}><Img src={Telefone} alt={"Ícone de Telefone"} />  <p>+258 84 366 7456</p></a></div>
+                            <div className={style.numeros}><a href={linkEscolha[0]} className={style.link_footer}><Img src={Telefone} alt={"Ícone de Telefone"} />  <p>+258 87 726 7456</p></a></div>
+                            <div className={style.numeros}><a href={linkEscolha[1]} className={style.link_footer}><Img src={Telefone} alt={"Ícone de Telefone"} />  <p>+258 84 366 7456</p></a></div>
                         </div>
                         <div className={style.email}>
                             <a href={linkEmail} className={style.link_footer}>
