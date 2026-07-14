@@ -10,7 +10,7 @@ import Telefone from "../assets/telefoneB.svg";
 
 const Footer = ({ nome }) => {
     const { mudarPage } = useMenuContext();
-    const linkEmail = `mailto:mozhouse.mz@gmail.com`;
+    const linkEmail = `mailto:contacto.mozhouse.mz@gmail.com`;
     const num1 = "258 87 726 7456";
     const linkWhatsApp1 = `https://wa.me/${num1}?text=Olá, tudo bem? Gostaria de saber mais sobre a MozHouse!`;
     const num2 = "258 84 366 7456";
@@ -38,7 +38,7 @@ const Footer = ({ nome }) => {
                             <a href={linkEmail} className={style.link_footer}>
                                 <Img src={Email} alt={"Ícone de E-mail alternativo"} />
                                 <p>
-                                    mozhouse@gmail.com
+                                    contacto.mozhouse.mz@gmail.com
                                 </p>
                             </a>
                         </div>
