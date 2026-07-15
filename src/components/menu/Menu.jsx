@@ -4,15 +4,26 @@ import Button from "../botaos/Button";
 import Img from "../img/Img";
 import style from "./Menu.module.css";
 import Fexar from "../assets/fexar.svg";
+import { useState } from "react";
 
 const Menu = ({ mostrarMenu, mostrarIcone }) => {
     const { pageActiva, mudarPage, setMostrarMenu } = useMenuContext();
+    const [fade, setFade] = useState(false);
 
-    const estiloContainer = mostrarIcone ? style.container : style.footerContainer;
+    const estiloContainer = mostrarIcone ? `${style.container} ${fade ? style.ocultarMenu : ""}` : style.footerContainer;
     const estiloIntens = mostrarIcone ? style.area_itens : style.nava_footer;
 
     const onClickOcultar = () => {
-        setMostrarMenu(false);
+        setTimeout(() => {
+            setMostrarMenu(false);
+            setFade(false);
+        }, 2000);
+
+        setFade(true);
+    }
+
+    const mudarPageControl = (page) => {
+        mudarPage(page);
     }
 
     return (
@@ -31,31 +42,41 @@ const Menu = ({ mostrarMenu, mostrarIcone }) => {
                             <div className={style.links_nav}>
                                 <Button children={<Link to={"/"} className={`${style.item_menu} ${pageActiva === "/" ? style.activa : ""}`}>{mostrarIcone ? "> " : ""}Início</Link>} estilo={"btnLink"} onClick={() => {
                                     onClickOcultar();
-                                    mudarPage("/");
+                                    setTimeout(() => {
+                                        mudarPageControl("/");
+                                    }, 1000);
                                 }} />
                             </div>
                             <div className={style.links_nav}>
                                 <Button children={<Link to={"/propriedades"} className={`${style.item_menu} ${pageActiva === "propriedades" ? style.activa : ""}`}>{mostrarIcone ? "> " : ""}Propriedades</Link>} estilo={"btnLink"} onClick={() => {
                                     onClickOcultar();
-                                    mudarPage("propriedades");
+                                    setTimeout(() => {
+                                        mudarPageControl("propriedades");
+                                    }, 1000);
                                 }} />
                             </div>
                             <div className={style.links_nav}>
                                 <Button children={<Link to={"/anunciar"} className={`${style.item_menu} ${pageActiva === "anunciar" ? style.activa : ""}`}>{mostrarIcone ? "> " : ""}Anunciar</Link>} estilo={"btnLink"} onClick={() => {
                                     onClickOcultar();
-                                    mudarPage("anunciar");
+                                    setTimeout(() => {
+                                        mudarPageControl("anunciar");
+                                    }, 1000);
                                 }} />
                             </div>
                             <div className={style.links_nav}>
                                 <Button children={<Link to={"/termos"} className={`${style.item_menu} ${pageActiva === "termos" ? style.activa : ""}`}>{mostrarIcone ? "> " : ""} Termos & Condições</Link>} estilo={"btnLink"} onClick={() => {
                                     onClickOcultar();
-                                    mudarPage("termos");
+                                    setTimeout(() => {
+                                        mudarPageControl("termos");
+                                    }, 1000);
                                 }} />
                             </div>
                             <div className={style.links_nav}>
                                 <Button children={<Link to={"/sobre"} className={`${style.item_menu} ${pageActiva === "sobre" ? style.activa : ""}`}>{mostrarIcone ? "> " : ""}Sobre Nós</Link>} estilo={"btnLink"} onClick={() => {
                                     onClickOcultar();
-                                    mudarPage("sobre");
+                                    setTimeout(() => {
+                                        mudarPageControl("sobre");
+                                    }, 1000);
                                 }} />
                             </div>
                         </div>

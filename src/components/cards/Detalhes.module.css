@@ -27,7 +27,7 @@
     width: 100%;
     z-index: 9999;
     inset: 0;
-    animation: fadeOverlay .90s ease;
+    animation: fadeOverlay 2s ease;
 }
 
 .area_conteudo_detalhes {
@@ -39,7 +39,24 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 10px;
-    animation: abrirModal 2s ease;
+    animation: abrirDetalhes 2s ease;
+}
+
+.ocultarDetalhes {
+    animation: ocultarDetalhes 2s ease;
+}
+
+@keyframes ocultarDetalhes {
+    from {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(20px) scale(.98);
+    }
+
 }
 
 @keyframes fadeOverlay {
@@ -52,10 +69,10 @@
     }
 }
 
-@keyframes abrirModal {
+@keyframes abrirDetalhes {
     from {
         opacity: 0;
-        transform: translateY(20px) scale(.95);
+        transform: translateY(20px) scale(.98);
     }
 
     to {

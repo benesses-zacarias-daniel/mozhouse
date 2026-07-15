@@ -24,6 +24,7 @@ const Detalhes = ({ onClickOcult, aberto, dados }) => {
     //States para gerir as Imgs
     const [srcDetAct, setSrcDetAct] = useState(0);
     const [mostImg, setMostImg] = useState(false);
+    const [fade, setFade] = useState(false);
 
     useEffect(() => {
         if (!aberto) return;
@@ -58,12 +59,15 @@ const Detalhes = ({ onClickOcult, aberto, dados }) => {
     }
 
     return (
-        <div className={style.container_detalhes}>
-            <div className={style.area_conteudo_detalhes}>
+        <div className={`${style.container_detalhes} ${fade ? style.ocultarDetalhes : ""}`}>
+            <div className={`${style.area_conteudo_detalhes} ${fade ? style.ocultarDetalhes : ""}`}>
                 <div className={style.fexar_detalhes}>
                     <Button estilo={style.btn_fexar_detalhes} onClick={() => {
-                        onClickOcult();
-
+                        setTimeout(() => {
+                            onClickOcult();
+                            setFade(false);
+                        }, 1000);
+                        setFade(true);
                     }} children={
                         <Img src={Fexar} alt={"Ícone de X"} />
                     } />
@@ -122,6 +126,6 @@ const Detalhes = ({ onClickOcult, aberto, dados }) => {
                     </div>
                 </div>
             </div>
-        </div>);
+        </div >);
 }
 export default Detalhes;
