@@ -202,11 +202,6 @@
     padding: 2px 0px 0px 0px;
 }
 
-/* 
-.btn_sobre_acao:hover {
-    transform: translateY(-1px);
-} */
-
 
 @media only screen and (min-width:900px) {
     .pedido_sobre {
