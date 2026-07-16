@@ -23,7 +23,6 @@ const Detalhes = ({ onClickOcult, aberto, dados }) => {
     const linkWhatsApp = `https://wa.me/${numero}?text=${mensWhatSapp}`;
     //States para gerir as Imgs
     const [srcDetAct, setSrcDetAct] = useState(0);
-    const [mostImg, setMostImg] = useState(false);
     const [fade, setFade] = useState(false);
 
     useEffect(() => {
@@ -34,10 +33,9 @@ const Detalhes = ({ onClickOcult, aberto, dados }) => {
             } else {
                 setSrcDetAct(srcDetAct + 1);
             }
-
-            mostImg ? setMostImg(true) : setMostImg(false);
-
+            console.log("Entrou nos Detalhes");
         }, 5000);
+
         return () => { clearInterval(intervalo) };
 
     }, [aberto, srcDetAct]);
