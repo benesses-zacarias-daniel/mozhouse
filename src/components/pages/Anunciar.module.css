@@ -90,7 +90,8 @@
 }
 
 .area_grupos {
-    width: 40%;
+    width: 350px;
+    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -172,6 +173,14 @@
     width: 100%;
     background-color: var(--fundoSec);
     padding: 0px 10px 20px 10px;
+}
+
+@media only screen and (min-width:700px) {
+
+    .area_grupos {
+        flex-direction: row;
+        width: 500px;
+    }
 }
 
 /* @media only screen and (min-width:800px) {
