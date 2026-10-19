@@ -72,11 +72,11 @@ const TermosCondicoes = () => {
             "desc": "Restou alguma dúvida? A nossa equipa de suporte está disponível para o ajudar através dos seguintes canais:",
             "src": null,
             "alt": null,
-            "telefonesAdmin": ["87 726 7456", "84 366 7456"]
+            "telefonesAdmin": ["84 975 4315", "87 000 6914"]
         }
     ];
 
-    const numero = "258 87 726 7456";
+    const numero = "258 87 000 6914";
     const linkAdmin = `https://wa.me/${numero}?text=Olá, tudo bem? Gostaria de ser exclarecido sobre:`;
 
     return (

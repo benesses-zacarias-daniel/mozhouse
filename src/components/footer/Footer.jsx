@@ -31,8 +31,8 @@ const Footer = ({ nome }) => {
                     <div className={style.contacto}>
                         <h2 className={style.titulo_contacto}>Contactos:</h2>
                         <div className={style.area_numeros}>
-                            <div className={style.numeros}><a href={linkWhatsApp1} className={style.link_footer}><Img src={Telefone} alt={"Ícone de Telefone"} />  <p>+258 87 726 7456</p></a></div>
-                            <div className={style.numeros}><a href={linkWhatsApp2} className={style.link_footer}><Img src={Telefone} alt={"Ícone de Telefone"} />  <p>+258 84 366 7456</p></a></div>
+                            <div className={style.numeros}><a href={linkWhatsApp2} className={style.link_footer}><Img src={Telefone} alt={"Ícone de Telefone"} />  <p>+258 84 975 4315</p></a></div>
+                            <div className={style.numeros}><a href={linkWhatsApp1} className={style.link_footer}><Img src={Telefone} alt={"Ícone de Telefone"} />  <p>+258 87 000 6914</p></a></div>
                         </div>
                         <div className={style.email}>
                             <a href={linkEmail} className={style.link_footer}>

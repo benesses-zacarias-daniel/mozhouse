@@ -12,7 +12,7 @@ import Button from "../botaos/Button";
 const CardCasa = ({ dadosCasas, onClickModalOpen }) => {
 
     // const numero = "258 84 975 4315";
-    const numero = "258 87 726 7456";
+    const numero = "258 87 000 6914";
 
     return (
         dadosCasas.map((Casa) => {

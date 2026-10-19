@@ -22,12 +22,12 @@ const Propriedades = () => {
         evt.target.innerHTML = mostrarProps ? "Ver Todas" : "Ver Menus";
     }
 
-
     const onClickDetalhes = (idCasa) => {
         const CasaModal = CasasHome.filter((casa) => casa.id === idCasa);
         setDadosModal(CasaModal);
         setMostDetalhes(true);
     }
+
     setTimeout(() => {
         setCarregando(true);
     }, 5000);
