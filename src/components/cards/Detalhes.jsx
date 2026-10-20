@@ -18,7 +18,7 @@ const Detalhes = ({ onClickOcult, aberto, dados }) => {
     const acessos = detalhes.acessos;
     const video = detalhes.video;
     //Link WhatsApp
-    const numero = "258 87 726 7456";
+    const numero = "258 87 000 6914";
     const mensWhatSapp = dados[0].mensWhatSapp;
     const linkWhatsApp = `https://wa.me/${numero}?text=${mensWhatSapp}`;
     //States para gerir as Imgs
