@@ -320,6 +320,10 @@
     gap: 5px;
 }
 
+.linkDetalhe p {
+    color: var(--branco);
+}
+
 .btn_detalhe_detalhe img {
     width: 24px;
     height: 24px;
