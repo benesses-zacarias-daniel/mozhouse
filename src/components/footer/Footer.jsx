@@ -1,7 +1,7 @@
 import Menu from "../menu/Menu";
 import Logo from "../logo/Logo";
 import style from "./Footer.module.css";
-import ImgLogo from "../assets/logo1.png";
+import ImgLogo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { useMenuContext } from "../context/MenuContext";
 import Img from "../img/Img";
