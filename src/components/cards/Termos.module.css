@@ -13,7 +13,7 @@
 
 .termo_final {
     background-color: var(--fundo);
-    border-color: var(borda);
+    border-color: var(--borda);
 }
 
 .area_icone_container {
