@@ -128,6 +128,7 @@
 
 .btn_anunciar p {
     padding: 0px 0px 3px 0px;
+    color: var(--branco);
 }
 
 .btn_anunciar img {

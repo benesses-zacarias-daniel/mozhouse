@@ -62,7 +62,7 @@
 
 .destaque_btn p {
     padding: 0px 0px 2px 0px;
-    color: var(--verdePrimario) !important;
+    color: var(--verdePrimario);
     flex: 1;
     height: 100%;
     display: flex;

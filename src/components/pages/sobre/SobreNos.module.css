@@ -73,7 +73,7 @@
 
 .sobre_btn_exp {
     width: 150px;
-    background-color: #21c45d;
+    background-color: var(--verdePrimario);
     /* padding: 5px; */
     border-radius: 20px;
 }
@@ -81,7 +81,7 @@
 .sobre_btn_exp a {
     width: 100%;
     height: 100%;
-    color: #000;
+    color: var(--branco);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,7 +116,7 @@
 
 .area_foco_jor {
     width: 150px;
-    border: 1px solid #21c45d;
+    border: 1px solid var(--textoSec);
     border-radius: 20px;
     padding: 5px;
     display: flex;
@@ -182,7 +182,7 @@
 }
 
 .btn_sobre_acao p {
-    color: var(--textoPrin);
+    color: var(--branco);
     padding: 0px 0px 3px 0px;
 }
 

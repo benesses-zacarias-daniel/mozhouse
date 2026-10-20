@@ -56,7 +56,7 @@ const SobreNos = () => {
 
     return (
         <section className={style.area_sobre_nos}>
-            <Hero titulo={"Sobre a "} foco={"MozHouse"} mens={"Conectamos proprietários e inquilinos em Moçambique. Tornamos o aluguer de casas e apartamentos simples, seguro e rápido."} children={
+            <Hero titulo={"Sobre a "} foco={"NearHomes"} mens={"Conectamos proprietários e inquilinos em Moçambique. Tornamos o aluguer de casas e apartamentos simples, seguro e rápido."} children={
                 <>
                     <Button estilo={style.sobre_btn_exp} onClick={() => {
                         onClick();
@@ -72,7 +72,7 @@ const SobreNos = () => {
                     A NOSSA JORNADA
                 </div>
                 <div className={style.area_jornada}>
-                    <p className={style.area_texto_jornada}>" A MozHouse nasceu com o objectivo de tornar mais simples a divulgação e a procura de imóveis em Moçambique, oferecendo uma plataforma moderna e acessível para todos. "</p>
+                    <p className={style.area_texto_jornada}>" A NearHomes nasceu com o objectivo de tornar mais simples a divulgação e a procura de imóveis em Moçambique, oferecendo uma plataforma moderna e acessível para todos. "</p>
                 </div>
             </div>
             <div className={style.visao_missao_container}>

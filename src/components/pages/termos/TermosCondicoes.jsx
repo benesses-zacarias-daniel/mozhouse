@@ -20,14 +20,14 @@ const TermosCondicoes = () => {
         {
             "id": 1,
             "titulo": "1. Introdução",
-            "desc": "A MozHouse é uma plataforma digital dedicada exclusivamente à divulgação, mediação e facilitação de aluguer de imóveis em Moçambique. O nosso objetivo é conectar inquilinos a proprietários de forma eficiente, acompanhando o processo para garantir uma experiência segura para ambas as partes.",
+            "desc": "A NearHomes é uma plataforma digital dedicada exclusivamente à divulgação, mediação e facilitação de aluguer de imóveis em Moçambique. O nosso objetivo é conectar inquilinos a proprietários de forma eficiente, acompanhando o processo para garantir uma experiência segura para ambas as partes.",
             "src": Introducao,
             "alt": "Ícone de alerta",
             "telefonesAdmin": ["", ""]
         }, {
             "id": 2,
             "titulo": "2. Responsabilidade",
-            "desc": "A MozHouse atua estritamente como uma plataforma intermediária de visualização e contacto. Não possuímos, gerimos ou controlamos os imóveis listados. A nossa função termina no momento em que facilitamos o contacto entre o interessado e o anunciante.",
+            "desc": "A NearHomes atua estritamente como uma plataforma intermediária de visualização e contacto. Não possuímos, gerimos ou controlamos os imóveis listados. A nossa função termina no momento em que facilitamos o contacto entre o interessado e o anunciante.",
             "src": ApertoMao,
             "alt": "Ícone de aperto de mãos",
             "telefonesAdmin": ["", ""]
@@ -62,7 +62,7 @@ const TermosCondicoes = () => {
         }, {
             "id": 7,
             "titulo": "7. Alterações",
-            "desc": "A MozHouse reserva-se o direito de atualizar, modificar ou alterar estes Termos e Condições a qualquer momento, sem aviso prévio, para refletir alterações na legislação ou melhorias nos nossos serviços. Recomendamos a consulta periódica desta página.",
+            "desc": "A NearHomes reserva-se o direito de atualizar, modificar ou alterar estes Termos e Condições a qualquer momento, sem aviso prévio, para refletir alterações na legislação ou melhorias nos nossos serviços. Recomendamos a consulta periódica desta página.",
             "src": Periodo,
             "alt": "Ícone de periodo",
             "telefonesAdmin": ["", ""]
@@ -86,7 +86,7 @@ const TermosCondicoes = () => {
                 <Button children={"SEGURANÇA E TRANSPARÊNCIA"} estilo={style.btn_termos_} onClick={() => { }} />
             </div> 
             */}
-            <Hero titulo={"Termos e Condições"} mens={"Bem-vindo à MozHouse. Ao utilizar a nossa plataforma, aceita os termos e condições descritos nesta página para garantir uma experiência segura e profissional."} />
+            <Hero titulo={"Termos e Condições"} mens={"Bem-vindo à NearHomes. Ao utilizar a nossa plataforma, aceita os termos e condições descritos nesta página para garantir uma experiência segura e profissional."} />
             <div className={style.termosMozHouse}>
                 <Termos dadosTermos={TermosCondicoesDados} />
             </div>

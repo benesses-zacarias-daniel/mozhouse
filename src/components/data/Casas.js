@@ -8,7 +8,7 @@ const Casas = [
         "altCasa": "",
         "local": "Mutauanha - Piloto (Nampula)",
         "nome": "Casa T2",
-        "mensWhatSapp": `Olá equipe MozHouse, tudo bem? Quero saber mais sobre esta propriedade.
+        "mensWhatSapp": `Olá equipe NearHomes, tudo bem? Quero saber mais sobre esta propriedade.
                          Casa T2,
                          2 Quartos,
                          Sem casa de banho,

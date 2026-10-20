@@ -2,7 +2,7 @@ const DepoimentosClientes = [
     {
         "id": 1,
         "nome": "Ntxuphí Namoro",
-        "depoimento": "A MozHouse ajudou-me a encontrar o lugar perfeito para o escritório da minha empresa em tempo recorde. Profissionalismo puro!"
+        "depoimento": "A NearHomes ajudou-me a encontrar o lugar perfeito para o escritório da minha empresa em tempo recorde. Profissionalismo puro!"
     }, {
         "id": 2,
         "nome": "Paulo Santos",
@@ -10,7 +10,7 @@ const DepoimentosClientes = [
     }, {
         "id": 3,
         "nome": "Benesses Flora",
-        "depoimento": "Encontrei a casa dos meus sonhos em Napipine. A MozHouse tem as melhores listagens do mercado sem dúvida."
+        "depoimento": "Encontrei a casa dos meus sonhos em Napipine. A NearHomes tem as melhores listagens do mercado sem dúvida."
     }
 ]
 

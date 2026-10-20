@@ -88,7 +88,7 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    color: #21c45d;
+    color: var(--verdePrimario);
 }
 
 .casas_propriedades {

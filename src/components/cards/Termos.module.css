@@ -12,8 +12,8 @@
 }
 
 .termo_final {
-    background-color: var(--verClaro);
-    border-color: #21c45d49;
+    background-color: var(--fundo);
+    border-color: var(borda);
 }
 
 .area_icone_container {
