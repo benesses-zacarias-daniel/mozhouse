@@ -1,21 +1,4 @@
-:root {
-  --verdePrimario: #21c45d;
-  --fundo: #111827;
-  --fundoSec: #0d1322;
-  --contraste: #101625;
-  --textoPrin: #ffffff;
-  --textoSec: #9ca3af;
-}
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* font-size: 1rem; */
-  font-size: 0.9rem;
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
-  text-decoration: none;
   color: var(--textoPrin);
 }
 

@@ -6,7 +6,6 @@ import Regua from "../assets/reguaArea.svg";
 import Banhos from "../assets/banho.svg";
 import GPS from "../assets/gps.svg";
 import Mens from "../assets/mensB.svg";
-import { FaBath, FaBed, FaDraftingCompass } from "react-icons/fa";
 import Button from "../botaos/Button";
 
 const CardCasa = ({ dadosCasas, onClickModalOpen }) => {

@@ -17,7 +17,7 @@ const MozHouseLayout = () => {
                 <ScrollCima />
                 <main id="conteudo" className={style.moz_main}>
                     <Rotas />
-                    <Footer nome={"MozHouse"} />
+                    <Footer nome={"Near House"} />
                 </main>
             </div>
         </MenuContextProvider>

@@ -1,23 +1,23 @@
 import { Link } from "react-router-dom";
-import Button from "../botaos/Button";
-import { useMenuContext } from "../context/MenuContext";
-import Img from "../img/Img";
+import Button from "../../botaos/Button";
+import { useMenuContext } from "../../context/MenuContext";
+import Img from "../../img/Img";
 import style from "./SobreNos.module.css";
-import Valores from "../cards/Valores";
-import PedidoMozHouse from "../cards/PedidoMozHouse";
-import VisaoMissao from "../cards/VisaoMissao";
-import Hero from "../hero/Hero";
+import Valores from "../../cards/Valores";
+import PedidoMozHouse from "../../cards/PedidoMozHouse";
+import VisaoMissao from "../../cards/VisaoMissao";
+import Hero from "../../hero/Hero";
 //Ícondes gerais de cada área
-import Visao from "../assets/visao.svg";
-import Missao from "../assets/objectivo.svg";
+import Visao from "../../assets/visao.svg";
+import Missao from "../../assets/objectivo.svg";
 
-import EscudoVerif from "../assets/escudoVerif.svg";
-import EstrelaVerif from "../assets/estrelaVerif.svg";
-import ApertoMao from "../assets/apertoMao.svg";
-import Lampada from "../assets/lampada.svg";
-import Diamante from "../assets/diamante.svg";
-import Suporte from "../assets/suporte.svg";
-import Mens from "../assets/mensB.svg";
+import EscudoVerif from "../../assets/escudoVerif.svg";
+import EstrelaVerif from "../../assets/estrelaVerif.svg";
+import ApertoMao from "../../assets/apertoMao.svg";
+import Lampada from "../../assets/lampada.svg";
+import Diamante from "../../assets/diamante.svg";
+import Suporte from "../../assets/suporte.svg";
+import Mens from "../../assets/mensB.svg";
 
 const SobreNos = () => {
     console.log("Sobre");

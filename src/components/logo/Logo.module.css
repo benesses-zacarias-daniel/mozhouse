@@ -1,12 +1,3 @@
-:root {
-    --verdePrimario: #21c45d;
-    --fundo: #111827;
-    --fundoSec: #0d1322;
-    --contraste: #101625;
-    --textoPrin: #ffffff;
-    --textoSec: #9ca3af;
-}
-
 .area_logo {
     flex: 1;
     height: 100%;

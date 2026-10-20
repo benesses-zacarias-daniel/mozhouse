@@ -1,17 +1,17 @@
-import Img from "../img/Img";
-import Hero from "../hero/Hero";
+import Img from "../../img/Img";
+import Hero from "../../hero/Hero";
 import style from "./Anunciar.module.css";
-import PassosMozHouse from "../cards/PassosMozHouse";
-import Mens from "../assets/mensB.svg";
+import PassosMozHouse from "../../cards/PassosMozHouse";
+import Mens from "../../assets/mensB.svg";
 //Ícones reais de algumas areas
-import Ajuda from "../assets/ajuda.svg";
-import Envio from "../assets/upload.svg";
-import Mundo from "../assets/mundo.svg";
-import Aperto from "../assets/apertoMao.svg";
+import Ajuda from "../../assets/ajuda.svg";
+import Envio from "../../assets/upload.svg";
+import Mundo from "../../assets/mundo.svg";
+import Aperto from "../../assets/apertoMao.svg";
 //
-import Check from "../assets/check.svg";
-import PedidoMozHouse from "../cards/PedidoMozHouse";
-import Button from "../botaos/Button";
+import Check from "../../assets/check.svg";
+import PedidoMozHouse from "../../cards/PedidoMozHouse";
+import Button from "../../botaos/Button";
 
 const Anunciar = () => {
     const numero = "258 87 726 7456";

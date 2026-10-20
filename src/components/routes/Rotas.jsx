@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import Inicio from "../pages/Inicio";
-import Propriedades from "../pages/Propriedades";
-import Anunciar from "../pages/Anunciar";
-import SobreNos from "../pages/SobreNos";
-import TermosCondicoes from "../pages/TermosCondicoes";
+import Inicio from "../pages/inicio/Inicio";
+import Propriedades from "../pages/propriedades/Propriedades";
+import Anunciar from "../pages/anunciar/Anunciar";
+import SobreNos from "../pages/sobre/SobreNos";
+import TermosCondicoes from "../pages/termos/TermosCondicoes";
 
 const Rotas = () => {
     return (

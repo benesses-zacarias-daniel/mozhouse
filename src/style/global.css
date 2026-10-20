@@ -1,0 +1,6 @@
+@import './reset.css';
+@import './variaveis.css';
+
+body {
+    background: var(--fundoSec);
+}

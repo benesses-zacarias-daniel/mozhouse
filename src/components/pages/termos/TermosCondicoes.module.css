@@ -1,13 +1,3 @@
-:root {
-    --verdePrimario: #21c45d;
-    --verdeClaro: #21c45d0b;
-    --fundo: #111827;
-    --fundoSec: #0d1322;
-    --contraste: #101625;
-    --textoPrin: #ffffff;
-    --textoSec: #9ca3af;
-}
-
 .area_termos_condicoes {
     flex: 1;
     padding: 6px 0px 0px 0px;

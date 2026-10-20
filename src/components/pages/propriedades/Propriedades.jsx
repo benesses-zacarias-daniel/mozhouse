@@ -1,11 +1,11 @@
-import CardCasa from "../cards/CardCasa";
-import Casas from "../data/Casas";
+import CardCasa from "../../cards/CardCasa";
+import Casas from "../../data/Casas";
 import style from "./Propriedades.module.css";
-import Button from "../botaos/Button";
+import Button from "../../botaos/Button";
 import { useState } from "react";
-import Hero from "../hero/Hero";
-import Detalhes from "../cards/Detalhes";
-import Loading from "../cards/Loading";
+import Hero from "../../hero/Hero";
+import Detalhes from "../../cards/Detalhes";
+import Loading from "../../cards/Loading";
 
 const Propriedades = () => {
 

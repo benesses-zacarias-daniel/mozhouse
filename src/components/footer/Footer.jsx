@@ -1,7 +1,7 @@
 import Menu from "../menu/Menu";
 import Logo from "../logo/Logo";
 import style from "./Footer.module.css";
-import ImgLogo from "../assets/logo.png";
+import ImgLogo from "../assets/logo1.png";
 import { Link } from "react-router-dom";
 import { useMenuContext } from "../context/MenuContext";
 import Img from "../img/Img";
@@ -24,7 +24,7 @@ const Footer = ({ nome }) => {
             <div className={style.area_info_footer}>
                 <div className={style.desc_footer}>
                     <Link to={"/"} onClick={() => { onClickLoGo(); }} >
-                        <Logo destaque={"Moz"} logoTexto={"House"} altLogo={"Logo do MozHouse"} srcLogo={ImgLogo} />
+                        <Logo destaque={"Near"} logoTexto={" Homes"} altLogo={"Logo do Near Homes"} srcLogo={ImgLogo} />
                     </Link>
                     <p className={style.desc_marca}>A imobiliária de luxo lider em Moçambique, oferecendo as melhores propriedades residenciais e comerciais.</p>
                     <div className={style.ocultar}>n</div>

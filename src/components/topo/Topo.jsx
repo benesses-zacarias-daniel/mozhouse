@@ -3,7 +3,7 @@ import Img from "../img/Img";
 import Mostrar from "../assets/menu.svg";
 import Logo from "../logo/Logo";
 import Menu from "../menu/Menu";
-import LogoSrc from "../assets/logo.png";
+import LogoSrc from "../assets/logo1.png";
 import style from "./Topo.module.css";
 import { useMenuContext } from "../context/MenuContext";
 import { Link } from "react-router-dom";
@@ -21,7 +21,7 @@ const Topo = () => {
         <header>
             <Button children={<Img src={Mostrar} alt={"Ícone barras horizontais"} />} estilo={style.btn_topo} onClick={() => { onClick(); }} />
             <Link to={"/"} onClick={() => { onClickloGo() }} className={style.link_logo}>
-                <Logo logoTexto={"House"} destaque={"Moz"} srcLogo={LogoSrc} altLogo={"Logo da MozHouse"} />
+                <Logo logoTexto={"Homes"} destaque={"Near"} srcLogo={LogoSrc} altLogo={"Logo da MozHouse"} />
             </Link>
             <Menu mostrarMenu={mostrarMenu} mostrarIcone={true} />
             <div className={style.ajuste}></div>
