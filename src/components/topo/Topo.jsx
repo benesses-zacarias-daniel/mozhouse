@@ -21,7 +21,7 @@ const Topo = () => {
         <header>
             <Button children={<Img src={Mostrar} alt={"Ícone barras horizontais"} />} estilo={style.btn_topo} onClick={() => { onClick(); }} />
             <Link to={"/"} onClick={() => { onClickloGo() }} className={style.link_logo}>
-                <Logo logoTexto={"Homes"} destaque={"Near"} srcLogo={LogoSrc} altLogo={"Logo da MozHouse"} />
+                <Logo logoTexto={"Homes"} destaque={"Near"} srcLogo={LogoSrc} altLogo={"Logo da NearHomes"} />
             </Link>
             <Menu mostrarMenu={mostrarMenu} mostrarIcone={true} />
             <div className={style.ajuste}></div>
