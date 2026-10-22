@@ -30,7 +30,7 @@ const Inicio = () => {
     const { mudarPage } = useMenuContext();
     const CasasHome = Casas.filter((casa) => casa.id === 1 || casa.id === 2 || casa.id === 3);
     const numero = "258 87 726 7456";
-    const linkWhatsApp = `https://wa.me/${numero}?text=Olá, tudo bem? Gostaria de saber mais sobre a MozHouse!`;
+    const linkWhatsApp = `https://wa.me/${numero}?text=Olá, tudo bem? Gostaria de saber mais sobre a NearHomes!`;
 
     const [mostDetalhes, setMostDetalhes] = useState(false);
     const [dadosModal, setDadosModal] = useState([]);
@@ -54,7 +54,7 @@ const Inicio = () => {
         }, {
             "id": 3,
             "passo": "Processo Simples",
-            "desc": "A MozHouse actua como intermediária segura entre proprietários e compradores ou arrendatários",
+            "desc": "A NearHomes actua como intermediária segura entre proprietários e compradores ou arrendatários",
             "src": Mao,
             "alt": "Ícone de aperto de mãos"
         }
@@ -69,7 +69,7 @@ const Inicio = () => {
         }, {
             "id": 2,
             "passo": "Publicidade",
-            "desc": "A equipe MozHouse verifica e publica o imóvel na nossa plataforma de Elite.",
+            "desc": "A equipe NearHomes verifica e publica o imóvel na nossa plataforma de Elite.",
             "src": Certo,
             "alt": ""
         }, {

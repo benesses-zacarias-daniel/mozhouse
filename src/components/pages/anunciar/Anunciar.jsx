@@ -33,7 +33,7 @@ const Anunciar = () => {
         }, {
             "id": 3,
             "passo": "Passo 03 - Publicação VIP",
-            "desc": "A equipa MozHouse cura o conteúdo e publica a propriedade na plataforma.",
+            "desc": "A equipa NearHomes cura o conteúdo e publica a propriedade na plataforma.",
             "alt": "",
             "src": Mundo
         }, {
@@ -47,7 +47,7 @@ const Anunciar = () => {
 
     return (
         <section className={style.area_anunciar}>
-            <Hero titulo={"Tem uma casa vazia? Alugue-a hoje"} mens={"Coloque seu imóvel na MozHouse e receba propostas de inquilínos verificados. Anúncio gratuito e suporte do início ao fim."} />
+            <Hero titulo={"Tem uma casa vazia? Alugue-a hoje"} mens={"Coloque seu imóvel na NearHomes e receba propostas de inquilínos verificados. Anúncio gratuito e suporte do início ao fim."} />
             <PassosMozHouse titulo={"Processo Simples e Rápido"} classeAreaGeral={style.area_geral_processo} minInfo={"Nós tratamos de toda a visibilidade técnica para que se possa focar apenas no negócio."} dadosPedido={DadosAnuciar} />
             <div className={style.area_infos}>
                 <div className={style.info_area}>
