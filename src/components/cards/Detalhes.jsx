@@ -1,15 +1,13 @@
 import style from "./Detalhes.module.css";
 import Img from "../img/Img";
 import Fexar from "../assets/fexar_detalhes.svg";
-import SetaEsquerda from "../assets/setaEB.svg";
-import SetaDir from "../assets/setaDB.svg";
 import Mens from "../assets/mensB.svg";
 import Button from "../botaos/Button";
 import EstrelaAval from "../assets/estrelaAval.svg";
 import { useEffect, useState } from "react";
 // import { useState } from "react";
 
-const Detalhes = ({ onClickOcult, aberto, dados }) => {
+const Detalhes = ({ onClickOcult, dados }) => {
     //Dados detalhados
     const detalhes = dados[0].detalhes;
     const srcDetalhes = detalhes.srcDetalhes;
@@ -25,7 +23,7 @@ const Detalhes = ({ onClickOcult, aberto, dados }) => {
     const [srcDetAct, setSrcDetAct] = useState(0);
     const [fade, setFade] = useState(false);
 
-    useEffect(() => {
+    /*useEffect(() => {
         if (!aberto) return;
         const intervalo = setInterval(() => {
             if (srcDetAct + 1 >= srcDetalhes.length) {
@@ -38,22 +36,36 @@ const Detalhes = ({ onClickOcult, aberto, dados }) => {
 
         return () => { clearInterval(intervalo) };
 
-    }, [aberto, srcDetAct]);
+    }, [aberto, srcDetAct]);*/
 
-    const onClickCasaDetalhes = (tipo) => {
-        if (tipo === 1) {
-            if (srcDetAct + 1 >= srcDetalhes.length) {
-                setSrcDetAct(0);
-            } else {
-                setSrcDetAct(srcDetAct + 1);
-            }
-        } else {
-            if (srcDetAct - 1 <= 0) {
-                setSrcDetAct(srcDetalhes.length - 1);
-            } else {
-                setSrcDetAct(srcDetAct - 1);
-            }
-        }
+    // useEffect(() => {
+    //     if (!aberto) return;
+
+    //     srcDetalhes.forEach((imagem) => {
+    //         const img = new Image();
+    //         img.src = imagem.srcDet;
+    //     });
+
+    // }, [aberto, srcDetalhes]);
+
+    /*const onClickCasaDetalhes = (tipo) => {
+         
+         if (tipo === 1) {
+             if (srcDetAct + 1 >= srcDetalhes.length) {
+                 setSrcDetAct(0);
+             } else {
+                 setSrcDetAct(srcDetAct + 1);
+             }
+         } else {
+             if (srcDetAct - 1 <= 0) {
+                 setSrcDetAct(srcDetalhes.length - 1);
+             } else {
+                 setSrcDetAct(srcDetAct - 1);
+             }
+         }
+     }*/
+    const onClickCasaDetalhes = (pos) => {
+        setSrcDetAct(pos);
     }
 
     return (
@@ -77,19 +89,22 @@ const Detalhes = ({ onClickOcult, aberto, dados }) => {
                     <div className={style.area_conteudo}>
                         <div className={style.area_imgs_detalhes}>
                             <Img src={srcDetalhes[srcDetAct].srcDet} alt={srcDetalhes[srcDetAct].alt} />
+                            <div className={style.miniaturas}>
+                                <div className={style.scroll_miniaturas}>
+                                    {srcDetalhes.map((img, pos) => (
+                                        <Button key={img.id}
+                                            estilo={pos === srcDetAct ? style.miniatura_ativa : style.miniatura}
+                                            onClick={() => onClickCasaDetalhes(pos)}>
+                                            <Img src={img.srcDet} alt={img.srcDet} />
+                                        </Button>
+                                    ))}
+                                </div>
+                            </div>
                             <div className={style.area_legenda_local}>
                                 <div className={style.ponto_verd}></div>
                                 <h4>{srcDetalhes[srcDetAct].localizacao}</h4>
                             </div>
                             <div className={style.loc_detalhes}>{srcDetAct + 1}/{tamanhoSrc}</div>
-                            <div className={style.area_btns_controle}>
-                                <Button estilo={style.btn_control} onClick={() => { onClickCasaDetalhes(0); }} children={
-                                    <Img src={SetaEsquerda} alt={"Seta para esquerda"} />
-                                } />
-                                <Button estilo={style.btn_control} onClick={() => { onClickCasaDetalhes(1); }} children={
-                                    <Img src={SetaDir} alt={"Seta para direita"} />
-                                } />
-                            </div>
                         </div>
                         <div className={style.area_info_detalhes}>
                             <div className={style.desc_detalhe}>{descDetalhes}</div>

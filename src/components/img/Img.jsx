@@ -1,6 +1,6 @@
 const Img = ({ src, alt }) => {
     return (
-        <img src={src} alt={alt} />
+        <img src={src} alt={alt} loading="lazy" />
     )
 }
 

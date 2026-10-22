@@ -166,7 +166,7 @@ const Inicio = () => {
                     <Link to={`/propriedades`} className={style.ajustar_link}>Explorar Propriedades</Link>
                 </Button>
             } />{mostDetalhes && (
-                <Detalhes onClickOcult={() => { setMostDetalhes(false) }} onClickFech={() => { setDetFech(true) }} fechando={detFech} aberto={mostDetalhes} dados={dadosModal} />)}
+                <Detalhes onClickOcult={() => { setMostDetalhes(false) }} onClickFech={() => { setDetFech(true) }} fechando={detFech} dados={dadosModal} />)}
         </section>
     )
 }

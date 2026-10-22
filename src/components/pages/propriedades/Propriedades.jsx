@@ -58,7 +58,7 @@ const Propriedades = () => {
                 )}
 
                 {mostDetalhes && (
-                    <Detalhes onClickOcult={() => { setMostDetalhes(false) }} aberto={mostDetalhes} dados={dadosModal} />)}
+                    <Detalhes onClickOcult={() => { setMostDetalhes(false) }} dados={dadosModal} />)}
             </div>
         </section>
     )

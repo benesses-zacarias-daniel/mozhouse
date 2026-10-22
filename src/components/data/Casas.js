@@ -20,7 +20,7 @@ const Casas = [
             "video": "/videos/casa1.webm",
             "srcDetalhes": [{ "id": 1, "srcDet": "/img/home/casa1A.webp", "alt": "", "localizacao": "Visão Frontal" }, { "id": 2, "srcDet": "/img/home/casa1Q1.webp", "alt": "", "localizacao": "Quarto I" }, { "id": 3, "srcDet": "/img/home/casa1Q2.webp", "alt": "", "localizacao": "Quarto II" }, { "id": 4, "srcDet": "/img/home/casa1Disp.webp", "alt": "", "localizacao": "Dispensa" }],
             "descDetalhes": "",
-            "acessos": ["Água", "Escola", "Mercado"]
+            "acessos": ["Água", "Escola (Primárias e Secundárias)", "Mercado"]
         }
     }
 ];
