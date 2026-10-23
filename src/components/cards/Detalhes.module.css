@@ -420,6 +420,18 @@
     .loc_detalhes {
         top: 300px;
     }
+
+    .miniaturas {
+        top: 280px;
+        right: 0px;
+        flex-direction: row;
+        height: 60px;
+        width: 280px;
+    }
+
+    .scroll_miniaturas {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (min-width:800px) {
@@ -435,7 +447,11 @@
 
     .loc_detalhes,
     .area_btns_controle {
-        top: 375px;
+        top: 365px;
+    }
+
+    .miniaturas {
+        top: 350px;
     }
 }
 
@@ -458,7 +474,11 @@
 
     .loc_detalhes,
     .area_btns_controle {
-        top: 445px;
+        top: 440px;
+    }
+
+    .miniaturas {
+        top: 420px;
     }
 
     .area_vid_detalhes {
