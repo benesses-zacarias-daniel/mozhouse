@@ -22,6 +22,7 @@ const Detalhes = ({ onClickOcult, dados }) => {
     //States para gerir as Imgs
     const [srcDetAct, setSrcDetAct] = useState(0);
     const [fade, setFade] = useState(false);
+    const srcThumb = detalhes.srcDetalhes.map((src) => src.srcThumb);
 
     /*useEffect(() => {
         if (!aberto) return;
@@ -91,11 +92,11 @@ const Detalhes = ({ onClickOcult, dados }) => {
                             <Img src={srcDetalhes[srcDetAct].srcDet} alt={srcDetalhes[srcDetAct].alt} />
                             <div className={style.miniaturas}>
                                 <div className={style.scroll_miniaturas}>
-                                    {srcDetalhes.map((img, pos) => (
-                                        <Button key={img.id}
+                                    {srcThumb.map((img, pos) => (
+                                        <Button key={pos}
                                             estilo={pos === srcDetAct ? style.miniatura_ativa : style.miniatura}
                                             onClick={() => onClickCasaDetalhes(pos)}>
-                                            <Img src={img.srcDet} alt={img.srcDet} />
+                                            <Img src={img.srcDet} alt={img.alt} load={true} />
                                         </Button>
                                     ))}
                                 </div>
