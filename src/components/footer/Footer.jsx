@@ -10,10 +10,10 @@ import Telefone from "../assets/telefoneB.svg";
 
 const Footer = ({ nome }) => {
     const { mudarPage } = useMenuContext();
-    const linkEmail = `mailto:contactomozhousemz@gmail.com`;
-    const num1 = "258 87 726 7456";
+    const linkEmail = `mailto:nearhomescontacto@gmail.com`;
+    const num1 = "258 84 975 4315";
     const linkWhatsApp1 = `https://wa.me/${num1}?text=Olá, tudo bem? Gostaria de saber mais sobre a NearHomes!`;
-    const num2 = "258 84 366 7456";
+    const num2 = "258 87 000 6914";
     const linkWhatsApp2 = `https://wa.me/${num2}?text=Olá, tudo bem? Gostaria de saber mais sobre a NearHomes!`;
 
     const onClickLoGo = () => {
@@ -24,7 +24,7 @@ const Footer = ({ nome }) => {
             <div className={style.area_info_footer}>
                 <div className={style.desc_footer}>
                     <Link to={"/"} onClick={() => { onClickLoGo(); }} >
-                        <Logo destaque={"Near"} logoTexto={" Homes"} altLogo={"Logo do NearHomes"} srcLogo={ImgLogo} />
+                        <Logo destaque={"Near"} logoTexto={"Homes"} altLogo={"Logo do NearHomes"} srcLogo={ImgLogo} />
                     </Link>
                     <p className={style.desc_marca}>A imobiliária de luxo lider em Moçambique, oferecendo as melhores propriedades residenciais e comerciais.</p>
                     <div className={style.ocultar}>n</div>
