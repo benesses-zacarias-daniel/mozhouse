@@ -188,16 +188,24 @@
     padding: 10px;
 }
 
-.area_img_cat {
+.area_img_cat,
+.escolha_nearHomes {
     width: 60px;
     height: 60px;
     padding: 5px;
-    background: var(--fundoSec);
     border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.escolha_nearHomes {
+    background-color: var(--fundoSec);
+}
+
+.area_img_cat {
+    background: var(--fundoSec);
 }
 
 .titulo_desc_destaque,

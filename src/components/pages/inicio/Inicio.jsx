@@ -155,7 +155,7 @@ const Inicio = () => {
                     )}
                 </div>
             </div>
-            <PassosMozHouse titulo={"Por que escolher a MozHouse?"} minInfo={""} dadosPedido={PassosEscolherDados} />{/*Passos Por que escolher MozHouse*/}
+            <PassosMozHouse titulo={"Por que escolher a MozHouse?"} minInfo={""} dadosPedido={PassosEscolherDados} classeAreaImg={style.escolha_nearHomes} />{/*Passos Por que escolher MozHouse*/}
             <PassosMozHouse titulo={"Como funciona"} minInfo={""} classeAreaGeral={style.area_geral_funciona} dadosPedido={PassosFuncionaDados} />{/*Passos de como funciona*/}
             <PassosMozHouse titulo={"Nossas Categorias"} minInfo={""} dadosPedido={Categorias} classeAreaPasso={style.area_cat} classeAreaImg={style.area_img_cat} classePasso={style.passos_cat} /> {/*Categorias*/}
             <Depoimentos depoimentos={DepoimentosClientes} minInfoDep={"A confiança dos nossos parceiros é o nosso maior património."} tituloDep={"O que dizem os nossos clientes"} />

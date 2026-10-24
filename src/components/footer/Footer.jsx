@@ -47,7 +47,7 @@ const Footer = ({ nome }) => {
                 <hr className={style.linha_vert} />
                 <div className={style.area_nav}>
                     <div className={style.area_nav_titulo}>Links Rápidos</div>
-                    <Menu mostrarMenu={true} mostrarIcone={false} />
+                    <Menu mostrarMenu={true} mostrarIcone={false} textoR={false} />
                 </div>
             </div>
             <hr className={style.linha_footer} />

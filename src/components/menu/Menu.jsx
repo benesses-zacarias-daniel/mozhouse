@@ -6,7 +6,7 @@ import style from "./Menu.module.css";
 import Fexar from "../assets/fexar.svg";
 import { useState } from "react";
 
-const Menu = ({ mostrarMenu, mostrarIcone }) => {
+const Menu = ({ mostrarMenu, mostrarIcone, textoR = false }) => {
     const { pageActiva, mudarPage, setMostrarMenu } = useMenuContext();
     const [fade, setFade] = useState(false);
 
@@ -64,7 +64,7 @@ const Menu = ({ mostrarMenu, mostrarIcone }) => {
                                 }} />
                             </div>
                             <div className={style.links_nav}>
-                                <Button children={<Link to={"/termos"} className={`${style.item_menu} ${pageActiva === "termos" ? style.activa : ""}`}>{mostrarIcone ? "> " : ""} Termos & Condições</Link>} estilo={"btnLink"} onClick={() => {
+                                <Button children={<Link to={"/termos"} className={`${style.item_menu} ${pageActiva === "termos" ? style.activa : ""}`}>{mostrarIcone ? "> " : ""} {textoR ? "Termos & Condições" : "Ter. & Condições"}</Link>} estilo={"btnLink"} onClick={() => {
                                     onClickOcultar();
                                     setTimeout(() => {
                                         mudarPageControl("termos");

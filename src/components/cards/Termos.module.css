@@ -12,8 +12,8 @@
 }
 
 .termo_final {
-    background-color: var(--verClaro);
-    border-color: #21c45d49;
+    background-color: var(--fundo);
+    border-color: var(--textoPrin);
 }
 
 .area_icone_container {
@@ -29,7 +29,7 @@
 .area_icone {
     width: 30px;
     height: 30px;
-    background: var(--verClaro);
+    background: var(--fundo);
     border-radius: 100%;
     display: flex;
     align-items: center;
