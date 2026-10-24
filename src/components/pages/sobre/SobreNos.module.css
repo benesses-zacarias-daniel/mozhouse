@@ -142,7 +142,7 @@
 
 .pedido_sobre {
     width: 85%;
-    background: var(--fundoSec);
+    background: var(--branco);
     border-radius: 12px;
     padding: 10px;
     display: flex;
@@ -182,7 +182,7 @@
 }
 
 .btn_sobre_acao p {
-    color: var(--textoPrin);
+    color: var(--branco);
     padding: 0px 0px 3px 0px;
 }
 
