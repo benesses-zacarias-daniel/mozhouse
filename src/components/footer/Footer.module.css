@@ -33,6 +33,9 @@ footer {
     padding: 0px 2px 0px 2px;
 }
 
+.area_nav_titulo {
+    font-weight: bold;
+}
 
 .desc_footer {
     display: flex;
