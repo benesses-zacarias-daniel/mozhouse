@@ -22,49 +22,7 @@ const Detalhes = ({ onClickOcult, dados }) => {
     //States para gerir as Imgs
     const [srcDetAct, setSrcDetAct] = useState(0);
     const [fade, setFade] = useState(false);
-    const srcThumb = detalhes.srcDetalhes.map((src) => src.srcThumb);
 
-    /*useEffect(() => {
-        if (!aberto) return;
-        const intervalo = setInterval(() => {
-            if (srcDetAct + 1 >= srcDetalhes.length) {
-                setSrcDetAct(0);
-            } else {
-                setSrcDetAct(srcDetAct + 1);
-            }
-            console.log("Entrou nos Detalhes");
-        }, 5000);
-
-        return () => { clearInterval(intervalo) };
-
-    }, [aberto, srcDetAct]);*/
-
-    // useEffect(() => {
-    //     if (!aberto) return;
-
-    //     srcDetalhes.forEach((imagem) => {
-    //         const img = new Image();
-    //         img.src = imagem.srcDet;
-    //     });
-
-    // }, [aberto, srcDetalhes]);
-
-    /*const onClickCasaDetalhes = (tipo) => {
-         
-         if (tipo === 1) {
-             if (srcDetAct + 1 >= srcDetalhes.length) {
-                 setSrcDetAct(0);
-             } else {
-                 setSrcDetAct(srcDetAct + 1);
-             }
-         } else {
-             if (srcDetAct - 1 <= 0) {
-                 setSrcDetAct(srcDetalhes.length - 1);
-             } else {
-                 setSrcDetAct(srcDetAct - 1);
-             }
-         }
-     }*/
     const onClickCasaDetalhes = (pos) => {
         setSrcDetAct(pos);
     }
@@ -92,11 +50,12 @@ const Detalhes = ({ onClickOcult, dados }) => {
                             <Img src={srcDetalhes[srcDetAct].srcDet} alt={srcDetalhes[srcDetAct].alt} />
                             <div className={style.miniaturas}>
                                 <div className={style.scroll_miniaturas}>
-                                    {srcThumb.map((img, pos) => (
+                                    {srcDetalhes.map((img, pos) => (
+
                                         <Button key={pos}
                                             estilo={pos === srcDetAct ? style.miniatura_ativa : style.miniatura}
                                             onClick={() => onClickCasaDetalhes(pos)}>
-                                            <Img src={img.srcDet} alt={img.alt} load={true} />
+                                            <Img src={img.srcThumb} alt={img.alt} load={true} />
                                         </Button>
                                     ))}
                                 </div>
