@@ -38,7 +38,7 @@ const Footer = ({ nome }) => {
                             <a href={linkEmail} className={style.link_footer}>
                                 <Img src={Email} alt={"Ícone de E-mail alternativo"} />
                                 <p>
-                                    contactomozhousemz@gmail.com
+                                    nearhomescontacto@gmail.com
                                 </p>
                             </a>
                         </div>
