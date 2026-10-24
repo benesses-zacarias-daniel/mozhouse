@@ -6,9 +6,6 @@ import style from "./MozHouseLayout.module.css";
 import MenuContextProvider from "../context/MenuContext";
 
 const MozHouseLayout = () => {
-    const onClick = (val) => {
-        setMostrar(val)
-    }
 
     return (
         <MenuContextProvider>
@@ -21,7 +18,8 @@ const MozHouseLayout = () => {
                 </main>
             </div>
         </MenuContextProvider>
-    )
+    );
+
 }
 
 
