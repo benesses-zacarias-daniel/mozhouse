@@ -150,6 +150,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    border: 1px solid var(--verdePrimario);
 }
 
 .desc_mens {
@@ -189,11 +190,6 @@
     width: 20px;
     height: 20px;
     padding: 2px 0px 0px 0px;
-}
-
-.area_jornada,
-.pedido_sobre {
-    border: 1px solid var(--verdePrimario);
 }
 
 @media only screen and (min-width:900px) {
