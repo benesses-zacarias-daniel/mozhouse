@@ -6,7 +6,7 @@ import style from "./Menu.module.css";
 import Fexar from "../assets/fexar.svg";
 import { useState } from "react";
 
-const Menu = ({ mostrarMenu, mostrarIcone }) => {
+const Menu = ({ mostrarMenu, mostrarIcone, textoR = true }) => {
     const { pageActiva, mudarPage, setMostrarMenu } = useMenuContext();
     const [fade, setFade] = useState(false);
 
