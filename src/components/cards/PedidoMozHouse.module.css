@@ -9,7 +9,7 @@
 
 .area_pedido {
     width: 98%;
-    background: var(--fundoSec);
+    background-color: var(--fundo);
     border: 1px solid var(--textoSec);
     border-radius: 10px;
     color: var(--textoPrin);

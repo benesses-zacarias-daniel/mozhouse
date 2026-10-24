@@ -142,7 +142,7 @@
 
 .pedido_sobre {
     width: 85%;
-    background: var(--branco);
+    background-color: var(--fundo);
     border-radius: 12px;
     padding: 10px;
     display: flex;
