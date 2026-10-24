@@ -1,4 +1,3 @@
-import { FaPhone } from "react-icons/fa6";
 import style from "./Termos.module.css";
 import Button from "../botaos/Button";
 import Img from "../img/Img";
@@ -26,10 +25,10 @@ const Termos = ({ dadosTermos }) => {
                                 <div className={style.area_btn_termos}>
                                     {/* <div className={style.ajuste_central}></div> */}
                                     <Button estilo={style.btn_termos} onClick={() => { }}>
-                                        <FaPhone color="#21c45d" /> {termosDados.telefonesAdmin[0]}
+                                        {termosDados.telefonesAdmin[0]}
                                     </Button>
                                     <Button estilo={style.btn_termos} onClick={() => { }}>
-                                        <FaPhone color="#21c45d" /> {termosDados.telefonesAdmin[1]}
+                                        {termosDados.telefonesAdmin[1]}
                                     </Button>
                                     <div className={style.ajuste_central}></div>
                                 </div>
