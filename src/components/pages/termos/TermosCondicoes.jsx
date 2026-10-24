@@ -10,11 +10,12 @@ import Negociacao from "../../assets/money.svg";
 import Comicao from "../../assets/pagar.svg";
 import EscudoCool from "../../assets/escudoCool.svg";
 import Periodo from "../../assets/periodo.svg";
+import Contacto from "../../assets/telefone.svg";
 import PedidoMozHouse from "../../cards/PedidoMozHouse";
 import Button from "../../botaos/Button";
 import Img from "../../img/Img";
 import Mens from "../../assets/mensB.svg";
-
+//src/components/assets/telefone.svg
 const TermosCondicoes = () => {
     const TermosCondicoesDados = [
         {
@@ -70,8 +71,8 @@ const TermosCondicoes = () => {
             "id": 8,
             "titulo": "8. Contactos",
             "desc": "Restou alguma dúvida? A nossa equipa de suporte está disponível para o ajudar através dos seguintes canais:",
-            "src": null,
-            "alt": null,
+            "src": Contacto,
+            "alt": "Ícone de Telefone",
             "telefonesAdmin": ["84 975 4315", "87 000 6914"]
         }
     ];
