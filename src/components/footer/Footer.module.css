@@ -96,6 +96,13 @@ footer {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    color: var(--verdePrimario);
+}
+
+.email p,
+.numeros a p {
+    color: var(--verdePrimario);
+    font-weight: 450 !important;
 }
 
 .numeros,
