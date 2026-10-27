@@ -11,11 +11,11 @@ const Casas = [
         "mensWhatSapp": `Olá equipe NearHomes, tudo bem? Quero saber mais sobre esta propriedade.
                          Casa T2,
                          2 Quartos,
-                         Sem casa de banho,
+                         Com 1 casa de banho,
                          Localizada na zona de Mutauanha - Piloto`,
         "quartos": 2,
-        "banhos": 0,
-        "area": "??",
+        "banhos": 1,
+        "area": 40,
         "detalhes": {
             "video": "/videos/casa1.webm",
             "srcDetalhes": [
