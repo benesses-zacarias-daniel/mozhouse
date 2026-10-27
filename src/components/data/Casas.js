@@ -25,7 +25,7 @@ const Casas = [
                 { "id": 4, "srcDet": "/img/home/casa1Disp.webp", "srcThumb": "/img/home/casa1Disp_thumb.webp", "alt": "", "localizacao": "Dispensa" }
             ],
             "descDetalhes": "",
-            "acessos": ["Água", "Escola (Primárias e Secundárias)", "Mercado"]
+            "acessos": ["Água", "Escola (Primárias e Secundárias)", "Mercado", "Estrada"]
         }
     }
 ];
