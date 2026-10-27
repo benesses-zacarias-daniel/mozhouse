@@ -1,11 +1,10 @@
+import { useState } from "react";
 import style from "./Detalhes.module.css";
-import Img from "../img/Img";
-import Fexar from "../assets/fexar_detalhes.svg";
-import Mens from "../assets/mensB.svg";
-import Button from "../botaos/Button";
-import EstrelaAval from "../assets/estrelaAval.svg";
-import { useEffect, useState } from "react";
-// import { useState } from "react";
+import Img from "../../img/Img";
+import Fexar from "../../assets/fexar_detalhes.svg";
+import Mens from "../../assets/mensB.svg";
+import Button from "../../botaos/Button";
+import EstrelaAval from "../../assets/estrelaAval.svg";
 
 const Detalhes = ({ onClickOcult, dados }) => {
     //Dados detalhados
@@ -79,7 +78,6 @@ const Detalhes = ({ onClickOcult, dados }) => {
                                             </div>
                                         )
                                     })
-
                                 )}
                             </div>
                         </div>

@@ -1,12 +1,12 @@
 import style from "./CardCasa.module.css"
-import Img from "../img/Img";
+import Img from "../../img/Img";
 //Imagens do Card de Casas
-import Quartos from "../assets/camaRei.svg";
-import Regua from "../assets/reguaArea.svg";
-import Banhos from "../assets/banho.svg";
-import GPS from "../assets/gps.svg";
-import Mens from "../assets/mensB.svg";
-import Button from "../botaos/Button";
+import Quartos from "../../assets/camaRei.svg";
+import Regua from "../../assets/reguaArea.svg";
+import Banhos from "../../assets/banho.svg";
+import GPS from "../../assets/gps.svg";
+import Mens from "../../assets/mensB.svg";
+import Button from "../../botaos/Button";
 
 const CardCasa = ({ dadosCasas, onClickModalOpen }) => {
 

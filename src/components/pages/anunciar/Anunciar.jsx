@@ -1,16 +1,15 @@
+import style from "./Anunciar.module.css";
 import Img from "../../img/Img";
 import Hero from "../../hero/Hero";
-import style from "./Anunciar.module.css";
-import PassosMozHouse from "../../cards/PassosMozHouse";
+import PassosMozHouse from "../../cards/cardPassos/NearHomesPassos";
 import Mens from "../../assets/mensB.svg";
 //Ícones reais de algumas areas
 import Ajuda from "../../assets/ajuda.svg";
 import Envio from "../../assets/upload.svg";
 import Mundo from "../../assets/mundo.svg";
 import Aperto from "../../assets/apertoMao.svg";
-//
 import Check from "../../assets/check.svg";
-import PedidoMozHouse from "../../cards/PedidoMozHouse";
+import PedidoMozHouse from "../../cards/cardPedido/NearHomesPedido";
 import Button from "../../botaos/Button";
 
 const Anunciar = () => {

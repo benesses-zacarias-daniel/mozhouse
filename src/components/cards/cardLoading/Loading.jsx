@@ -1,6 +1,6 @@
 import style from "./Loading.module.css";
-import Img from "../img/Img";
-import ImgCarregar from "../assets/load.svg";
+import Img from "../../img/Img";
+import ImgCarregar from "../../assets/load.svg";
 
 const Loading = () => {
     return (

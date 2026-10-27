@@ -1,5 +1,5 @@
-import Img from "../img/Img";
-import style from "./PassosMozHouse.module.css";
+import Img from "../../img/Img";
+import style from "./NearHomesPassos.module.css";
 
 const PassosMozHouse = ({ titulo, minInfo, classeAreaGeral = style.area_geral_passos, classeAreaPasso = style.area_passos, classeAreaImg = style.area_img_passos, classePasso = style.passos, dadosPedido }) => {
     return (

@@ -1,5 +1,5 @@
-import Img from "../img/Img";
 import style from "./Valores.module.css"
+import Img from "../../img/Img";
 
 const Valores = ({ dadosVal }) => {
     return (
