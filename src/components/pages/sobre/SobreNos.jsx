@@ -1,11 +1,11 @@
+import style from "./SobreNos.module.css";
 import { Link } from "react-router-dom";
 import Button from "../../botaos/Button";
 import { useMenuContext } from "../../context/MenuContext";
 import Img from "../../img/Img";
-import style from "./SobreNos.module.css";
-import Valores from "../../cards/Valores";
-import PedidoMozHouse from "../../cards/PedidoMozHouse";
-import VisaoMissao from "../../cards/VisaoMissao";
+import Valores from "../../cards/cardValores/Valores";
+import PedidoMozHouse from "../../cards/cardPedido/NearHomesPedido";
+import VisaoMissao from "../../cards/cardVisaoMissao/VisaoMissao";
 import Hero from "../../hero/Hero";
 //Ícondes gerais de cada área
 import Visao from "../../assets/visao.svg";

@@ -1,5 +1,5 @@
-import Img from "../img/Img";
-import Estrela from "../assets/estrelaDepoi.svg"
+import Img from "../../img/Img";
+import Estrela from "../../assets/estrelaDepoi.svg"
 import style from "./Depoimentos.module.css";
 
 const Depoimentos = ({ tituloDep, minInfoDep, depoimentos }) => {

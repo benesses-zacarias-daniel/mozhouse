@@ -1,5 +1,5 @@
 import style from "./VisaoMissao.module.css"
-import Img from "../img/Img";
+import Img from "../../img/Img";
 
 const VisaoMissao = ({ dadosVisao }) => {
     return (

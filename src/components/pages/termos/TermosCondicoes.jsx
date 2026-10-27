@@ -1,7 +1,7 @@
-// import Button from "../botaos/Button";
-import Termos from "../../cards/Termos";
-import Hero from "../../hero/Hero";
 import style from "./TermosCondicoes.module.css";
+// import Button from "../botaos/Button";
+import Termos from "../../cards/cardTermos/Termos";
+import Hero from "../../hero/Hero";
 //Ícondes gerais de cada área
 import Introducao from "../../assets/info.svg";
 import ApertoMao from "../../assets/apertoMao.svg";
@@ -11,11 +11,11 @@ import Comicao from "../../assets/pagar.svg";
 import EscudoCool from "../../assets/escudoCool.svg";
 import Periodo from "../../assets/periodo.svg";
 import Contacto from "../../assets/telefone.svg";
-import PedidoMozHouse from "../../cards/PedidoMozHouse";
+import PedidoMozHouse from "../../cards/cardPedido/NearHomesPedido";
 import Button from "../../botaos/Button";
 import Img from "../../img/Img";
 import Mens from "../../assets/mensB.svg";
-//src/components/assets/telefone.svg
+
 const TermosCondicoes = () => {
     const TermosCondicoesDados = [
         {

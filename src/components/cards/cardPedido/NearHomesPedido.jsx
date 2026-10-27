@@ -1,4 +1,4 @@
-import style from "./PedidoMozHouse.module.css";
+import style from "./NearHomesPedido.module.css";
 
 const PedidoMozHouse = ({ titulo_pedido, desc_pedido, children, classeAreaGeral = style.container_pedido, classeAreaPedido = style.area_pedido }) => {
     return (

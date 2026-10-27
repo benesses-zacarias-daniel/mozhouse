@@ -1,6 +1,6 @@
 import style from "./Termos.module.css";
-import Button from "../botaos/Button";
-import Img from "../img/Img";
+import Button from "../../botaos/Button";
+import Img from "../../img/Img";
 
 const Termos = ({ dadosTermos }) => {
 

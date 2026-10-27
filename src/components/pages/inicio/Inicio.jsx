@@ -1,13 +1,14 @@
+import style from "./Inicio.module.css";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useMenuContext } from "../../context/MenuContext";
 import Hero from "../../hero/Hero";
-import style from "./Inicio.module.css";
 import Button from "../../botaos/Button";
-import { Link } from "react-router-dom";
-import CardCasa from "../../cards/CardCasa";
+import CardCasa from "../../cards/cardCasa/CardCasa";
 import Casas from "../../data/Casas";
 import Img from "../../img/Img";
 import Seta from "../../assets/seta.svg";
-import PassosMozHouse from "../../cards/PassosMozHouse";
+import PassosMozHouse from "../../cards/cardPassos/NearHomesPassos";
 //Ícones reais de algumas areas
 import EscudoVerificado from "../../assets/escudoVerif.svg";
 import Suporte from "../../assets/suporte.svg";
@@ -19,12 +20,11 @@ import Anunciar from "../../assets/anunciar.svg";
 import Certo from "../../assets/certo.svg";
 import Telefone from "../../assets/telefone.svg";
 // import Categorias from "../cards/Categorias";
-import PedidoMozHouse from "../../cards/PedidoMozHouse";
-import Depoimentos from "../../cards/Depoimentos";
+import PedidoMozHouse from "../../cards/cardPedido/NearHomesPedido";
+import Depoimentos from "../../cards/cardDepoimentos/Depoimentos";
 import DepoimentosClientes from "../../data/Depoimentos";
-import Detalhes from "../../cards/Detalhes";
-import { useState } from "react";
-import Loading from "../../cards/Loading";
+import Detalhes from "../../cards/cardDetalhes/Detalhes";
+import Loading from "../../cards/cardLoading/Loading";
 
 const Inicio = () => {
     const { mudarPage } = useMenuContext();
